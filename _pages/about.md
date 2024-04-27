@@ -19,13 +19,13 @@ redirect_from:
 
 Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a master student in Digital Technologies, Communication and Education in the University of Mnachester. Her research interests include educational technology, Generative AI in Education, and international education.
 
-楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、教育中的人工智能、国际教育。
+楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能教育应用、国际教育。
 
-I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
+I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
 
 
 # 🔥 News
-- *2024.04*: &nbsp;🎉🎉 开始于联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习; 
+- *2024.04*: &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习; 
 - *2024.01*: &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖. 
 
 # 📝 Publications 
