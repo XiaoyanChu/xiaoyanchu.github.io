@@ -33,16 +33,17 @@ I have published more than 15 papers at the top SSCI/CSSCI educational journals 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature HSSC</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[A systematic review of Stimulated Recall (SR) in educational research from 2012 to 2022](https://www.nature.com/articles/s41599-024-02987-6)
+Zhai, X., **Chu, X***., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A systematic review of Stimulated Recall (SR) in educational research from 2012 to 2022](https://www.nature.com/articles/s41599-024-02987-6) *Humanities and Social Sciences Communications*, 11(1), 1-14. （**SSCI Q1, co-first author, corresponding author**）
 
-Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M.
 
 [**Google Scholar**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=JpvPUK4AAAAJ&sortby=pubdate&citation_for_view=JpvPUK4AAAAJ:ufrVoPGSRksC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - This article provides a comprehensive analysis of SR studies in the realm of education and proposes a promising avenue for researchers to proactively apply stimulated recall in investigating educational issues in the digital era. 
 </div>
 </div>
 
-- [基于“生成式人工智能+元宇宙”的人机协同学习模式研究](https://openedu.sou.edu.cn/upload/qikanfile/202309211431377817.pdf), 翟雪松,楚肖燕,焦丽珍,童兆平,李艳, **开放教育研究**
+- 翟雪松,**楚肖燕**,焦丽珍,童兆平,李艳.[基于“生成式人工智能+元宇宙”的人机协同学习模式研究](https://openedu.sou.edu.cn/upload/qikanfile/202309211431377817.pdf)[J].*开放教育研究*,2023,29(05):26-36. （**北大核心、CSSCI**）
+- 翟雪松,**楚肖燕**,顾建民,李艳,王会军.从知识共享到知识共创：教育元宇宙的去中心化知识观[J].华东师范大学学报(教育科学版),2023,41(11):27-37. （**北大核心、CSSCI**）
+- Zhai, X. S., **Chu, X***. Y., Chen, M., Shen, J., & Lou, F. L. (2023). Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. IEEE Transactions on Learning Technologies, 16(6): 1130-1140. （**SSCI Q1, co-first author, corresponding author**）
 
 # 📚︎ Academic Services
 - IEEE TALE 2021 Reviewer
