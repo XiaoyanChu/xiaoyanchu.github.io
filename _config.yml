@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xiaoyan CHU Homepage"
-description              : "“用教育给技术以温度，用技术给教育以未来。”</br></br>“我们无法用**昨天**的方法教**今天**的学生面向**未来**的世界。”     "
+description              : "“用教育给技术以温度，用技术给教育以未来。”</br></br>“我们无法用<strong>昨天</strong>的方法教<strong>今天</strong>的学生面向<strong>未来</strong>的世界。”     "
 repository               : "XiaoyanChu/xiaoyanchu.github.io"
 google_scholar_stats_use_cdn : true
 
