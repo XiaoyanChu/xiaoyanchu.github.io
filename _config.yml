@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xiaoyan CHU Homepage"
-description              : "This is a academic homepage of Xiaoyan CHU. "
+description              : "“用教育给技术以温度，用技术给教育以未来。”"
 repository               : "XiaoyanChu/xiaoyanchu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -29,7 +29,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=JpvPUK4AAAAJ"
   email            : "xiaoyanchu@zju.edu.cn"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Xiaoyan-Chu-2"
   uri              :
   bitbucket        :
   codepen          :
