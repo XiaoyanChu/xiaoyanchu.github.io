@@ -45,6 +45,7 @@ Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A 
 - 翟雪松,**楚肖燕**,顾建民,李艳,王会军.从知识共享到知识共创：教育元宇宙的去中心化知识观[J].*华东师范大学学报(教育科学版)*,2023,41(11):27-37. （**北大核心、CSSCI**）
 - Zhai, X. S., **Chu, X**. Y., Chen, M., Shen, J., & Lou, F. L. (2023). Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. *IEEE Transactions on Learning Technologies*, 16(6): 1130-1140. （**SSCI Q1, co-first author, corresponding author**）
 
+<span class='anchor' id='academic-services'></span>
 # 📚︎ Academic Services
 - IEEE TALE 2021 Reviewer
 - IEEE iLRN 2023 PC Member
