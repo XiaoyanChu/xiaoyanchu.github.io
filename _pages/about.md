@@ -17,13 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan CHU
+Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a master student in Digital Technologies, Communication and Education in the University of Mnachester. Her research interests include educational technology, Generative AI in Education, and international education.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong></a>.
+楚肖燕是浙江大学教育技术学博士生，同时也是曼彻斯特大学数字技术、传播与教育系的硕士研究生。她的研究兴趣包括教育技术、教育中的人工智能、国际教育。
+
+I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong></a>.
 
 
 # 🔥 News
-- *2024.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.04*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📝 Publications 
@@ -33,7 +35,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Xuesong Zhai, **Xiaoyan Chu**, Minjuan Wang
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
