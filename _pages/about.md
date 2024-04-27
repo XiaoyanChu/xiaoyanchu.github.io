@@ -27,7 +27,7 @@ I have published more than 15 papers at the top SSCI/CSSCI educational journals 
 # 🔥 News
 - *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习; 
 - *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖.
-
+<br>
 
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature HSSC</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
