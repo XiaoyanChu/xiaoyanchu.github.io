@@ -28,6 +28,7 @@ I have published more than 15 papers at the top SSCI/CSSCI educational journals 
 - *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习; 
 - *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖.
 
+
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature HSSC</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
@@ -45,7 +46,7 @@ Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A 
 - 翟雪松,**楚肖燕**,顾建民,李艳,王会军.从知识共享到知识共创：教育元宇宙的去中心化知识观[J].*华东师范大学学报(教育科学版)*,2023,41(11):27-37. （**北大核心、CSSCI**）
 - Zhai, X. S., **Chu, X**. Y., Chen, M., Shen, J., & Lou, F. L. (2023). Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. *IEEE Transactions on Learning Technologies*, 16(6): 1130-1140. （**SSCI Q1, co-first author, corresponding author**）
 
-# 📚︎ Services
+# Services
 - IEEE TALE 2021 Reviewer
 - IEEE iLRN 2023 PC Member
 - IEEE-TLT/Knowledge Management & E-Learning/Complex & Intelligent Systems Reviewer
