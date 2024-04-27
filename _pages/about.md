@@ -21,7 +21,7 @@ Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang Universit
 
 楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、教育中的人工智能、国际教育。
 
-I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong></a>.
+I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
 
 
 # 🔥 News
