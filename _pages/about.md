@@ -35,8 +35,8 @@ She has published more than 15 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 News
-- *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习[Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
-- *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖[Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
+- *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
+- *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖 [Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
 <br>
 <br>
 <br>
