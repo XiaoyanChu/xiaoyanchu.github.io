@@ -17,20 +17,23 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a master student in Digital Technologies, Communication and Education in the University of Mnachester. Her research interests include educational technology, Generative AI in Education, and international education.
+Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Mnachester. Her research interests include educational technology, Generative AI in Education, and international education.
 
 楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能教育应用、国际教育。
 
-“用教育给技术以温度，用技术给教育以未来。”
+Her Mottos:
+*"Infusing technology with the warmth of education, and imbuing education with the promise of tomorrow through technology."*
+*“用教育给技术以温度，用技术给教育以未来。”*
 
-“我们无法用<strong>昨天</strong>的方法教<strong>今天</strong>的学生面向<strong>未来</strong>的世界。”
+*"We cannot guide today's students into the future world using the antiquated methods of yesterday."*
+*“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-I have published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
+She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>470+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
 
 
 # 🔥 News
-- *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习; 
-- *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖.
+- *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习[Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
+- *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖[Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
 <br>
 <br>
 <br>
@@ -48,7 +51,8 @@ Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A 
 </div>
 
 - 翟雪松,**楚肖燕**,焦丽珍,童兆平,李艳.[基于“生成式人工智能+元宇宙”的人机协同学习模式研究](https://openedu.sou.edu.cn/upload/qikanfile/202309211431377817.pdf)[J].*开放教育研究*,2023,29(05):26-36. （**北大核心、CSSCI**）
-- 翟雪松,**楚肖燕**,顾建民,李艳,王会军.从知识共享到知识共创：教育元宇宙的去中心化知识观[J].*华东师范大学学报(教育科学版)*,2023,41(11):27-37. （**北大核心、CSSCI**）
+- 翟雪松,**楚肖燕**,顾建民,李艳,王会军.从知识共享到知识共创：教育元宇宙的去中心化知识观[J].*华东师范大学学报(教育科学版)*,2023,41(11):27-37. （**北大核心、CSSCI**）[An Empirical Study on the Effectiveness of Human-Computer
+Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse]
 - Zhai, X. S., **Chu, X**. Y., Chen, M., Shen, J., & Lou, F. L. (2023). Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. *IEEE Transactions on Learning Technologies*, 16(6): 1130-1140. （**SSCI Q1, co-first author, corresponding author**）
 
 # 📚 Academic Services
