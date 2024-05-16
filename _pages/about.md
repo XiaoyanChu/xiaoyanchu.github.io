@@ -31,7 +31,7 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>490+</span></strong> and h-index <strong><span id='total_cit'>5</span></strong></a>.
+She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>500+</span></strong> and h-index <strong><span id='total_cit'>5</span></strong></a>.
 
 
 # 🔥 News
@@ -64,7 +64,7 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - 翟雪松,**楚肖燕**,顾建民,李艳,王会军.[从知识共享到知识共创：教育元宇宙的去中心化知识观](https://xbjk.ecnu.edu.cn/CN/10.16382/j.cnki.1000-5560.2023.11.003)[J].*华东师范大学学报(教育科学版)*,2023,41(11):27-37. （**北大核心、CSSCI**）[Zhai, X., Chu, X., Gu, J., Li, Y., Wang, H. From Knowledge Sharing to Knowledge Co-creation: Decentralized Knowledge View of Educational Metaverse. *Journal of East China Normal University (Educational Sciences)*, 2023, 41(11): 27-37.]
 - Zhai, X. S., **Chu, X**. Y., Chen, M., Shen, J., & Lou, F. L. (2023). [Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study](https://ieeexplore.ieee.org/document/10125040). *IEEE Transactions on Learning Technologies*, 16(6): 1130-1140. （**SSCI Q1, co-first author, corresponding author**）
 - Zhai, X., **Chu, X.**, Meng, N., Wang, M., Spector, M., Tsai, C. C., & Liu, H. (2022). [The Effect of Multi-mode Stimuli of Feedforward and Eye Tracking on Metacognition—An Exploratory Study Using Digital Dictionaries](https://www.researchgate.net/publication/364209171_The_Effect_of_Multi-mode_Stimuli_of_Feedforward_and_Eye_Tracking_on_Metacognition-_An_Exploratory_Study_Using_Digital_Dictionaries). *Educational Technology & Society*, 25(1): 213-227.（**SSCI Q1**）
-- Zhai, X., **Chu, X.**, Chai, C. S., Jong, M. S. Y., Istenic, A., Spector, M., ... & Li, Y. (2021). [A Review of Artificial Intelligence (AI) in Education from 2010 to 2020](https://www.hindawi.com/journals/complexity/2021/8812542/). *Complexity*, 2021. （SCI Q2）
+- Zhai, X., **Chu, X.**, Chai, C. S., Jong, M. S. Y., Istenic, A., Spector, M., ... & Li, Y. (2021). [A Review of Artificial Intelligence (AI) in Education from 2010 to 2020](https://www.hindawi.com/journals/complexity/2021/8812542/). *Complexity*, 2021. （🏆**ESI Highly Cited Paper**）
 - Zhai, X., **Chu, X.**, & Li, Y. (2021, May). [Exploring the Construction of Innovative Educational Ecosystem Based on the “Internet+ Educational Crowd Funding”](https://ieeexplore.ieee.org/document/9437735). In *2021 IEEE 24th International Conference on Computer Supported Cooperative Work in Design (CSCWD)* (pp. 476-479). IEEE.
 - Zhai, X., Sun, Y., Wang, M., Asmi, F., Cai, W., & **Chu, X**. (2022, May). [Exploring the Effect of Virtual Reality with Haptics on Educational Research: A Meta-analysis From 2010 to 2020](https://ieeexplore.ieee.org/document/9815893). In *2022 8th International Conference of the Immersive Learning Research Network (iLRN) (pp. 1-7). IEEE*. (*corresponding author*)
 
