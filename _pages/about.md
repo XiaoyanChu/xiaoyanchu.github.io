@@ -31,16 +31,17 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>500+</span></strong> and h-index <strong><span id='total_cit'>5</span></strong></a>.
+She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>510+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
 
 
 # 🔥 News
+- *2024.05* &nbsp;🎉🎉 Research Accepted by Cambridge China Education Forum 2024; 
 - *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
 - *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖 [Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
 
 # 📖 Educations
 - *2023.09 - 2024.06 (now, 联合培养)*, MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester. 
-- *2021.09 - 2016.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
+- *2021.09 - 2026.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
 - *2017.09 - 2021.06*, 教育技术学理学学士, 教育科学学院, 南京师范大学. [BS in Educational Technology, School of Education Sciences, Nanjing Normal University]
 <br>
 <br>
