@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Mnachester. Her research interests include educational technology, Generative AI in Education, and international education.
+Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Manchester. Her research interests include Educational Technology, Generative AI in Education, and International Education.
 
 楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能教育应用、国际教育。
 
