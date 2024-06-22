@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Manchester. Her research interests include Educational Technology, Generative AI in Education, and International Education.
+Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Manchester. Her research interests include Educational Technology, Generative AI and Virtual Reality in Education.
 
-楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能教育应用、国际教育。
+楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能/虚拟现实教育应用。
 
 Her Mottos:
 
@@ -31,10 +31,11 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>560+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
+She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>570+</span></strong> and h-index <strong><span id='total_cit'>4</span></strong></a>.
 
 
 # 🔥 News
+- *2024.06* &nbsp;🎉🎉 Successfully presenting research in ISLS 2024 conference; 
 - *2024.05* &nbsp;🎉🎉 Research Accepted by Cambridge China Education Forum 2024; 
 - *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
 - *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖 [Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
@@ -59,6 +60,7 @@ Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A 
 </div>
 </div>
 
+- **Chu, X.**, Xu, J., & Zhai, X. (2024). [Investigating the Knowledge Building Process of Collaborative Learning between Student and Virtual Tutor Supported by ChatGPT: A Discourse Analysis](https://repository.isls.org/handle/1/10556). In Clarke-Midura, J., Kollar, I., Gu, X., & D'Angelo, C. (Eds.), *Proceedings of the 17th International Conference on Computer-Supported Collaborative Learning - CSCL 2024 (pp. 363-364)*. International Society of the Learning Sciences.
 - 翟雪松,**楚肖燕**,焦丽珍,童兆平,李艳.[基于“生成式人工智能+元宇宙”的人机协同学习模式研究](https://openedu.sou.edu.cn/upload/qikanfile/202309211431377817.pdf)[J].*开放教育研究*,2023,29(05):26-36. （**北大核心、CSSCI**）[
 Zhai, X., Chu, X., Jiao, L., Tong, Z., Li, Y. An Empirical Study on the Effectiveness of Human-Computer
 Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse. *Open Education Research*, 2023, 29(05): 26-36.]
