@@ -35,7 +35,8 @@ She has published more than 15 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 News
-- *2024.06* &nbsp;🎉🎉 Successfully presenting research in ISLS 2024 conference; 
+- *2024.06* &nbsp;🎉🎉 Successfully presenting research in ISLS 2024 conference;
+- *2024.06* &nbsp;🎉🎉 Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester；
 - *2024.05* &nbsp;🎉🎉 Research Accepted by Cambridge China Education Forum 2024; 
 - *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
 - *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖 [Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
@@ -78,6 +79,7 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - IEEE-TLT Junior Associate Editor, Guest Editor
 
 # 🎖 Honors and Awards
+- *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester.
 - *2024.01* 浙江大学第九届学生人文社会科学研究优秀成果一等奖 [First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University]
 - *2023.11* 浙江大学五好研究生、优秀研究生、优秀研究生干部 [Zhejiang University's Five-Good Graduates, Outstanding Graduate, and Outstanding Graduate Cadre]
 - *2023.05* 国家留学基金委国际组织后备人才培养项目公派留学赴曼彻斯特大学联合培养 [Selected for the China Scholarship Council (CSC) International Organization Talent Training Program, studying abroad at the University of Manchester for joint training]
@@ -89,7 +91,8 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - *2019.10* 本科生国家奖学金 [National Scholarship for Undergraduates]
 
 # 💬 Talks and Conferences
-- *2024.10* 2023 AECT International Convention, Orlando, USA.
+- *2024.06* 2024 ISLS Annual Meeting, Buffalo, USA.
+- *2023.10* 2023 AECT International Convention, Orlando, USA.
 - *2023.05* 全球华人计算机教育应用大会（GCCCE）（最佳英文论文提名）, 北京. [Global Chinese Conference on Computers in Education (GCCCE) (Nomination for Best English Paper), Beijing.]
 - *2023.05* 当我们在谈论教育技术的时候我们在谈论什么, 浙江大学教育学院“E路青年说”, 杭州, 浙江. [What Are We Talking About When We Talk About Educational Technology, presented at the "E-road Youth Forum" of the College of Education, Zhejiang University]
 
