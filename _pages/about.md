@@ -56,8 +56,8 @@ She has published more than 15 papers at the top SSCI/CSSCI educational journals
 **楚肖燕**,沈书生,王敏娟,等.[世界一流高校探索生成式人工智能应用规范的经验及对我国的启示——基于LDA主题模型分析的文本挖掘](https://www.yuan.chinajournal.net.cn/WKG/WebPublication/paperDigest.aspx?paperID=50628ccf-edac-4c2a-9e3e-b1b132cf3a44)[J].*现代远距离教育*,2024,(03):38-47. [**Chu, X.**, Shen, S., Wang, M., et al., World-Class Universities’ Exploration of Generative Artificial Intelligence Application Guidance:Experiences and Implications for China——Text Mining Based on LDA Topic Model Analysis. *Modern Distance Education*,2024,(03):38-47.]
 
 
-[**Google Scholar**](https://www.yuan.chinajournal.net.cn/WKG/WebPublication/paperDigest.aspx?paperID=50628ccf-edac-4c2a-9e3e-b1b132cf3a44) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- 生成式人工智能的飞速迭代迫使高等教育在人才培养、专业转型等方面作出及时的回应。诸多世界一流高校和科研机构正积极探索其应用价值，并从应用模式、技术伦理等视角制定相应的技术规范和应用指导。然而，生成式人工智能技术在我国高校的广泛应用与指导规范的相对匮乏形成了亟待破解的难题，凸显了剖析与总结现有国际经验的重要研究价值。选取16所世界一流高校生成式人工智能应用的指导性文件作为探索性分析案例，根据联合国教科文组织对高等教育机构提出的战略方向，结合LDA(Latent Dirichlet Allocation)无监督学习算法抽取出技术应用、师生指导、课程评价与道德伦理四个主题，并分别进行了深入的内容挖掘。对世界一流高校的案例梳理，将有助于我国高校制定生成人工智能应用规范的探索，为我国高等教育在人工智能时代的进一步变革与发展提供前瞻性参考。
+[**Link**](https://www.yuan.chinajournal.net.cn/WKG/WebPublication/paperDigest.aspx?paperID=50628ccf-edac-4c2a-9e3e-b1b132cf3a44) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- 文章选取16所世界一流高校生成式人工智能应用的指导性文件作为探索性分析案例，根据联合国教科文组织对高等教育机构提出的战略方向，结合LDA无监督学习算法抽取出技术应用、师生指导、课程评价与道德伦理四个主题，并分别进行了深入的内容挖掘。对世界一流高校的案例梳理，将有助于我国高校制定生成人工智能应用规范的探索，为我国高等教育在人工智能时代的进一步变革与发展提供前瞻性参考。
 </div>
 </div>
 
