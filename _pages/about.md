@@ -31,19 +31,19 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>700+</span></strong> and h-index <strong><span id='total_cit'>5</span></strong></a>.
+She has published more than 15 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>970+</span></strong> and h-index <strong><span id='total_cit'>5</span></strong></a>.
 
 
 # 🔥 News
+- *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester.
+- *2024.09* &nbsp;🎉🎉 Graduated with Distinction from the MA DTCE；
 - *2024.07* &nbsp;🎉🎉 Successfully presenting research at Cambridge China Education Forum 2024; 
 - *2024.06* &nbsp;🎉🎉 Successfully presenting research at ISLS 2024 conference;
 - *2024.06* &nbsp;🎉🎉 Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester；
-- *2024.04* &nbsp;🎉🎉 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)]; 
-- *2024.01* &nbsp;🎉🎉 获得浙江大学第九届学生人文社会科学研究优秀成果一等奖 [Awarded first prize in the 9th Zhejiang University Student Humanities and Social Sciences Research Excellence Award].
 
 # 📖 Educations
-- *2023.09 - 2024.06 (now, 联合培养)*, MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester. 
 - *2021.09 - 2026.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
+- *2023.09 - 2024.09 (CSC联合培养)*, MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester [Awarded the Dean’s Award for Outstanding Achievement]. 
 - *2017.09 - 2021.06*, 教育技术学理学学士, 教育科学学院, 南京师范大学. [BS in Educational Technology, School of Education Sciences, Nanjing Normal University]
 <br>
 <br>
@@ -74,12 +74,14 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - Zhai, X., Sun, Y., Wang, M., Asmi, F., Cai, W., & **Chu, X**. (2022, May). [Exploring the Effect of Virtual Reality with Haptics on Educational Research: A Meta-analysis From 2010 to 2020](https://ieeexplore.ieee.org/document/9815893). In *2022 8th International Conference of the Immersive Learning Research Network (iLRN) (pp. 1-7). IEEE*. (*corresponding author*)
 
 # 📚 Academic Services
-- IEEE TALE 2021 Reviewer
-- IEEE iLRN 2023 PC Member
+- ET&S/IJHCI reviewer
 - IEEE-TLT/Knowledge Management & E-Learning/Complex & Intelligent Systems Reviewer
 - IEEE-TLT Junior Associate Editor, Guest Editor
+- IEEE iLRN 2023 PC Member
+- IEEE TALE 2021 Reviewer
 
 # 🎖 Honors and Awards
+- *2024.09* Awarded the Dean’s Award for Achievement, the University of Manchester.
 - *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester.
 - *2024.01* 浙江大学第九届学生人文社会科学研究优秀成果一等奖 [First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University]
 - *2023.11* 浙江大学五好研究生、优秀研究生、优秀研究生干部 [Zhejiang University's Five-Good Graduates, Outstanding Graduate, and Outstanding Graduate Cadre]
