@@ -101,5 +101,5 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - *2023.05* 当我们在谈论教育技术的时候我们在谈论什么, 浙江大学教育学院“E路青年说”, 杭州, 浙江. [What Are We Talking About When We Talk About Educational Technology, presented at the "E-road Youth Forum" of the College of Education, Zhejiang University]
 
 # 💻 Internships
-- *2024.04 - 2024.07*, 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)].
+- *2024.04 - 2024.07*, 🇺🇳联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)].
 - *2022.06 - 2022.10*, The Ken Blanchard Companies, Remote.
