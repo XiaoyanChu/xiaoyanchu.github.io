@@ -43,7 +43,7 @@ She has published more than 15 papers at the top SSCI/CSSCI educational journals
 
 # 📖 Educations
 - *2021.09 - 2026.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
-- *2023.09 - 2024.09 (CSC联合培养)*, MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester [Graduated with Distinction & Awarded the Dean’s Award for Achievement]. 
+- *2023.09 - 2024.09 (CSC联合培养)*, 数字技术、传播与教育硕士项目，曼彻斯特大学. [MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester] (Graduated with Distinction & Awarded the Dean’s Award for Achievement). 
 - *2017.09 - 2021.06*, 教育技术学理学学士, 教育科学学院, 南京师范大学. [BS in Educational Technology, School of Education Sciences, Nanjing Normal University]
 <br>
 <br>
