@@ -35,11 +35,10 @@ She has published more than 16 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 News
-- *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester.
+- *2025.01* &nbsp;🎉🎉 入选浙江大学博士生求是新星培养计划;
+- *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester;
 - *2024.09* &nbsp;🎉🎉 Graduated with Distinction from the MA DTCE；
 - *2024.07* &nbsp;🎉🎉 Successfully presenting research at Cambridge China Education Forum 2024; 
-- *2024.06* &nbsp;🎉🎉 Successfully presenting research at ISLS 2024 conference;
-- *2024.06* &nbsp;🎉🎉 Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester；
 
 # 📖 Educations
 - *2021.09 - 2026.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
@@ -53,7 +52,7 @@ She has published more than 16 papers at the top SSCI/CSSCI educational journals
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ERTD</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Chu, X.,**,Wang, M., Spector, J.M. et al..[Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis.](https://link.springer.com/article/10.1007/s11423-025-10457-2)*Educational Technology Research and Development*,2025, https://doi.org/10.1007/s11423-025-10457-2.
+**Chu, X.,**,Wang, M., Spector, J.M. et al..[Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis.](https://link.springer.com/article/10.1007/s11423-025-10457-2) *Educational Technology Research and Development*,2025, https://doi.org/10.1007/s11423-025-10457-2.
 
 
 [**Link**](https://link.springer.com/article/10.1007/s11423-025-10457-2) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
