@@ -36,6 +36,7 @@ She has published more than 16 papers at the top SSCI/CSSCI educational journals
 
 # 🔥 News
 - *2025.01* &nbsp;🎉🎉 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University];
+- *2025.01* &nbsp;🎉🎉 入选2024中国知网高被引学者TOP5% [Selected as a Top 5% Highly Cited Scholar in CNKI 2024];
 - *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester;
 - *2024.09* &nbsp;🎉🎉 Graduated with Distinction from the MA DTCE；
 - *2024.07* &nbsp;🎉🎉 Successfully presenting research at Cambridge China Education Forum 2024; 
@@ -82,6 +83,7 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 
 # 🎖 Honors and Awards
 - *2025.01* 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University]
+- *2025.01* 入选2024中国知网高被引学者TOP5% [Selected as a Top 5% Highly Cited Scholar in CNKI 2024]
 - *2024.09* Awarded the Dean’s Award for Achievement, the University of Manchester
 - *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester
 - *2024.01* 浙江大学第九届学生人文社会科学研究优秀成果一等奖 [First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University]
