@@ -35,7 +35,7 @@ She has published more than 16 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 News
-- *2025.01* &nbsp;🎉🎉 入选浙江大学博士生求是新星培养计划;
+- *2025.01* &nbsp;🎉🎉 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University];
 - *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester;
 - *2024.09* &nbsp;🎉🎉 Graduated with Distinction from the MA DTCE；
 - *2024.07* &nbsp;🎉🎉 Successfully presenting research at Cambridge China Education Forum 2024; 
@@ -81,8 +81,9 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - IEEE TALE 2021 Reviewer
 
 # 🎖 Honors and Awards
-- *2024.09* Awarded the Dean’s Award for Achievement, the University of Manchester.
-- *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester.
+- *2025.01* 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University]
+- *2024.09* Awarded the Dean’s Award for Achievement, the University of Manchester
+- *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester
 - *2024.01* 浙江大学第九届学生人文社会科学研究优秀成果一等奖 [First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University]
 - *2023.11* 浙江大学五好研究生、优秀研究生、优秀研究生干部 [Zhejiang University's Five-Good Graduates, Outstanding Graduate, and Outstanding Graduate Cadre]
 - *2023.05* 国家留学基金委国际组织后备人才培养项目公派留学赴曼彻斯特大学联合培养 [Selected for the China Scholarship Council (CSC) International Organization Talent Training Program, studying abroad at the University of Manchester for joint training]
