@@ -75,9 +75,10 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - Zhai, X., Sun, Y., Wang, M., Asmi, F., Cai, W., & **Chu, X**. (2022, May). [Exploring the Effect of Virtual Reality with Haptics on Educational Research: A Meta-analysis From 2010 to 2020](https://ieeexplore.ieee.org/document/9815893). In *2022 8th International Conference of the Immersive Learning Research Network (iLRN) (pp. 1-7). IEEE*. (*corresponding author*)
 
 # 📚 Academic Services
-- ET&S/IJHCI reviewer
-- IEEE-TLT/Knowledge Management & E-Learning/Complex & Intelligent Systems Reviewer
 - IEEE-TLT Junior Associate Editor, Guest Editor
+- IEEE-TLT/ET&S/IJHCI reviewer
+- Humanities and Social Sciences Communications/Educational Media International reviewer
+- Knowledge Management & E-Learning/Complex & Intelligent Systems Reviewer
 - IEEE iLRN 2023 PC Member
 - IEEE TALE 2021 Reviewer
 
