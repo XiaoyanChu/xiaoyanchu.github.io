@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate of Educational Technology at Zhejiang University, as well as a joint training student in Digital Technologies, Communication and Education in the University of Manchester. Her research interests include Educational Technology, Generative AI and Virtual Reality in Education.
+Xiaoyan Chu is a Ph.D. candidate in Educational Technology at Zhejiang University. She earned her MSc in Digital Technologies, Communication and Education (DTCE) with Distinction from the University of Manchester. Her research focuses on Educational Technology, Generative AI, and Virtual Reality in education.
 
-楚肖燕是浙江大学教育技术学博士生，英国曼彻斯特大学联合培养。她的研究兴趣包括教育技术、生成式人工智能/虚拟现实教育应用。
+楚肖燕是浙江大学教育技术学博士生，曾赴英国曼彻斯特大学联合培养，并以优秀成绩（Distinction）获得DTCE硕士学位。她的研究聚焦于教育技术、生成式人工智能与虚拟现实在教育中的应用。
 
 Her Mottos:
 
@@ -27,11 +27,11 @@ Her Mottos:
 
 *“用教育给技术以温度，用技术给教育以未来。”*
 
-*"We cannot guide today's students into the future world using the antiquated methods of yesterday."*
+*"We cannot guide today's students into the future world using the pedagogy of yesterday."*
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 16 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1180+</span></strong> and h-index <strong><span id='total_cit'>6</span></strong></a>.
+She has published more than 16 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1410+</span></strong> and h-index <strong><span id='total_cit'>6</span></strong></a>.
 
 
 # 🔥 News
