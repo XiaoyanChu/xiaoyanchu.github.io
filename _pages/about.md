@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate in Educational Technology at Zhejiang University. She earned her MSc in Digital Technologies, Communication and Education (DTCE) with Distinction from the University of Manchester. Her research focuses on Educational Technology, Generative AI, and Virtual Reality in education.
+Xiaoyan Chu is a Ph.D. candidate in Educational Technology at Zhejiang University. She earned her MA in Digital Technologies, Communication and Education (DTCE) with Distinction from the University of Manchester. Her research focuses on Educational Technology, Generative AI, and Virtual Reality in education.
 
 楚肖燕是浙江大学教育技术学博士生，曾赴英国曼彻斯特大学联合培养，并以优秀成绩（Distinction）获得DTCE硕士学位。她的研究聚焦于教育技术、生成式人工智能与虚拟现实在教育中的应用。
 
