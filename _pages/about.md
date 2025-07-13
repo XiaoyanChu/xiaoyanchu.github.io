@@ -35,6 +35,7 @@ She has published more than 16 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 News
+- *2025.07* &nbsp;🎉🎉 获得2025年浙江大学争创优秀博士学位论文资助 [Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative]；
 - *2025.01* &nbsp;🎉🎉 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University];
 - *2025.01* &nbsp;🎉🎉 入选2024中国知网高被引学者TOP5% [Selected as a Top 5% Highly Cited Scholar in CNKI 2024];
 - *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester;
