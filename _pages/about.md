@@ -31,7 +31,7 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 16 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1620+</span></strong> and h-index <strong><span id='total_cit'>6</span></strong></a>.
+She has published more than 16 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1700+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
 
 
 # 🔥 News
@@ -76,8 +76,8 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - Zhai, X., Sun, Y., Wang, M., Asmi, F., Cai, W., & **Chu, X**. (2022, May). [Exploring the Effect of Virtual Reality with Haptics on Educational Research: A Meta-analysis From 2010 to 2020](https://ieeexplore.ieee.org/document/9815893). In *2022 8th International Conference of the Immersive Learning Research Network (iLRN) (pp. 1-7). IEEE*. (*corresponding author*)
 
 # 📚 Academic Services
-- IEEE-TLT Junior Associate Editor, Guest Editor
-- IEEE-TLT/ET&S/IJHCI reviewer
+- IEEE Transactions on Learning Technologies Junior Associate Editor, Guest Editor
+- IEEE-TLT/Educational Technology & Society/ Teaching and Teacher Education/IJHCI reviewer
 - Humanities and Social Sciences Communications/Educational Media International reviewer
 - Knowledge Management & E-Learning/Complex & Intelligent Systems Reviewer
 - IEEE iLRN 2023 PC Member
