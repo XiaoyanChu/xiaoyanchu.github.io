@@ -14,6 +14,10 @@ redirect_from:
 {% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "https://x.com/xiaoyan_chu" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "https://www.linkedin.com/in/xiaoyan-chu-7b49632a4/" %}
 
 <span class='anchor' id='about-me'></span>
 
@@ -31,7 +35,7 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 16 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1700+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1800+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
 
 
 # 🔥 News
