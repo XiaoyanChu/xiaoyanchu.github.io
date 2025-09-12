@@ -32,7 +32,7 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1800+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1820+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
 
 
 # 🔥 News
@@ -63,6 +63,7 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 </div>
 </div>
 
+- **Chu, X**. [More ICT, more creativity? A fsQCA study on configurational pathways to students’ creative thinking in PISA 2022](https://www.sciencedirect.com/science/article/pii/S0883035525002757) *International Journal of Educational Research*, 134, 1-15. （**SSCI Q1**）
 - **楚肖燕**,沈书生,王敏娟,等.[世界一流高校探索生成式人工智能应用规范的经验及对我国的启示——基于LDA主题模型分析的文本挖掘](https://www.yuan.chinajournal.net.cn/WKG/WebPublication/paperDigest.aspx?paperID=50628ccf-edac-4c2a-9e3e-b1b132cf3a44)[J].*现代远距离教育*,2024,(03):38-47. （**北大核心、CSSCI**） [**Chu, X.**, Shen, S., Wang, M., et al., World-Class Universities’ Exploration of Generative Artificial Intelligence Application Guidance:Experiences and Implications for China——Text Mining Based on LDA Topic Model Analysis. *Modern Distance Education*,2024,(03):38-47.]
 - **Chu, X.**, Xu, J., & Zhai, X. (2024). [Investigating the Knowledge Building Process of Collaborative Learning between Student and Virtual Tutor Supported by ChatGPT: A Discourse Analysis](https://repository.isls.org/handle/1/10556). In Clarke-Midura, J., Kollar, I., Gu, X., & D'Angelo, C. (Eds.), *Proceedings of the 17th International Conference on Computer-Supported Collaborative Learning - CSCL 2024 (pp. 363-364)*. International Society of the Learning Sciences.
 - Zhai, X., **Chu, X**., Wang, M., Tsai, C. C., Liang, J. C., & Spector, J. M. [A systematic review of Stimulated Recall (SR) in educational research from 2012 to 2022](https://www.nature.com/articles/s41599-024-02987-6) *Humanities and Social Sciences Communications*, 11(1), 1-14. （**SSCI Q1, co-first author, corresponding author**）
