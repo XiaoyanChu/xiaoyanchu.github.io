@@ -28,11 +28,11 @@ Her Mottos:
 
 *“用教育给技术以温度，用技术给教育以未来。”*
 
-*"We cannot guide today's students into the future world using the pedagogy of yesterday."*
+*"We cannot prepare today’s students for tomorrow’s world with the pedagogy of yesterday."*
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>1950+</span></strong> and h-index <strong><span id='total_cit'>7</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2000+</span></strong> and h-index <strong><span id='total_cit'>8</span></strong></a>.
 
 
 # 🔥 News
@@ -51,7 +51,7 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 <br>
 <br>
 
-# 📝 Publications 
+# 📝 Selected Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ERTD</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
