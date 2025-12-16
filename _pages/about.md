@@ -59,7 +59,7 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 
 
 
-- This study investigates how individual and collaborative interactions with a humanized dual-LLM GenAI agent influence foreign language learning and critical thinking awareness. Using a quasi-experimental design with 89 university students, the study found no statistically significant differences across conditions. However, exploratory analyses suggested that collaborative interaction was associated with higher language proficiency, while individual interaction uniquely supported gains in critical thinking awareness. Epistemic network analysis further showed that collaborative settings fostered more balanced interaction patterns, whereas individual interaction emphasized cognitive monitoring and strategic learning.
+- This study explores individual and collaborative interactions with a humanized dual-LLM GenAI agent, designed to enhance social presence and cognitive support, in foreign language learning. Results from a quasi-experimental study suggest that collaborative interaction is associated with higher language proficiency, while individual interaction uniquely supports critical thinking awareness. Interaction analysis further reveals distinct cognitive patterns across learning configurations.
 </div>
 </div>
 
