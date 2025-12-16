@@ -52,10 +52,10 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 <br>
 
 # 📝 Selected Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ERTD</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Google Scholar EdTech Top3 Journal</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Chu, X.,**,Wang, M., Spector, J.M. et al..[Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis.](https://link.springer.com/article/10.1007/s11423-025-10457-2) *Educational Technology Research and Development*,2025, https://doi.org/10.1007/s11423-025-10457-2.
+**Chu, X.,**,Li, Y.[Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness](https://www.tandfonline.com/doi/abs/10.1080/10494820.2025.2601294) *Interactive Learning Environments*,2025,  https://doi.org/10.1080/10494820.2025.2601294.
 
 
 [**Link**](https://link.springer.com/article/10.1007/s11423-025-10457-2) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
@@ -63,6 +63,7 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 </div>
 </div>
 
+- **Chu, X.,**,Wang, M., Spector, J.M. et al. (2025). [Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis](https://link.springer.com/article/10.1007/s11423-025-10457-2) *Educational Technology Research and Development*, 1-19. （**SSCI Q1**）
 - **Chu, X**. (2025). [More ICT, more creativity? A fsQCA study on configurational pathways to students’ creative thinking in PISA 2022](https://www.sciencedirect.com/science/article/pii/S0883035525002757) *International Journal of Educational Research*, 134, 1-15. （**SSCI Q1**）
 - **楚肖燕**,沈书生,王敏娟,等.[世界一流高校探索生成式人工智能应用规范的经验及对我国的启示——基于LDA主题模型分析的文本挖掘](https://www.yuan.chinajournal.net.cn/WKG/WebPublication/paperDigest.aspx?paperID=50628ccf-edac-4c2a-9e3e-b1b132cf3a44)[J].*现代远距离教育*,2024,(03):38-47. （**北大核心、CSSCI**） [**Chu, X.**, Shen, S., Wang, M., et al., World-Class Universities’ Exploration of Generative Artificial Intelligence Application Guidance:Experiences and Implications for China——Text Mining Based on LDA Topic Model Analysis. *Modern Distance Education*,2024,(03):38-47.]
 - **Chu, X.**, Xu, J., & Zhai, X. (2024). [Investigating the Knowledge Building Process of Collaborative Learning between Student and Virtual Tutor Supported by ChatGPT: A Discourse Analysis](https://repository.isls.org/handle/1/10556). In Clarke-Midura, J., Kollar, I., Gu, X., & D'Angelo, C. (Eds.), *Proceedings of the 17th International Conference on Computer-Supported Collaborative Learning - CSCL 2024 (pp. 363-364)*. International Society of the Learning Sciences.
