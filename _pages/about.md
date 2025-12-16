@@ -55,10 +55,10 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Google Scholar EdTech Top3 Journal</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Chu, X.,**,Li, Y.[Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness](https://www.tandfonline.com/doi/abs/10.1080/10494820.2025.2601294) *Interactive Learning Environments*,2025,  https://doi.org/10.1080/10494820.2025.2601294.
+**Chu, X.**,Li, Y.[Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness](https://www.tandfonline.com/doi/abs/10.1080/10494820.2025.2601294) *Interactive Learning Environments*,2025,  https://doi.org/10.1080/10494820.2025.2601294.
 
 
-[**Link**](https://link.springer.com/article/10.1007/s11423-025-10457-2) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+
 - The proliferation of Generative AI (GenAI) has profoundly transformed language learning paradigms. Although GenAI demonstrates great potential, its limited social presence, occasional AI hallucinations, and risk of overreliance raise concerns. A humanized GenAI agent powered by dual Large Language Models (LLMs) offers a viable solution. Nevertheless, how individual and collaborative interactions with a humanized dual-LLM GenAI agent affect foreign language proficiency, critical thinking awareness, as well as the underlying mechanisms remains underexplored. The study employed a quasi-experimental design involving 89 university students assigned to three different language learning conditions. Data on participants’ language proficiency and critical thinking awareness were collected, with their conversations with the GenAI agent being documented. While no condition proved statistically superior, exploratory analyses suggested a trend whereby collaborative interactions with the GenAI agent were associated with higher language proficiency, while only the individual interaction group showed significant within-group improvement in critical thinking awareness. Epistemic network analysis revealed that collaborative interactions fostered balanced and diverse interaction patterns, whereas individual interactions centered on cognitive monitoring and strategic learning behaviors.
 </div>
 </div>
