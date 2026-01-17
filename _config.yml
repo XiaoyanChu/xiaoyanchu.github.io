@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "楚肖燕<br>Xiaoyan Chu"
-  avatar           : "images/android-chrome-512x512.jpg"
+  avatar           : "/images/android-chrome-512x512.jpg"
   bio              : "Zhejiang University<br>University of Manchester"
   location         : "Hangzhou, China"
   employer         :
