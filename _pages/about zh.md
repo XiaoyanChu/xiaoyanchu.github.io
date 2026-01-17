@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: 
 title: ""
 excerpt: ""
 author_profile: true
@@ -18,13 +18,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Xiaoyan Chu is a Ph.D. candidate in Educational Technology at Zhejiang University. She earned her MA in Digital Technologies, Communication and Education (DTCE) with Distinction from the University of Manchester. Her research focuses on Educational Technology, Generative AI, and Virtual Reality in education.
+楚肖燕是浙江大学教育技术学博士生，曾赴英国曼彻斯特大学联合培养，并以优秀成绩（Distinction）获得DTCE硕士学位。她的研究聚焦于教育技术、生成式人工智能与虚拟现实在教育中的应用。
 
 Her Mottos:
 
-*"Infusing technology with the warmth of education, and imbuing education with the promise of tomorrow through technology."*
+*“用教育给技术以温度，用技术给教育以未来。”*
 
-*"We cannot prepare today’s students for tomorrow’s world with the pedagogy of yesterday."*
+*“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
 She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2100+</span></strong> and h-index <strong><span id='total_cit'>8</span></strong></a>.
 
