@@ -26,21 +26,20 @@ Her Mottos:
 
 *"We cannot prepare today’s students for tomorrow’s world with the pedagogy of yesterday."*
 
-She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2100+</span></strong> and h-index <strong><span id='total_cit'>8</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2200+</span></strong> and h-index <strong><span id='total_cit'>10</span></strong></a>.
 
 
 # 🔥 News
-- *2025.07* &nbsp;🎉🎉 获得2025年浙江大学争创优秀博士学位论文资助 [Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative]；
-- *2025.01* &nbsp;🎉🎉 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University];
-- *2025.01* &nbsp;🎉🎉 入选2024中国知网高被引学者TOP5% [Selected as a Top 5% Highly Cited Scholar in CNKI 2024];
-- *2024.09* &nbsp;🎉🎉 Awarded the Dean’s Award for Achievement, the University of Manchester;
-- *2024.09* &nbsp;🎉🎉 Graduated with Distinction from the MA DTCE；
-- *2024.07* &nbsp;🎉🎉 Successfully presenting research at Cambridge China Education Forum 2024; 
+- *2026.01* &nbsp;🎉🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI 2024;
+- *2025.07* &nbsp;🎉🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative;
+- *2025.01* &nbsp;🎉🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University;
+- *2025.01* &nbsp;🎉🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI 2024;
+
 
 # 📖 Educations
-- *2021.09 - 2026.06 (now, 硕博连读)*, 教育技术学博士研究生, 教育学院, 浙江大学. [Ph.D. candidate in Educational Technology, College of Education, Zhejiang University]
-- *2023.09 - 2024.09 (CSC联合培养)*, 数字技术、传播与教育硕士项目，曼彻斯特大学. [MA DTCE (Digital Technologies, Communication and Education), Institution of Education, University of Manchester] (Graduated with Distinction & Awarded the Dean’s Award for Achievement). 
-- *2017.09 - 2021.06*, 教育技术学理学学士, 教育科学学院, 南京师范大学. [BS in Educational Technology, School of Education Sciences, Nanjing Normal University]
+- *2021.09 - 2026.06 (Expected)*, Ph.D. in Educational Technology, College of Education, Zhejiang University.
+- *2023.09 - 2024.09 (CSC Joint Program)*, MA in Digital Technologies, Communication and Education, University of Manchester (Graduated with Distinction & Dean’s Award).
+- *2017.09 - 2021.06*, B.S. in Educational Technology, School of Education Sciences, Nanjing Normal University.
 <br>
 <br>
 <br>
@@ -81,27 +80,27 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - IEEE TALE 2021 Reviewer
 
 # 🎖 Honors and Awards
-- *2025.01* 入选浙江大学博士研究生求是新星培养计划 [Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University]
-- *2025.01* 入选2024中国知网高被引学者TOP5% [Selected as a Top 5% Highly Cited Scholar in CNKI 2024]
+- *2025.01* Awarded a place in the Qiushi Rising Star Training Program for PhD Students at Zhejiang University
+- *2025.01* Selected as a Top 5% Highly Cited Scholar in CNKI 2024
 - *2024.09* Awarded the Dean’s Award for Achievement, the University of Manchester
 - *2024.06* Conference/Research Abroad Funding from The Faculty of Humanities, The University of Manchester
-- *2024.01* 浙江大学第九届学生人文社会科学研究优秀成果一等奖 [First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University]
-- *2023.11* 浙江大学五好研究生、优秀研究生、优秀研究生干部 [Zhejiang University's Five-Good Graduates, Outstanding Graduate, and Outstanding Graduate Cadre]
-- *2023.05* 国家留学基金委国际组织后备人才培养项目公派留学赴曼彻斯特大学联合培养 [Selected for the China Scholarship Council (CSC) International Organization Talent Training Program, studying abroad at the University of Manchester for joint training]
-- *2022.10* 研究生国家奖学金 [National Scholarship for Graduate Students]
-- *2022.05* 全国大学生英语能力竞赛（A类）二等奖 [Second Prize in the National English Proficiency Competition for College Students (Category A)]
-- *2021.10* 联合国教科文组织信息素养项目（Global Media and Information Literacy）竞赛全球优胜奖 [Global Media and Information Literacy Competition organized by UNESCO: Best Solution]
-- *2021.06* 江苏省优秀毕业生 [Outstanding Graduate of Jiangsu Province]
-- *2020.05* 江苏省三好学生 [Three-Good Student of Jiangsu Province]
-- *2019.10* 本科生国家奖学金 [National Scholarship for Undergraduates]
+- *2024.01* First Prize in the 9th Outstanding Student Humanities and Social Sciences Research Achievements at Zhejiang University
+- *2023.11* Zhejiang University's Five-Good Graduates, Outstanding Graduate, and Outstanding Graduate Cadre
+- *2023.05* Selected for the China Scholarship Council (CSC) International Organization Talent Training Program, studying abroad at the University of Manchester for joint training
+- *2022.10* National Scholarship for Graduate Students
+- *2022.05* Second Prize in the National English Proficiency Competition for College Students (Category A)
+- *2021.10* Global Media and Information Literacy）竞赛全球优胜奖 [Global Media and Information Literacy Competition organized by UNESCO: Best Solution
+- *2021.06* Outstanding Graduate of Jiangsu Province
+- *2020.05* Three-Good Student of Jiangsu Province
+- *2019.10* National Scholarship for Undergraduates
 
 # 💬 Talks and Conferences
 - *2024.07* 2024 Cambridge China Education Forum, Cambridge, UK.
 - *2024.06* 2024 ISLS Annual Meeting, Buffalo, USA.
 - *2023.10* 2023 AECT International Convention, Orlando, USA.
-- *2023.05* 全球华人计算机教育应用大会（GCCCE）（最佳英文论文提名）, 北京. [Global Chinese Conference on Computers in Education (GCCCE) (Nomination for Best English Paper), Beijing.]
-- *2023.05* 当我们在谈论教育技术的时候我们在谈论什么, 浙江大学教育学院“E路青年说”, 杭州, 浙江. [What Are We Talking About When We Talk About Educational Technology, presented at the "E-road Youth Forum" of the College of Education, Zhejiang University]
+- *2023.05* Global Chinese Conference on Computers in Education (GCCCE) (Nomination for Best English Paper), Beijing.
+- *2023.05* What Are We Talking About When We Talk About Educational Technology, presented at the "E-road Youth Forum" of the College of Education, Zhejiang University
 
 # 💻 Internships
-- *2024.04 - 2024.07*, 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习 [Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI)].
+- *2024.04 - 2024.07*, Internship at the UNESCO International Centre for Higher Education Innovation (UNESCO-ICHEI).
 - *2022.06 - 2022.10*, The Ken Blanchard Companies, Remote.
