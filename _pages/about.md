@@ -89,7 +89,7 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - *2023.05* Selected for the China Scholarship Council (CSC) International Organization Talent Training Program, studying abroad at the University of Manchester for joint training
 - *2022.10* National Scholarship for Graduate Students
 - *2022.05* Second Prize in the National English Proficiency Competition for College Students (Category A)
-- *2021.10* Global Media and Information Literacy）竞赛全球优胜奖 [Global Media and Information Literacy Competition organized by UNESCO: Best Solution
+- *2021.10* Global Media and Information Literacy Competition organized by UNESCO: Best Solution
 - *2021.06* Outstanding Graduate of Jiangsu Province
 - *2020.05* Three-Good Student of Jiangsu Province
 - *2019.10* National Scholarship for Undergraduates
