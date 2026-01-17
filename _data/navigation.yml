@@ -1,25 +1,37 @@
-# main links links
+# 英文菜单 (保留原样，用于首页)
 main:
   - title: "About Me"
     url: "/#about-me"
-
   - title: "News"
     url: "/#-news"
-    
   - title: "Educations"
     url: "/#-educations"
-
   - title: "Publications"
     url: "/#-selected-publications"
-
   - title: "Academic Services"
     url: "/#-academic-services"
-
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
-
   - title: "Talks and Conferences"
     url: "/#-talks-and-conferences"
-
   - title: "Internships"
     url: "/#-internships"
+
+# 中文菜单 (新增，用于中文页)
+main_zh:
+  - title: "关于我"
+    url: "#about-me"
+  - title: "新闻动态"
+    url: "#-news"
+  - title: "教育背景"
+    url: "#-educations"
+  - title: "科研论文"
+    url: "#-selected-publications"
+  - title: "学术服务"
+    url: "#-academic-services"
+  - title: "荣誉奖励"
+    url: "#-honors-and-awards"
+  - title: "学术报告"
+    url: "#-talks-and-conferences"
+  - title: "实习经历"
+    url: "#-internships"
