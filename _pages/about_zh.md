@@ -30,12 +30,14 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 
 
 # 🔥 新闻动态
+<span class='anchor' id='-news'></span>
 - *2026.01* &nbsp;🎉🎉 入选2025中国知网高被引学者TOP5%;
 - *2025.07* &nbsp;🎉🎉 获得2025年浙江大学争创优秀博士学位论文资助；
 - *2025.01* &nbsp;🎉🎉 入选浙江大学博士研究生求是新星培养计划;
 - *2025.01* &nbsp;🎉🎉 入选2024中国知网高被引学者TOP5%;
 
 # 📖 教育背景
+<span class='anchor' id='-educations'></span>
 - *2021.09 - 2026.06 (预计)*, 教育技术学博士（硕博连读）, 教育学院, 浙江大学.
 - *2023.09 - 2024.09 (CSC联培)*, 数字技术、传播与教育硕士, 教育学院, 曼彻斯特大学 (优秀等第毕业并获院长奖).
 - *2017.09 - 2021.06*, 教育技术学理学学士, 教育科学学院, 南京师范大学.
@@ -43,7 +45,8 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 <br>
 <br>
 
-# 📝 代表性成果 
+# 📝 代表性成果
+<span class='anchor' id='-selected-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Google Scholar EdTech Top3 Journal</div><img src='/images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -71,13 +74,15 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - Zhai, X., Sun, Y., Wang, M., Asmi, F., Cai, W., & **Chu, X**. (2022, May). [Exploring the Effect of Virtual Reality with Haptics on Educational Research: A Meta-analysis From 2010 to 2020](https://ieeexplore.ieee.org/document/9815893). In *2022 8th International Conference of the Immersive Learning Research Network (iLRN) (pp. 1-7). IEEE*. (*corresponding author*)
 
 # 📚 学术服务
+<span class='anchor' id='-academic-services'></span>
 - IEEE Transactions on Learning Technologies (SSCI Q1) 青年副编、客座编辑
 - IEEE-TLT/Educational Technology & Society/ Teaching and Teacher Education/IJHCI审稿人
 - Humanities and Social Sciences Communications/Educational Media International审稿人
 - Knowledge Management & E-Learning/Complex & Intelligent Systems审稿人
 - IEEE iLRN 2023、IEEE TALE 2021 审稿人
 
-# 🎖 荣誉奖项
+# 🎖 荣誉奖励
+<span class='anchor' id='-honors-and-awards'></span>
 - *2025.01* 入选浙江大学博士研究生求是新星培养计划
 - *2025.01* 入选2024中国知网高被引学者TOP5%
 - *2024.09* 荣获英国曼彻斯特大学院长成就奖 (Dean’s Award for Achievement)
@@ -93,6 +98,7 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - *2019.10* 本科生国家奖学金
 
 # 💬 学术汇报
+<span class='anchor' id='-talks-and-conferences'></span>
 - *2024.07* 2024年剑桥中国教育论坛，英国剑桥.
 - *2024.06* 2024年国际学习科学协会（ISLS）年会，美国布法罗.
 - *2023.10* 22023年美国教育传播与技术协会（AECT）国际年会，美国奥兰多.
@@ -100,5 +106,6 @@ Collaborative Learning Based on "Generative Artificial Intelligence + Metaverse.
 - *2023.05* 当我们在谈论教育技术的时候我们在谈论什么, 浙江大学教育学院“E路青年说”, 杭州, 浙江.
 
 # 💻 实习经历
+<span class='anchor' id='-internships'></span>
 - *2024.04 - 2024.07*, 联合国教科文组织高等教育创新中心（UNESCO-ICHEI）实习.
 - *2022.06 - 2022.10*, 肯·布兰查德公司（The Ken Blanchard Companies）实习，远程.
