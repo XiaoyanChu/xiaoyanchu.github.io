@@ -16,15 +16,15 @@
 
           {% for link in nav_links %}
             <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              <a href="{{ domain }}{{ link.url }}" target="_self">{{ link.title }}</a>
             </li>
           {% endfor %}
 
-          <li class="masthead__menu-item">
+          <li class="masthead__menu-item language-toggle">
             {% if page.permalink == '/zh/' %}
-              <a href="/">English Version</a>
+              <a href="/" target="_self" style="font-weight: bold; color: #494e52;" title="Switch to English">🌐 EN</a>
             {% else %}
-              <a href="/zh/">中文版</a>
+              <a href="/zh/" target="_self" style="font-weight: bold; color: #494e52;" title="切换至中文版">🌐 中文</a>
             {% endif %}
           </li>
         </ul>
