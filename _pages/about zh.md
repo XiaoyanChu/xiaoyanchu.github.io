@@ -1,4 +1,5 @@
 ---
+layout: about
 permalink: /zh/
 title: ""
 excerpt: ""
@@ -46,7 +47,7 @@ She has published more than 20 papers at the top SSCI/CSSCI educational journals
 <br>
 
 # 📝 Selected Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Google Scholar EdTech Top3 Journal</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Google Scholar EdTech Top3 Journal</div><img src='/images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Chu, X.**, Li, Y.[Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness](https://www.tandfonline.com/doi/abs/10.1080/10494820.2025.2601294) *Interactive Learning Environments*,2025,  https://doi.org/10.1080/10494820.2025.2601294.
