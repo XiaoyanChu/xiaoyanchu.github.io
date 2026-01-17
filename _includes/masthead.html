@@ -8,6 +8,16 @@
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+
+          {% if page.permalink == '/zh/' %}
+           <li class="masthead__menu-item">
+             <a href="/">English Version</a>
+           </li>
+          {% else %}
+            <li class="masthead__menu-item">
+             <a href="/zh/">中文版</a>
+           </li>
+          {% endif %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
