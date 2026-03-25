@@ -26,7 +26,7 @@ Her Mottos:
 
 *"We cannot prepare today’s students for tomorrow’s world with the pedagogy of yesterday."*
 
-She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2200+</span></strong> and h-index <strong><span id='total_cit'>10</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2500+</span></strong> and h-index <strong><span id='total_cit'>10</span></strong></a>.
 
 
 # 🔥 News
