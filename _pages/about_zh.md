@@ -26,7 +26,7 @@ Her Mottos:
 
 *“我们无法用昨天的方法教今天的学生面向未来的世界。”*
 
-She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2200+</span></strong> and h-index <strong><span id='total_cit'>10</span></strong></a>.
+She has published more than 20 papers at the top SSCI/CSSCI educational journals and conferences, now with total <a href='https://scholar.google.com/citations?user=JpvPUK4AAAAJ'>google scholar citations <strong><span id='total_cit'>2500+</span></strong> and h-index <strong><span id='total_cit'>10</span></strong></a>.
 
 
 # 🔥 新闻动态
