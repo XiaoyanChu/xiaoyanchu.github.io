@@ -948,6 +948,57 @@
             <span class="lang-en lang-hidden">International Collaboration Network</span>
         </h2>
         <div id="map"></div>
+        
+        <!-- 机构列表 -->
+        <div style="max-width: 1000px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 15px; border: 1px solid var(--border);">
+            <h3 style="font-size: 1.3rem; color: var(--primary); margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">
+                <span class="lang-zh">合作机构</span>
+                <span class="lang-en lang-hidden">Partner Institutions</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                    <strong style="color: var(--accent);">🏛️ <span class="lang-zh">浙江大学</span><span class="lang-en lang-hidden">Zhejiang University</span></strong>
+                    <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.3rem;"><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇬🇧 <span class="lang-zh">曼彻斯特大学</span><span class="lang-en lang-hidden">University of Manchester</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇬🇧 <span class="lang-zh">剑桥大学</span><span class="lang-en lang-hidden">University of Cambridge</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇬🇧 <span class="lang-zh">伦敦大学学院</span><span class="lang-en lang-hidden">University College London</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇨🇳 <span class="lang-zh">北京大学</span><span class="lang-en lang-hidden">Peking University</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇨🇳 <span class="lang-zh">北京师范大学</span><span class="lang-en lang-hidden">Beijing Normal University</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇨🇳 <span class="lang-zh">南京师范大学</span><span class="lang-en lang-hidden">Nanjing Normal University</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇭🇰 <span class="lang-zh">香港中文大学</span><span class="lang-en lang-hidden">The Chinese University of Hong Kong</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇭🇰 <span class="lang-zh">香港教育大学</span><span class="lang-en lang-hidden">The Education University of Hong Kong</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇹🇼 <span class="lang-zh">台湾师范大学</span><span class="lang-en lang-hidden">National Taiwan Normal University</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🇺🇸 <span class="lang-zh">佛罗里达湾岸大学</span><span class="lang-en lang-hidden">Florida Gulf Coast University</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🏢 <span class="lang-zh">科大讯飞</span><span class="lang-en lang-hidden">iFLYTEK</span>
+                </div>
+                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
+                    🌐 <span class="lang-zh">联合国教科文组织高等教育创新中心</span><span class="lang-en lang-hidden">UNESCO-ICHEI</span>
+                </div>
+            </div>
+        </div>
+        
         <div class="network-legend">
             <div class="legend-item">
                 <div class="legend-dot primary"></div>
@@ -1135,92 +1186,38 @@
         }
 
         // Initialize Map
-        const map = L.map('map').setView([30.0, 30.0], 2);
+        const map = L.map('map').setView([35.0, 105.0], 2);
         
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
             maxZoom: 18
         }).addTo(map);
 
-<!-- Collaboration Network -->
-    <section class="network-section" id="network">
-        <h2 class="section-title">
-            <span class="lang-zh">国际合作网络</span>
-            <span class="lang-en lang-hidden">International Collaboration Network</span>
-        </h2>
-        <div id="map"></div>
-        
-        <!-- 添加这个新的机构列表 -->
-        <div style="max-width: 1000px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 15px; border: 1px solid var(--border);">
-            <h3 style="font-size: 1.3rem; color: var(--primary); margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">
-                <span class="lang-zh">合作机构</span>
-                <span class="lang-en lang-hidden">Partner Institutions</span>
-            </h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
-                    <strong style="color: var(--accent);">🏛️ <span class="lang-zh">浙江大学</span><span class="lang-en lang-hidden">Zhejiang University</span></strong>
-                    <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.3rem;"><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇬🇧 <span class="lang-zh">曼彻斯特大学</span><span class="lang-en lang-hidden">University of Manchester</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇬🇧 <span class="lang-zh">剑桥大学</span><span class="lang-en lang-hidden">University of Cambridge</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇬🇧 <span class="lang-zh">伦敦大学学院</span><span class="lang-en lang-hidden">University College London</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇨🇳 <span class="lang-zh">北京大学</span><span class="lang-en lang-hidden">Peking University</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇨🇳 <span class="lang-zh">北京师范大学</span><span class="lang-en lang-hidden">Beijing Normal University</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇨🇳 <span class="lang-zh">南京师范大学</span><span class="lang-en lang-hidden">Nanjing Normal University</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇭🇰 <span class="lang-zh">香港中文大学</span><span class="lang-en lang-hidden">The Chinese University of Hong Kong</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇭🇰 <span class="lang-zh">香港教育大学</span><span class="lang-en lang-hidden">The Education University of Hong Kong</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇹🇼 <span class="lang-zh">台湾师范大学</span><span class="lang-en lang-hidden">National Taiwan Normal University</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🇺🇸 <span class="lang-zh">佛罗里达湾岸大学</span><span class="lang-en lang-hidden">Florida Gulf Coast University</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🏢 <span class="lang-zh">科大讯飞</span><span class="lang-en lang-hidden">iFLYTEK</span>
-                </div>
-                <div style="padding: 0.8rem 1rem; background: var(--bg); border-radius: 8px;">
-                    🌐 <span class="lang-zh">联合国教科文组织高等教育创新中心</span><span class="lang-en lang-hidden">UNESCO-ICHEI</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="network-legend">
-            <div class="legend-item">
-                <div class="legend-dot primary"></div>
-                <span class="lang-zh">当前机构</span>
-                <span class="lang-en lang-hidden">Current Institution</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-dot partner"></div>
-                <span class="lang-zh">合作机构</span>
-                <span class="lang-en lang-hidden">Partner Institutions</span>
-            </div>
-        </div>
-    </section>
+        // Collaboration locations
+        const collaborations = [
+            { name: 'Zhejiang University', nameZh: '浙江大学', lat: 30.2636, lng: 120.1219, type: 'primary' },
+            { name: 'University of Manchester', nameZh: '曼彻斯特大学', lat: 53.4668, lng: -2.2339, type: 'partner' },
+            { name: 'University of Cambridge', nameZh: '剑桥大学', lat: 52.2053, lng: 0.1218, type: 'partner' },
+            { name: 'University College London (UCL)', nameZh: '伦敦大学学院', lat: 51.5246, lng: -0.1340, type: 'partner' },
+            { name: 'Peking University', nameZh: '北京大学', lat: 39.9990, lng: 116.3161, type: 'partner' },
+            { name: 'Beijing Normal University', nameZh: '北京师范大学', lat: 39.9602, lng: 116.3686, type: 'partner' },
+            { name: 'Nanjing Normal University', nameZh: '南京师范大学', lat: 32.0603, lng: 118.7969, type: 'partner' },
+            { name: 'The Chinese University of Hong Kong', nameZh: '香港中文大学', lat: 22.4194, lng: 114.2069, type: 'partner' },
+            { name: 'The Education University of Hong Kong', nameZh: '香港教育大学', lat: 22.3827, lng: 114.2042, type: 'partner' },
+            { name: 'iFLYTEK', nameZh: '科大讯飞', lat: 31.8639, lng: 117.2808, type: 'partner' },
+            { name: 'Florida Gulf Coast University', nameZh: '佛罗里达湾岸大学', lat: 26.4632, lng: -81.7706, type: 'partner' },
+            { name: 'National Taiwan Normal University', nameZh: '台湾师范大学', lat: 25.0262, lng: 121.5273, type: 'partner' },
+            { name: 'UNESCO-ICHEI', nameZh: '联合国教科文组织高等教育创新中心', lat: 39.9042, lng: 116.4074, type: 'partner' }
+        ];
 
         // Add markers
         collaborations.forEach(loc => {
             const color = loc.type === 'primary' ? '#c53030' : '#1a365d';
+            const size = loc.type === 'primary' ? 20 : 14;
             const icon = L.divIcon({
                 className: 'custom-marker',
-                html: `<div style="background: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></div>`,
-                iconSize: [16, 16]
+                html: `<div style="background: ${color}; width: ${size}px; height: ${size}px; border-radius: 50%; border: 3px solid white; box-shadow: 0 3px 10px rgba(0,0,0,0.4);"></div>`,
+                iconSize: [size, size]
             });
             
             const displayName = currentLang === 'zh' ? loc.nameZh : loc.name;
