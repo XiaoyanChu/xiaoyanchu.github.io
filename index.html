@@ -108,6 +108,38 @@
             gap: 2rem;
         }
 
+        /* 汉堡菜单按钮 */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s;
+            border-radius: 3px;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
         nav {
             display: flex;
             gap: 0;
@@ -655,29 +687,65 @@
                 font-size: 1.2rem;
             }
 
+            /* 显示汉堡菜单按钮 */
+            .menu-toggle {
+                display: flex;
+            }
+
+            /* 隐藏导航，点击后显示 */
             .header-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: white;
                 flex-direction: column;
-                gap: 0.8rem;
-                width: 100%;
+                justify-content: flex-start;
+                align-items: stretch;
+                gap: 0;
+                padding: 5rem 0 2rem 0;
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+                transition: right 0.3s ease;
+                overflow-y: auto;
+            }
+
+            .header-nav.active {
+                right: 0;
             }
 
             nav {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 0.3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
                 width: 100%;
+                padding: 0;
             }
 
             nav a {
-                padding: 0.4rem 0.6rem;
-                font-size: 0.85rem;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                text-align: left;
+                border-bottom: 1px solid var(--border);
+                border-left: 3px solid transparent;
+            }
+
+            nav a:hover {
+                background: var(--bg);
+                border-left-color: var(--accent);
+            }
+
+            .lang-switch {
+                width: auto;
+                margin: 1rem 2rem;
                 text-align: center;
             }
 
-            .lang-switch, .cv-download {
-                width: 100%;
+            .cv-download {
+                margin: 0 2rem 1rem 2rem;
                 text-align: center;
-                font-size: 0.9rem;
+                display: block;
             }
 
             .hero {
@@ -827,7 +895,15 @@
 
     <header>
         <div class="logo">Xiaoyan Chu</div>
-        <div class="header-nav">
+        
+        <!-- 汉堡菜单按钮 -->
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header-nav" id="headerNav">
             <nav>
                 <a href="#about" class="lang-zh">关于</a>
                 <a href="#about" class="lang-en lang-hidden">About</a>
@@ -1297,6 +1373,24 @@
     </footer>
 
     <script>
+        // 汉堡菜单切换
+        function toggleMenu() {
+            const nav = document.getElementById('headerNav');
+            const toggle = document.querySelector('.menu-toggle');
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // 点击导航链接后关闭菜单
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('headerNav');
+                const toggle = document.querySelector('.menu-toggle');
+                nav.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+
         // Language Toggle
         let currentLang = 'zh';
         
