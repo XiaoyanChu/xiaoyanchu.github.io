@@ -1415,11 +1415,13 @@
             icon.classList.toggle('open');
         }
 
-        // Initialize Map
+        // Initialize Map - 使用高德地图（国内可访问）
         const map = L.map('map').setView([35.0, 105.0], 2);
         
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors',
+        // 使用高德地图切片服务（国内可访问）
+        L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+            attribution: '© 高德地图',
+            subdomains: ['1', '2', '3', '4'],
             maxZoom: 18
         }).addTo(map);
 
