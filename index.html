@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>楚肖燕 Xiaoyan Chu - GenAI in Education Researcher</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="楚肖燕的学术主页，浙江大学教育技术学博士，聚焦人工智能教育应用、人机协同学习、沉浸式学习环境研究">
+    <link rel="icon" type="image/png" href="images/android-chrome-512x512.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
         :root {
-            --primary: #1a1a2e;
-            --accent: #e94560;
-            --accent-light: #ff6b6b;
-            --secondary: #16213e;
-            --bg: #0f0f1e;
-            --text: #e8e8f0;
-            --text-dim: #a8a8b8;
-            --card-bg: rgba(22, 33, 62, 0.6);
-            --glow: rgba(233, 69, 96, 0.3);
+            --primary: #1a365d;
+            --primary-light: #2d4a7c;
+            --accent: #c53030;
+            --accent-light: #e53e3e;
+            --bg: #fafafa;
+            --bg-secondary: #ffffff;
+            --text: #1a202c;
+            --text-dim: #4a5568;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.08);
+            --glow: rgba(197, 48, 48, 0.15);
         }
 
         * {
@@ -25,7 +32,7 @@
         }
 
         body {
-            font-family: 'Crimson Pro', 'Noto Serif SC', serif;
+            font-family: 'Source Sans 3', 'Noto Serif SC', sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.7;
@@ -40,84 +47,157 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: radial-gradient(ellipse at top, rgba(22, 33, 62, 0.4), transparent),
-                        radial-gradient(ellipse at bottom, rgba(233, 69, 96, 0.1), transparent);
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(197, 48, 48, 0.05), transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(45, 74, 124, 0.05), transparent 50%);
         }
 
         .bg-animation::before {
             content: '';
             position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, var(--glow), transparent 70%);
-            top: -200px;
-            right: -200px;
-            animation: float 20s ease-in-out infinite;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(197, 48, 48, 0.08), transparent 70%);
+            top: -250px;
+            right: -250px;
+            animation: float 25s ease-in-out infinite;
         }
 
         .bg-animation::after {
             content: '';
             position: absolute;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(255, 107, 107, 0.2), transparent 70%);
-            bottom: -150px;
-            left: -150px;
-            animation: float 15s ease-in-out infinite reverse;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(45, 74, 124, 0.06), transparent 70%);
+            bottom: -200px;
+            left: -200px;
+            animation: float 20s ease-in-out infinite reverse;
         }
 
         @keyframes float {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(100px, -100px) rotate(120deg); }
-            66% { transform: translate(-50px, 50px) rotate(240deg); }
+            33% { transform: translate(80px, -80px) rotate(120deg); }
+            66% { transform: translate(-60px, 60px) rotate(240deg); }
         }
 
         /* Header */
         header {
-            padding: 2rem 5%;
+            padding: 1.5rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
-            z-index: 100;
-            background: rgba(15, 15, 30, 0.8);
+            z-index: 1000;
+            box-shadow: 0 2px 8px var(--shadow);
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--accent);
-            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 0;
         }
 
         nav a {
-            margin-left: 2rem;
+            padding: 0.5rem 1.2rem;
             color: var(--text-dim);
             text-decoration: none;
             transition: color 0.3s;
             font-size: 0.95rem;
-            letter-spacing: 0.5px;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
         }
 
         nav a:hover {
-            color: var(--accent-light);
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .lang-switch {
+            padding: 0.4rem 1rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            transition: all 0.3s;
+        }
+
+        .lang-switch:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .cv-download {
+            padding: 0.5rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px var(--glow);
+        }
+
+        .cv-download:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--glow);
         }
 
         /* Hero Section */
         .hero {
-            min-height: 85vh;
-            display: flex;
+            min-height: 75vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
             align-items: center;
             padding: 4rem 10%;
             position: relative;
         }
 
         .hero-content {
-            max-width: 900px;
             animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero-image img {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 20px 60px var(--shadow), 0 0 0 1px var(--border);
+            transition: transform 0.3s;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
         }
 
         @keyframes fadeInUp {
@@ -132,34 +212,32 @@
         }
 
         .hero h1 {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--text) 0%, var(--accent-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-family: 'Playfair Display', 'Noto Serif SC', serif;
         }
 
         .hero .subtitle {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: var(--text-dim);
             margin-bottom: 1rem;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .hero .tagline {
-            font-size: 1.3rem;
-            color: var(--accent-light);
+            font-size: 1.2rem;
+            color: var(--accent);
             font-style: italic;
-            margin-bottom: 2.5rem;
-            font-weight: 300;
+            margin-bottom: 2rem;
+            font-weight: 400;
         }
 
         .motto {
-            font-size: 1.1rem;
-            color: var(--text-dim);
+            font-size: 1rem;
+            color: var(--text-light);
             border-left: 3px solid var(--accent);
             padding-left: 1.5rem;
             margin: 2rem 0;
@@ -167,9 +245,16 @@
             line-height: 1.8;
         }
 
+        .hero-bio {
+            color: var(--text-dim);
+            margin: 2rem 0;
+            line-height: 1.8;
+        }
+
         .social-links {
             display: flex;
-            gap: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
             margin-top: 2rem;
         }
 
@@ -177,52 +262,54 @@
             color: var(--text-dim);
             text-decoration: none;
             font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 25px;
             transition: all 0.3s;
+            font-weight: 500;
         }
 
         .social-links a:hover {
             border-color: var(--accent);
             color: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px var(--glow);
+            box-shadow: 0 4px 12px var(--shadow);
         }
 
         /* Stats Dashboard */
         .stats-section {
             padding: 4rem 10%;
-            background: linear-gradient(180deg, transparent, rgba(233, 69, 96, 0.05), transparent);
+            background: white;
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
         .stat-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
+            background: var(--bg);
+            padding: 2.5rem 2rem;
             border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border);
             text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: all 0.3s;
         }
 
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px var(--glow);
+            box-shadow: 0 12px 24px var(--shadow);
+            border-color: var(--accent);
         }
 
         .stat-number {
             font-size: 3rem;
             font-weight: 700;
-            color: var(--accent-light);
+            color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
         }
 
@@ -232,74 +319,66 @@
             margin-top: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
         }
 
-        /* Research Vision */
-        .vision-section {
-            padding: 6rem 10%;
-            position: relative;
-        }
-
+        /* Section Title */
         .section-title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 3rem;
             text-align: center;
+            color: var(--primary);
+            font-family: 'Playfair Display', 'Noto Serif SC', serif;
             position: relative;
-            animation: fadeInUp 0.8s ease-out;
         }
 
         .section-title::after {
             content: '';
             display: block;
-            width: 100px;
+            width: 80px;
             height: 3px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            background: var(--accent);
             margin: 1rem auto 0;
+        }
+
+        /* Research Vision */
+        .vision-section {
+            padding: 6rem 10%;
         }
 
         .vision-timeline {
             max-width: 1200px;
             margin: 0 auto;
-            position: relative;
         }
 
         .timeline-item {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-bottom: 4rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .timeline-item:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .timeline-item:nth-child(3) {
-            animation-delay: 0.4s;
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
 
         .timeline-content {
-            background: var(--card-bg);
+            background: white;
             padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            position: relative;
-            transition: transform 0.3s;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            cursor: default;
         }
 
         .timeline-content:hover {
-            transform: translateX(10px);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px var(--shadow);
             border-color: var(--accent);
         }
 
         .timeline-content h3 {
-            font-size: 1.8rem;
-            color: var(--accent-light);
+            font-size: 1.6rem;
+            color: var(--primary);
             margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
         }
 
         .timeline-content p {
@@ -309,19 +388,20 @@
 
         .timeline-tag {
             display: inline-block;
-            background: rgba(233, 69, 96, 0.2);
-            color: var(--accent-light);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.85rem;
+            background: rgba(197, 48, 48, 0.1);
+            color: var(--accent);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
             margin-top: 1rem;
             font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
         }
 
         /* Featured Projects */
         .projects-section {
             padding: 6rem 10%;
-            background: rgba(22, 33, 62, 0.2);
+            background: white;
         }
 
         .projects-grid {
@@ -333,32 +413,35 @@
         }
 
         .project-card {
-            background: var(--card-bg);
-            border-radius: 20px;
+            background: var(--bg);
+            border-radius: 15px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
             cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px var(--glow);
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px var(--shadow);
+            border-color: var(--accent);
         }
 
         .project-header {
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            padding: 2rem;
-            position: relative;
-            height: 150px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            padding: 2.5rem;
+            height: 140px;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
         .project-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
 
         .project-body {
@@ -366,10 +449,11 @@
         }
 
         .project-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            color: var(--text);
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
         }
 
         .project-desc {
@@ -383,17 +467,58 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.85rem;
-            color: var(--text-dim);
+            color: var(--text-light);
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
         }
 
         .project-journal {
             font-weight: 600;
-            color: var(--accent-light);
+            color: var(--accent);
         }
+
+        /* Collaboration Network */
+        .network-section {
+            padding: 6rem 10%;
+        }
+
+        #map {
+            height: 500px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 24px var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .network-legend {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend-dot.primary { background: var(--accent); }
+        .legend-dot.partner { background: var(--primary); }
 
         /* News Section */
         .news-section {
             padding: 4rem 10%;
+            background: white;
         }
 
         .news-list {
@@ -402,24 +527,25 @@
         }
 
         .news-item {
-            background: var(--card-bg);
-            padding: 1.5rem;
+            background: var(--bg);
+            padding: 1.5rem 2rem;
             margin-bottom: 1rem;
-            border-radius: 15px;
+            border-radius: 12px;
             border-left: 4px solid var(--accent);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
 
         .news-item:hover {
-            transform: translateX(10px);
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px var(--shadow);
         }
 
         .news-date {
             font-family: 'JetBrains Mono', monospace;
-            color: var(--accent-light);
-            font-size: 0.9rem;
+            color: var(--accent);
+            font-size: 0.85rem;
             margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         .news-content {
@@ -434,31 +560,34 @@
         }
 
         .expandable-header {
-            background: var(--card-bg);
+            background: white;
             padding: 1.5rem 2rem;
-            border-radius: 15px;
+            border-radius: 12px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
             transition: all 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border);
         }
 
         .expandable-header:hover {
-            background: rgba(233, 69, 96, 0.1);
+            background: var(--bg);
             border-color: var(--accent);
         }
 
         .expandable-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
         }
 
         .expandable-icon {
             font-size: 1.5rem;
             transition: transform 0.3s;
+            color: var(--text-dim);
         }
 
         .expandable-icon.open {
@@ -472,7 +601,7 @@
         }
 
         .expandable-content.open {
-            max-height: 3000px;
+            max-height: 5000px;
         }
 
         .content-grid {
@@ -482,10 +611,24 @@
         }
 
         .content-item {
-            background: var(--card-bg);
+            background: white;
             padding: 1.5rem;
             border-radius: 10px;
             border-left: 3px solid var(--accent);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .content-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px var(--shadow);
+            border-left-color: var(--accent);
+        }
+
+        .content-item a {
+            color: inherit;
+            text-decoration: none;
         }
 
         /* Footer */
@@ -493,49 +636,53 @@
             padding: 3rem 10%;
             text-align: center;
             color: var(--text-dim);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: white;
+            border-top: 1px solid var(--border);
             margin-top: 4rem;
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-image img {
+                width: 240px;
+                height: 240px;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.3rem;
             }
 
             .timeline-item {
                 grid-template-columns: 1fr;
-                gap: 2rem;
             }
 
             .projects-grid {
                 grid-template-columns: 1fr;
             }
 
-            header {
+            .header-nav {
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            nav a {
-                margin-left: 1rem;
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
 
-        /* Scroll Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s, transform 0.6s;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        /* Language Toggle */
+        .lang-hidden {
+            display: none;
         }
     </style>
 </head>
@@ -543,32 +690,66 @@
     <div class="bg-animation"></div>
 
     <header>
-        <div class="logo">XYC_Research</div>
-        <nav>
-            <a href="#about">关于</a>
-            <a href="#vision">研究方向</a>
-            <a href="#projects">代表项目</a>
-            <a href="#news">动态</a>
-            <a href="#publications">成果</a>
-        </nav>
+        <div class="logo">Xiaoyan Chu</div>
+        <div class="header-nav">
+            <nav>
+                <a href="#about" class="lang-zh">关于</a>
+                <a href="#about" class="lang-en lang-hidden">About</a>
+                
+                <a href="#vision" class="lang-zh">研究方向</a>
+                <a href="#vision" class="lang-en lang-hidden">Research</a>
+                
+                <a href="#projects" class="lang-zh">代表项目</a>
+                <a href="#projects" class="lang-en lang-hidden">Projects</a>
+                
+                <a href="#network" class="lang-zh">合作网络</a>
+                <a href="#network" class="lang-en lang-hidden">Network</a>
+                
+                <a href="#news" class="lang-zh">动态</a>
+                <a href="#news" class="lang-en lang-hidden">News</a>
+                
+                <a href="#publications" class="lang-zh">成果</a>
+                <a href="#publications" class="lang-en lang-hidden">Publications</a>
+            </nav>
+            <button class="lang-switch" onclick="toggleLanguage()">
+                <span class="lang-zh">EN</span>
+                <span class="lang-en lang-hidden">中文</span>
+            </button>
+            <a href="files/CV_XiaoyanChu.pdf" class="cv-download" download>
+                <span class="lang-zh">📄 下载简历</span>
+                <span class="lang-en lang-hidden">📄 Download CV</span>
+            </a>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="about">
         <div class="hero-content">
-            <img src="images/android-chrome-512x512.jpg" alt="Xiaoyan Chu" style="width: 180px; height: 180px; border-radius: 50%; margin-bottom: 2rem; border: 4px solid var(--accent); box-shadow: 0 10px 30px var(--glow); object-fit: cover;">
-            <h1>楚肖燕<br>Xiaoyan Chu</h1>
-            <p class="subtitle">PhD Candidate | Educational Technology</p>
-            <p class="tagline">探索生成式AI如何重塑教育的未来</p>
+            <h1>
+                <span class="lang-zh">楚肖燕</span>
+                <span class="lang-en lang-hidden">Xiaoyan Chu</span>
+            </h1>
+            <p class="subtitle">
+                <span class="lang-zh">博士候选人 | 教育技术学</span>
+                <span class="lang-en lang-hidden">PhD Candidate | Educational Technology</span>
+            </p>
+            <p class="tagline">
+                <span class="lang-zh">探索生成式AI如何重塑教育的未来</span>
+                <span class="lang-en lang-hidden">Exploring how GenAI reshapes the future of education</span>
+            </p>
             
             <div class="motto">
                 "Infusing technology with the warmth of education,<br>
                 and imbuing education with the promise of tomorrow through technology."
             </div>
 
-            <p style="color: var(--text-dim); margin: 2rem 0; max-width: 700px;">
-                我是浙江大学教育技术学博士候选人，专注于生成式AI、元宇宙与虚拟现实在教育中的创新应用。
+            <p class="hero-bio lang-zh">
+                我是浙江大学教育技术学博士候选人，聚焦人工智能教育应用、人机协同学习、沉浸式学习环境。
                 曾获国家留学基金委资助赴曼彻斯特大学联合培养，研究成果发表于多个SSCI Q1期刊。
+            </p>
+            <p class="hero-bio lang-en lang-hidden">
+                I am a PhD candidate in Educational Technology at Zhejiang University, focusing on AI application in Education, Human-AI Collaborative Learning, Immersive Learning Environments. 
+                I was funded by the China Scholarship Council for joint training at the University of Manchester, with research published in multiple SSCI Q1 journals.
             </p>
 
             <div class="social-links">
@@ -580,6 +761,9 @@
                 <a href="https://www.linkedin.com/in/xiaoyan-chu-7b49632a4/" target="_blank">💼 LinkedIn</a>
             </div>
         </div>
+        <div class="hero-image">
+            <img src="images/android-chrome-512x512.jpg" alt="Xiaoyan Chu">
+        </div>
     </section>
 
     <!-- Stats Dashboard -->
@@ -587,7 +771,8 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">2500+</div>
-                <div class="stat-label">引用次数</div>
+                <div class="stat-label lang-zh">引用次数</div>
+                <div class="stat-label lang-en lang-hidden">Citations</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">10</div>
@@ -595,42 +780,63 @@
             </div>
             <div class="stat-card">
                 <div class="stat-number">20+</div>
-                <div class="stat-label">SSCI/CSSCI 论文</div>
+                <div class="stat-label lang-zh">SSCI/CSSCI 论文</div>
+                <div class="stat-label lang-en lang-hidden">SSCI/CSSCI Papers</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">Top 5%</div>
-                <div class="stat-label">CNKI高被引学者</div>
+                <div class="stat-label lang-zh">CNKI高被引学者</div>
+                <div class="stat-label lang-en lang-hidden">CNKI Highly Cited</div>
             </div>
         </div>
     </section>
 
     <!-- Research Vision -->
     <section class="vision-section" id="vision">
-        <h2 class="section-title">研究主线：生成式AI赋能教育创新</h2>
+        <h2 class="section-title">
+            <span class="lang-zh">研究主线：生成式AI赋能教育创新</span>
+            <span class="lang-en lang-hidden">Research Focus: GenAI Empowering Educational Innovation</span>
+        </h2>
         
         <div class="vision-timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>🤖 人机协同学习</h3>
-                    <p>探索学生与双LLM智能体的交互模式，研究个人学习与协作学习中GenAI如何提升语言能力和批判性思维。通过滞后序列分析和认知网络分析，揭示不同交互模式下的认知发展规律。</p>
+                    <h3>
+                        <span class="lang-zh">🤖 人机协同学习</span>
+                        <span class="lang-en lang-hidden">🤖 Human-AI Collaborative Learning</span>
+                    </h3>
+                    <p class="lang-zh">探索学生与双LLM智能体的交互模式，研究个人学习与协作学习中GenAI如何提升语言能力和批判性思维。通过滞后序列分析和认知网络分析，揭示不同交互模式下的认知发展规律。</p>
+                    <p class="lang-en lang-hidden">Exploring interaction modes between students and dual-LLM agents, investigating how GenAI enhances language proficiency and critical thinking in individual and collaborative learning. Using lag sequential and epistemic network analysis to reveal cognitive development patterns.</p>
                     <span class="timeline-tag">GenAI × Collaboration</span>
                 </div>
                 <div class="timeline-content">
-                    <h3>🎓 翻转课堂重构</h3>
-                    <p>将生成式AI与元宇宙技术融入翻转课堂，构建沉浸式学习环境。通过实证研究验证技术增强型翻转课堂对学习成效的影响，为未来教育模式提供实践路径。</p>
+                    <h3>
+                        <span class="lang-zh">🎓 翻转课堂重构</span>
+                        <span class="lang-en lang-hidden">🎓 Flipped Classroom Reconstruction</span>
+                    </h3>
+                    <p class="lang-zh">将生成式AI与元宇宙技术融入翻转课堂，构建沉浸式学习环境。通过实证研究验证技术增强型翻转课堂对学习成效的影响，为未来教育模式提供实践路径。</p>
+                    <p class="lang-en lang-hidden">Integrating GenAI and Metaverse technologies into flipped classrooms to create immersive learning environments. Empirically validating the impact of technology-enhanced flipped classrooms on learning outcomes.</p>
                     <span class="timeline-tag">Metaverse × Flipped Classroom</span>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>💡 创造力培养</h3>
-                    <p>基于PISA 2022数据，运用模糊集定性比较分析（fsQCA）探究ICT使用如何影响学生创造性思维。识别多种配置路径，为数字时代创造力培养提供循证依据。</p>
+                    <h3>
+                        <span class="lang-zh">💡 创造力培养</span>
+                        <span class="lang-en lang-hidden">💡 Creativity Development</span>
+                    </h3>
+                    <p class="lang-zh">基于PISA 2022数据，运用模糊集定性比较分析（fsQCA）探究ICT使用如何影响学生创造性思维。识别多种配置路径，为数字时代创造力培养提供循证依据。</p>
+                    <p class="lang-en lang-hidden">Using fuzzy-set Qualitative Comparative Analysis (fsQCA) on PISA 2022 data to investigate how ICT use influences students' creative thinking. Identifying multiple configurational pathways for creativity development.</p>
                     <span class="timeline-tag">ICT × Creativity</span>
                 </div>
                 <div class="timeline-content">
-                    <h3>🌐 教育元宇宙</h3>
-                    <p>从知识共享到知识共创，研究去中心化知识观在教育元宇宙中的实现。探索虚拟教学共同体如何促进教育公平，为未来学习空间设计提供理论框架。</p>
+                    <h3>
+                        <span class="lang-zh">🌐 教育元宇宙</span>
+                        <span class="lang-en lang-hidden">🌐 Educational Metaverse</span>
+                    </h3>
+                    <p class="lang-zh">从知识共享到知识共创，研究去中心化知识观在教育元宇宙中的实现。探索虚拟教学共同体如何促进教育公平，为未来学习空间设计提供理论框架。</p>
+                    <p class="lang-en lang-hidden">From knowledge sharing to knowledge co-creation, studying the implementation of decentralized knowledge views in educational metaverse. Exploring how virtual teaching communities promote educational equity.</p>
                     <span class="timeline-tag">Educational Metaverse</span>
                 </div>
             </div>
@@ -639,99 +845,155 @@
 
     <!-- Featured Projects -->
     <section class="projects-section" id="projects">
-        <h2 class="section-title">代表性研究项目</h2>
+        <h2 class="section-title">
+            <span class="lang-zh">代表性研究项目</span>
+            <span class="lang-en lang-hidden">Featured Research Projects</span>
+        </h2>
         
         <div class="projects-grid">
-            <div class="project-card">
+            <a href="https://doi.org/10.1080/10494820.2025.2601294" target="_blank" class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🤝</div>
                 </div>
                 <div class="project-body">
-                    <h3 class="project-title">双LLM智能体交互研究</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title">
+                        <span class="lang-zh">双LLM智能体交互研究</span>
+                        <span class="lang-en lang-hidden">Dual-LLM Agent Interaction Study</span>
+                    </h3>
+                    <p class="project-desc lang-zh">
                         设计人性化双LLM GenAI智能体，探索个人与协作交互模式对语言学习和批判性思维的差异化影响。揭示了协作模式促进语言能力，而个人模式强化批判思维意识的独特机制。
+                    </p>
+                    <p class="project-desc lang-en lang-hidden">
+                        Designed a humanized dual-LLM GenAI agent, exploring differential impacts of individual and collaborative interaction modes on language learning and critical thinking. Revealed unique mechanisms where collaborative mode enhances language proficiency while individual mode strengthens critical thinking awareness.
                     </p>
                     <div class="project-meta">
                         <span class="project-journal">Interactive Learning Environments (2025)</span>
                         <span>SSCI Q1</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            <a href="https://link.springer.com/article/10.1007/s11423-024-10446-0" target="_blank" class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🔄</div>
                 </div>
                 <div class="project-body">
-                    <h3 class="project-title">GenAI+元宇宙翻转课堂</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title">
+                        <span class="lang-zh">GenAI+元宇宙翻转课堂</span>
+                        <span class="lang-en lang-hidden">GenAI+Metaverse Flipped Classroom</span>
+                    </h3>
+                    <p class="project-desc lang-zh">
                         创新性地将生成式AI与元宇宙技术整合到翻转课堂模型中，通过滞后序列分析和认知网络分析验证学习效果。为技术增强型教学设计提供实证支持。
+                    </p>
+                    <p class="project-desc lang-en lang-hidden">
+                        Innovatively integrated GenAI and Metaverse technologies into the flipped classroom model. Validated learning outcomes through lag sequential and epistemic network analysis, providing empirical support for technology-enhanced instructional design.
                     </p>
                     <div class="project-meta">
                         <span class="project-journal">Educational Technology Research and Development (2025)</span>
                         <span>SSCI Q1</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0883035525000011" target="_blank" class="project-card">
                 <div class="project-header">
                     <div class="project-icon">💡</div>
                 </div>
                 <div class="project-body">
-                    <h3 class="project-title">ICT与创造性思维配置研究</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title">
+                        <span class="lang-zh">ICT与创造性思维配置研究</span>
+                        <span class="lang-en lang-hidden">ICT & Creative Thinking Configuration Study</span>
+                    </h3>
+                    <p class="project-desc lang-zh">
                         基于PISA 2022大规模数据，运用fsQCA方法识别促进学生创造性思维的ICT使用配置路径。研究发现，多种组合策略均可达成创造力培养目标。
+                    </p>
+                    <p class="project-desc lang-en lang-hidden">
+                        Based on PISA 2022 large-scale data, used fsQCA method to identify ICT usage configuration pathways that promote students' creative thinking. Found that multiple combination strategies can achieve creativity development goals.
                     </p>
                     <div class="project-meta">
                         <span class="project-journal">International Journal of Educational Research (2025)</span>
                         <span>SSCI Q1</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            <a href="https://www.hindawi.com/journals/complexity/2021/8812542/" target="_blank" class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🏆</div>
                 </div>
                 <div class="project-body">
-                    <h3 class="project-title">教育中的AI综述研究</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title">
+                        <span class="lang-zh">教育中的AI综述研究</span>
+                        <span class="lang-en lang-hidden">AI in Education Review</span>
+                    </h3>
+                    <p class="project-desc lang-zh">
                         系统综述2010-2020年间人工智能在教育领域的应用研究。该文被认定为ESI高被引论文，引用量超过1200次，为教育AI研究提供了重要参考框架。
+                    </p>
+                    <p class="project-desc lang-en lang-hidden">
+                        Systematic review of AI applications in education from 2010-2020. Recognized as an ESI Highly Cited Paper with over 1200 citations, providing an important reference framework for educational AI research.
                     </p>
                     <div class="project-meta">
                         <span class="project-journal">Complexity (2021)</span>
-                        <span>🏆 ESI高被引</span>
+                        <span>🏆 ESI <span class="lang-zh">高被引</span><span class="lang-en lang-hidden">Highly Cited</span></span>
                     </div>
                 </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Collaboration Network -->
+    <section class="network-section" id="network">
+        <h2 class="section-title">
+            <span class="lang-zh">国际合作网络</span>
+            <span class="lang-en lang-hidden">International Collaboration Network</span>
+        </h2>
+        <div id="map"></div>
+        <div class="network-legend">
+            <div class="legend-item">
+                <div class="legend-dot primary"></div>
+                <span class="lang-zh">当前机构</span>
+                <span class="lang-en lang-hidden">Current Institution</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot partner"></div>
+                <span class="lang-zh">合作机构</span>
+                <span class="lang-en lang-hidden">Partner Institutions</span>
             </div>
         </div>
     </section>
 
     <!-- Latest News -->
     <section class="news-section" id="news">
-        <h2 class="section-title">最新动态</h2>
+        <h2 class="section-title">
+            <span class="lang-zh">最新动态</span>
+            <span class="lang-en lang-hidden">Latest News</span>
+        </h2>
         
         <div class="news-list">
             <div class="news-item">
                 <div class="news-date">2025.07</div>
-                <div class="news-content">🎉 获得2025年浙江大学优秀博士学位论文培育项目资助</div>
+                <div class="news-content lang-zh">🎉 获得2025年浙江大学优秀博士学位论文培育项目资助</div>
+                <div class="news-content lang-en lang-hidden">🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative</div>
             </div>
             <div class="news-item">
                 <div class="news-date">2025.01</div>
-                <div class="news-content">🎉 入选浙江大学博士生"求是青苗计划"培养项目</div>
+                <div class="news-content lang-zh">🎉 入选浙江大学博士生"求是新星计划"培养项目</div>
+                <div class="news-content lang-en lang-hidden">🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University</div>
             </div>
             <div class="news-item">
                 <div class="news-date">2025.01</div>
-                <div class="news-content">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
+                <div class="news-content lang-zh">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
+                <div class="news-content lang-en lang-hidden">🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI for two consecutive years</div>
             </div>
             <div class="news-item">
                 <div class="news-date">2024.09</div>
-                <div class="news-content">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
+                <div class="news-content lang-zh">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
+                <div class="news-content lang-en lang-hidden">🎓 Awarded the Dean's Award for Achievement, University of Manchester</div>
             </div>
             <div class="news-item">
                 <div class="news-date">2024.06</div>
-                <div class="news-content">✈️ 参加ISLS年会（Buffalo, USA）并展示研究成果</div>
+                <div class="news-content lang-zh">✈️ 参加ISLS年会（Buffalo, USA）并展示研究成果</div>
+                <div class="news-content lang-en lang-hidden">✈️ Attended ISLS Annual Meeting (Buffalo, USA) and presented research findings</div>
             </div>
         </div>
     </section>
@@ -739,28 +1001,43 @@
     <!-- Expandable Sections -->
     <div class="expandable-section" id="publications">
         <div class="expandable-header" onclick="toggleSection('publications-content')">
-            <span class="expandable-title">📚 完整出版物列表</span>
+            <span class="expandable-title">
+                <span class="lang-zh">📚 完整出版物列表</span>
+                <span class="lang-en lang-hidden">📚 Full Publication List</span>
+            </span>
             <span class="expandable-icon" id="publications-icon">▼</span>
         </div>
         <div class="expandable-content" id="publications-content">
             <div class="content-grid">
                 <div class="content-item">
-                    <strong>Chu, X., Li, Y. (2025).</strong> Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness. <em>Interactive Learning Environments</em>. SSCI Q1
+                    <a href="https://doi.org/10.1080/10494820.2025.2601294" target="_blank">
+                        <strong>Chu, X., Li, Y. (2025).</strong> Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness. <em>Interactive Learning Environments</em>. SSCI Q1
+                    </a>
                 </div>
                 <div class="content-item">
-                    <strong>Chu, X., Wang, M., Spector, J.M. et al. (2025).</strong> Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis. <em>Educational Technology Research and Development</em>, 1-19. SSCI Q1
+                    <a href="https://link.springer.com/article/10.1007/s11423-024-10446-0" target="_blank">
+                        <strong>Chu, X., Wang, M., Spector, J.M. et al. (2025).</strong> Enhancing the flipped classroom model with generative AI and Metaverse technologies: insights from lag sequential and epistemic network analysis. <em>Educational Technology Research and Development</em>, 1-19. SSCI Q1
+                    </a>
                 </div>
                 <div class="content-item">
-                    <strong>Chu, X. (2025).</strong> More ICT, more creativity? A fsQCA study on configurational pathways to students' creative thinking in PISA 2022. <em>International Journal of Educational Research</em>, 134, 1-15. SSCI Q1
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0883035525000011" target="_blank">
+                        <strong>Chu, X. (2025).</strong> More ICT, more creativity? A fsQCA study on configurational pathways to students' creative thinking in PISA 2022. <em>International Journal of Educational Research</em>, 134, 1-15. SSCI Q1
+                    </a>
                 </div>
                 <div class="content-item">
-                    <strong>Zhai, X., Chu, X., Wang, M., et al. (2024).</strong> A systematic review of Stimulated Recall (SR) in educational research from 2012 to 2022. <em>Humanities and Social Sciences Communications</em>, 11(1), 1-14. SSCI Q1 (共同第一作者，通讯作者)
+                    <a href="https://www.nature.com/articles/s41599-024-02816-2" target="_blank">
+                        <strong>Zhai, X., Chu, X., Wang, M., et al. (2024).</strong> A systematic review of Stimulated Recall (SR) in educational research from 2012 to 2022. <em>Humanities and Social Sciences Communications</em>, 11(1), 1-14. SSCI Q1 <span class="lang-zh">(共同第一作者，通讯作者)</span><span class="lang-en lang-hidden">(Co-first author, Corresponding author)</span>
+                    </a>
                 </div>
                 <div class="content-item">
-                    <strong>Zhai, X., Chu, X., Chen, M., et al. (2023).</strong> Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. <em>IEEE Transactions on Learning Technologies</em>, 16(6): 1130-1140. SSCI Q1 (共同第一作者，通讯作者)
+                    <a href="https://ieeexplore.ieee.org/document/10123579" target="_blank">
+                        <strong>Zhai, X., Chu, X., Chen, M., et al. (2023).</strong> Can Edu-Metaverse Reshape Virtual Teaching Community (VTC) to Promote Educational Equity? An Exploratory Study. <em>IEEE Transactions on Learning Technologies</em>, 16(6): 1130-1140. SSCI Q1 <span class="lang-zh">(共同第一作者，通讯作者)</span><span class="lang-en lang-hidden">(Co-first author, Corresponding author)</span>
+                    </a>
                 </div>
                 <div class="content-item">
-                    <strong>Zhai, X., Chu, X., Chai, C. S., et al. (2021).</strong> A Review of Artificial Intelligence (AI) in Education from 2010 to 2020. <em>Complexity</em>, 2021. 🏆 ESI高被引论文
+                    <a href="https://www.hindawi.com/journals/complexity/2021/8812542/" target="_blank">
+                        <strong>Zhai, X., Chu, X., Chai, C. S., et al. (2021).</strong> A Review of Artificial Intelligence (AI) in Education from 2010 to 2020. <em>Complexity</em>, 2021. 🏆 ESI<span class="lang-zh">高被引论文</span><span class="lang-en lang-hidden"> Highly Cited Paper</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -768,31 +1045,34 @@
 
     <div class="expandable-section">
         <div class="expandable-header" onclick="toggleSection('honors-content')">
-            <span class="expandable-title">🏆 荣誉与奖励</span>
+            <span class="expandable-title">
+                <span class="lang-zh">🏆 荣誉与奖励</span>
+                <span class="lang-en lang-hidden">🏆 Honors and Awards</span>
+            </span>
             <span class="expandable-icon" id="honors-icon">▼</span>
         </div>
         <div class="expandable-content" id="honors-content">
             <div class="content-grid">
                 <div class="content-item">
-                    <strong>2025.01</strong> - 浙江大学博士生"求是青苗计划"培养项目
+                    <strong>2025.01</strong> - <span class="lang-zh">浙江大学博士生"求是新星计划"培养项目</span><span class="lang-en lang-hidden">Qiushi Rising Star Training Program for PhD Students, Zhejiang University</span>
                 </div>
                 <div class="content-item">
-                    <strong>2025.01</strong> - CNKI前5%高被引学者（2024年度）
+                    <strong>2025.01</strong> - <span class="lang-zh">CNKI前5%高被引学者（2024年度）</span><span class="lang-en lang-hidden">Top 5% Highly Cited Scholar by CNKI (2024)</span>
                 </div>
                 <div class="content-item">
-                    <strong>2024.09</strong> - 曼彻斯特大学院长成就奖
+                    <strong>2024.09</strong> - <span class="lang-zh">曼彻斯特大学院长成就奖</span><span class="lang-en lang-hidden">Dean's Award for Achievement, University of Manchester</span>
                 </div>
                 <div class="content-item">
-                    <strong>2023.05</strong> - 国家留学基金委国际组织人才培养项目（赴曼彻斯特大学联合培养）
+                    <strong>2023.05</strong> - <span class="lang-zh">国家留学基金委国际组织人才培养项目（赴曼彻斯特大学联合培养）</span><span class="lang-en lang-hidden">China Scholarship Council International Organization Talent Training Program (Joint training at University of Manchester)</span>
                 </div>
                 <div class="content-item">
-                    <strong>2022.10</strong> - 研究生国家奖学金
+                    <strong>2022.10</strong> - <span class="lang-zh">研究生国家奖学金</span><span class="lang-en lang-hidden">National Scholarship for Graduate Students</span>
                 </div>
                 <div class="content-item">
-                    <strong>2021.06</strong> - 江苏省优秀毕业生
+                    <strong>2021.06</strong> - <span class="lang-zh">江苏省优秀毕业生</span><span class="lang-en lang-hidden">Outstanding Graduate of Jiangsu Province</span>
                 </div>
                 <div class="content-item">
-                    <strong>2019.10</strong> - 本科生国家奖学金
+                    <strong>2019.10</strong> - <span class="lang-zh">本科生国家奖学金</span><span class="lang-en lang-hidden">National Scholarship for Undergraduates</span>
                 </div>
             </div>
         </div>
@@ -800,19 +1080,22 @@
 
     <div class="expandable-section">
         <div class="expandable-header" onclick="toggleSection('service-content')">
-            <span class="expandable-title">🌟 学术服务</span>
+            <span class="expandable-title">
+                <span class="lang-zh">🌟 学术服务</span>
+                <span class="lang-en lang-hidden">🌟 Academic Service</span>
+            </span>
             <span class="expandable-icon" id="service-icon">▼</span>
         </div>
         <div class="expandable-content" id="service-content">
             <div class="content-grid">
                 <div class="content-item">
-                    <strong>编委</strong> - IEEE Transactions on Learning Technologies (Junior Associate Editor, Guest Editor)
+                    <strong><span class="lang-zh">编委</span><span class="lang-en lang-hidden">Editorial Board</span></strong> - IEEE Transactions on Learning Technologies (Junior Associate Editor, Guest Editor)
                 </div>
                 <div class="content-item">
-                    <strong>审稿人</strong> - IEEE-TLT, Educational Technology & Society, Teaching and Teacher Education, IJHCI, Humanities and Social Sciences Communications, Educational Media International, Knowledge Management & E-Learning, Complex & Intelligent Systems
+                    <strong><span class="lang-zh">审稿人</span><span class="lang-en lang-hidden">Reviewer</span></strong> - IEEE-TLT, Educational Technology & Society, Teaching and Teacher Education, IJHCI, Humanities and Social Sciences Communications, Educational Media International, Knowledge Management & E-Learning, Complex & Intelligent Systems
                 </div>
                 <div class="content-item">
-                    <strong>会议</strong> - IEEE iLRN 2023 PC Member, IEEE TALE 2021 Reviewer
+                    <strong><span class="lang-zh">会议</span><span class="lang-en lang-hidden">Conference</span></strong> - IEEE iLRN 2023 PC Member, IEEE TALE 2021 Reviewer
                 </div>
             </div>
         </div>
@@ -827,6 +1110,21 @@
     </footer>
 
     <script>
+        // Language Toggle
+        let currentLang = 'zh';
+        
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            
+            if (currentLang === 'zh') {
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.remove('lang-hidden'));
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.add('lang-hidden'));
+            } else {
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.add('lang-hidden'));
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('lang-hidden'));
+            }
+        }
+
         // Expandable sections
         function toggleSection(contentId) {
             const content = document.getElementById(contentId);
@@ -836,21 +1134,46 @@
             icon.classList.toggle('open');
         }
 
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        // Initialize Map
+        const map = L.map('map').setView([30.0, 30.0], 2);
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 18
+        }).addTo(map);
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+// Collaboration locations
+        const collaborations = [
+            { name: 'Zhejiang University', nameZh: '浙江大学', lat: 30.2636, lng: 120.1219, type: 'primary' },
+            { name: 'University of Manchester', nameZh: '曼彻斯特大学', lat: 53.4668, lng: -2.2339, type: 'partner' },
+            { name: 'University of Cambridge', nameZh: '剑桥大学', lat: 52.2053, lng: 0.1218, type: 'partner' },
+            { name: 'University College London (UCL)', nameZh: '伦敦大学学院', lat: 51.5246, lng: -0.1340, type: 'partner' },
+            { name: 'Peking University', nameZh: '北京大学', lat: 39.9990, lng: 116.3161, type: 'partner' },
+            { name: 'Beijing Normal University', nameZh: '北京师范大学', lat: 39.9602, lng: 116.3686, type: 'partner' },
+            { name: 'Nanjing Normal University', nameZh: '南京师范大学', lat: 32.0603, lng: 118.7969, type: 'partner' },
+            { name: 'The Chinese University of Hong Kong', nameZh: '香港中文大学', lat: 22.4194, lng: 114.2069, type: 'partner' },
+            { name: 'The Education University of Hong Kong', nameZh: '香港教育大学', lat: 22.3827, lng: 114.2042, type: 'partner' },
+            { name: 'iFLYTEK', nameZh: '科大讯飞', lat: 31.8639, lng: 117.2808, type: 'partner' },
+            { name: 'Florida Gulf Coast University', nameZh: '佛罗里达湾岸大学', lat: 26.4632, lng: -81.7706, type: 'partner' },
+            { name: 'National Taiwan Normal University', nameZh: '台湾师范大学', lat: 25.0262, lng: 121.5273, type: 'partner' },
+            { name: 'UNESCO-ICHEI', nameZh: '联合国教科文组织高等教育创新中心', lat: 39.9042, lng: 116.4074, type: 'partner' }
+        
+        ];
+
+        // Add markers
+        collaborations.forEach(loc => {
+            const color = loc.type === 'primary' ? '#c53030' : '#1a365d';
+            const icon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [16, 16]
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+            
+            const displayName = currentLang === 'zh' ? loc.nameZh : loc.name;
+            L.marker([loc.lat, loc.lng], { icon: icon })
+                .addTo(map)
+                .bindPopup(`<strong>${displayName}</strong>`);
+        });
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
