@@ -246,15 +246,78 @@
     width: 100%;
     border-radius: 10px;
     border: 1px solid var(--border);
-    object-fit: cover;
-    max-height: 200px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: contain;      /* 完整显示，不裁切 */
+    background: #f8f8f8;      /* 图片背景色，防止透明图片显示怪 */
+    display: block;
+    transition: transform 0.25s, box-shadow 0.25s;
     cursor: zoom-in;
 }
 
 .research-img:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 24px var(--shadow);
+}
+
+/* 灯箱遮罩 */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 2rem;
+    animation: lbFadeIn 0.2s ease;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 88vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    cursor: default;
+    animation: lbZoomIn 0.2s ease;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 10000;
+}
+
+.lightbox-close:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+@keyframes lbFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes lbZoomIn {
+    from { transform: scale(0.88); opacity: 0; }
+    to   { transform: scale(1);    opacity: 1; }
 }
 
 /* 研究版图论文链接 */
