@@ -133,6 +133,19 @@
         .content-item:hover { transform:translateX(5px); box-shadow:0 4px 12px var(--shadow); }
         .content-item a { color:inherit; text-decoration:none; }
 
+
+
+        /* References */
+        .references-section { padding:4rem 10%; max-width:1200px; margin:0 auto; }
+        .references-card { background:white; border-radius:15px; border:1px solid var(--border); padding:2rem; box-shadow:0 4px 16px var(--shadow); }
+        .references-note { color:var(--text-dim); margin-bottom:1.5rem; line-height:1.8; }
+        .references-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
+        .reference-item { background:var(--bg); border-radius:10px; padding:1.2rem 1.3rem; border-left:3px solid var(--accent); transition:all 0.3s; }
+        .reference-item:hover { transform:translateY(-3px); box-shadow:0 6px 16px var(--shadow); }
+        .reference-name { font-size:1.05rem; font-weight:700; color:var(--primary); margin-bottom:0.35rem; }
+        .reference-role { font-size:0.92rem; color:var(--text-dim); line-height:1.7; }
+        .reference-institution { font-size:0.86rem; color:var(--text-light); margin-top:0.35rem; }
+
         /* Footer */
         footer { padding:3rem 10%; text-align:center; color:var(--text-dim); background:white; border-top:1px solid var(--border); margin-top:4rem; }
 
@@ -210,6 +223,8 @@
                 <a href="#news" class="lang-en lang-hidden">News</a>
                 <a href="#publications" class="lang-zh">成果</a>
                 <a href="#publications" class="lang-en lang-hidden">Publications</a>
+                <a href="#references" class="lang-zh">推荐人</a>
+                <a href="#references" class="lang-en lang-hidden">References</a>
             </nav>
             <button class="lang-switch" onclick="toggleLanguage()">
                 <span class="lang-zh">EN</span>
@@ -703,8 +718,72 @@
             </div>
         </div>
     </div>
+
+
+    <!-- [EDIT-REFERENCES] 推荐人 -->
+    <section class="references-section" id="references">
+        <h2 class="section-title">
+            <span class="lang-zh">推荐人</span>
+            <span class="lang-en lang-hidden">References</span>
+        </h2>
+        <div class="references-card">
+            <p class="references-note">
+                <span class="lang-zh">推荐信及联系方式可根据申请需要提供。</span>
+                <span class="lang-en lang-hidden">References and contact information are available upon request.</span>
+            </p>
+            <div class="references-grid">
+                <div class="reference-item">
+                    <div class="reference-name">
+                        <span class="lang-zh">阚阅</span><span class="lang-en lang-hidden">Yue Kan</span>
+                    </div>
+                    <div class="reference-role">
+                        <span class="lang-zh">博士生导师，求是特聘教授，浙江大学教育学院院长</span>
+                        <span class="lang-en lang-hidden">Doctoral Supervisor, Qiushi Distinguished Professor, Dean of the College of Education</span>
+                    </div>
+                    <div class="reference-institution">
+                        <span class="lang-zh">浙江大学</span><span class="lang-en lang-hidden">Zhejiang University</span>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">Alan C. K. Cheung</div>
+                    <div class="reference-role">
+                        <span class="lang-zh">教授，博士生导师，香港中文大学教育学院院长</span>
+                        <span class="lang-en lang-hidden">Professor, Doctoral Supervisor, Dean of the Faculty of Education</span>
+                    </div>
+                    <div class="reference-institution">
+                        <span class="lang-zh">香港中文大学</span><span class="lang-en lang-hidden">The Chinese University of Hong Kong</span>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">
+                        <span class="lang-zh">董艳</span><span class="lang-en lang-hidden">Yan Dong</span>
+                    </div>
+                    <div class="reference-role">
+                        <span class="lang-zh">教授，博士生导师，北京师范大学科学教育研究院副院长</span>
+                        <span class="lang-en lang-hidden">Professor, Doctoral Supervisor, Vice Dean of the Institute of Science Education</span>
+                    </div>
+                    <div class="reference-institution">
+                        <span class="lang-zh">北京师范大学</span><span class="lang-en lang-hidden">Beijing Normal University</span>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">
+                        <span class="lang-zh">翟雪松</span><span class="lang-en lang-hidden">Xuesong Zhai</span>
+                    </div>
+                    <div class="reference-role">
+                        <span class="lang-zh">特聘研究员，教授，博士生导师</span>
+                        <span class="lang-en lang-hidden">Distinguished Research Fellow, Professor, Doctoral Supervisor</span>
+                    </div>
+                    <div class="reference-institution">
+                        <span class="lang-zh">浙江大学教育学院</span><span class="lang-en lang-hidden">College of Education, Zhejiang University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Xiaoyan Chu | PhD Candidate at Zhejiang University</p>
+        <p>&copy; 2026 Xiaoyan Chu | PhD Candidate at Zhejiang University</p>
         <p style="margin-top:0.5rem;font-size:0.85rem;">College of Education, Zhejiang University | Hangzhou, China</p>
     </footer>
 
