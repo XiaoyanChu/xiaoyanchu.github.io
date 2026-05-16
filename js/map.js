@@ -1,142 +1,1056 @@
 /* ============================================
-   🗺️ 地图配置文件
+   🎨 CSS样式文件
    ============================================
-   [EDIT-INSTITUTIONS] 在这里添加/修改合作机构
-   
-   添加新机构步骤：
-   1. 复制下面任意一行
-   2. 修改 name（英文名）和 nameZh（中文名）
-   3. 修改坐标 lat（纬度）和 lng（经度）
-   4. type 保持 'partner'（当前机构用 'primary'）
-   
-   获取坐标方法：
-   - 打开 Google Maps
-   - 搜索机构名称
-   - 右键点击位置 → 复制坐标
+   快速导航：
+   - 颜色变量    → 搜索 [COLORS]
+   - 字体设置    → 搜索 [FONTS]
+   - 导航栏样式  → 搜索 [HEADER]
+   - 响应式设计  → 搜索 [RESPONSIVE]
    ============================================ */
 
-// [EDIT-INSTITUTIONS] 合作机构列表
-const collaborations = [
-    { 
-        name: 'Zhejiang University', 
-        nameZh: '浙江大学', 
-        lat: 30.2636, 
-        lng: 120.1219, 
-        type: 'primary'  // 当前机构，保持 primary
-    },
-    { 
-        name: 'University of Manchester', 
-        nameZh: '曼彻斯特大学', 
-        lat: 53.4668, 
-        lng: -2.2339, 
-        type: 'partner' 
-    },
-    { 
-        name: 'University of Cambridge', 
-        nameZh: '剑桥大学', 
-        lat: 52.2053, 
-        lng: 0.1218, 
-        type: 'partner' 
-    },
-    { 
-        name: 'University College London (UCL)', 
-        nameZh: '伦敦大学学院', 
-        lat: 51.5246, 
-        lng: -0.1340, 
-        type: 'partner' 
-    },
-    { 
-        name: 'Peking University', 
-        nameZh: '北京大学', 
-        lat: 39.9990, 
-        lng: 116.3161, 
-        type: 'partner' 
-    },
-    { 
-        name: 'Beijing Normal University', 
-        nameZh: '北京师范大学', 
-        lat: 39.9602, 
-        lng: 116.3686, 
-        type: 'partner' 
-    },
-    { 
-        name: 'Nanjing Normal University', 
-        nameZh: '南京师范大学', 
-        lat: 32.0603, 
-        lng: 118.7969, 
-        type: 'partner' 
-    },
-    { 
-        name: 'The Chinese University of Hong Kong', 
-        nameZh: '香港中文大学', 
-        lat: 22.4194, 
-        lng: 114.2069, 
-        type: 'partner' 
-    },
-    { 
-        name: 'The Education University of Hong Kong', 
-        nameZh: '香港教育大学', 
-        lat: 22.3827, 
-        lng: 114.2042, 
-        type: 'partner' 
-    },
-    { 
-        name: 'iFLYTEK', 
-        nameZh: '科大讯飞', 
-        lat: 31.8639, 
-        lng: 117.2808, 
-        type: 'partner' 
-    },
-    { 
-        name: 'Florida Gulf Coast University', 
-        nameZh: '佛罗里达湾岸大学', 
-        lat: 26.4632, 
-        lng: -81.7706, 
-        type: 'partner' 
-    },
-    { 
-        name: 'National Taiwan Normal University', 
-        nameZh: '台湾师范大学', 
-        lat: 25.0262, 
-        lng: 121.5273, 
-        type: 'partner' 
-    },
-    { 
-        name: 'UNESCO-ICHEI', 
-        nameZh: '联合国教科文组织高等教育创新中心', 
-        lat: 39.9042, 
-        lng: 116.4074, 
-        type: 'partner' 
-    }
-];
-
-// 初始化地图
-function initMap() {
-    const map = L.map('map').setView([35.0, 105.0], 2);
-    
-    // 使用高德地图（国内可访问）
-    L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
-        attribution: '© 高德地图',
-        subdomains: ['1', '2', '3', '4'],
-        maxZoom: 18
-    }).addTo(map);
-
-    // 添加标记点
-    collaborations.forEach(loc => {
-        const color = loc.type === 'primary' ? '#c53030' : '#1a365d';
-        const size = loc.type === 'primary' ? 20 : 14;
-        const icon = L.divIcon({
-            className: 'custom-marker',
-            html: `<div style="background: ${color}; width: ${size}px; height: ${size}px; border-radius: 50%; border: 3px solid white; box-shadow: 0 3px 10px rgba(0,0,0,0.4);"></div>`,
-            iconSize: [size, size]
-        });
-        
-        const displayName = currentLang === 'zh' ? loc.nameZh : loc.name;
-        L.marker([loc.lat, loc.lng], { icon: icon })
-            .addTo(map)
-            .bindPopup(`<strong>${displayName}</strong>`);
-    });
+/* [COLORS] 颜色变量 - 修改主题色在这里 */
+:root {
+    --primary: #1a365d;           /* 主色：深蓝 */
+    --primary-light: #2d4a7c;     /* 主色浅版 */
+    --accent: #c53030;            /* 强调色：红色 */
+    --accent-light: #e53e3e;      /* 强调色浅版 */
+    --bg: #fafafa;                /* 背景色：浅灰 */
+    --bg-secondary: #ffffff;      /* 次背景：白色 */
+    --text: #1a202c;              /* 文字：深灰 */
+    --text-dim: #4a5568;          /* 次要文字 */
+    --text-light: #718096;        /* 浅色文字 */
+    --border: #e2e8f0;            /* 边框色 */
+    --shadow: rgba(0, 0, 0, 0.08);
+    --glow: rgba(197, 48, 48, 0.15);
 }
 
-// 页面加载完成后初始化地图
-document.addEventListener('DOMContentLoaded', initMap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* [FONTS] 字体设置 */
+body {
+    font-family: 'Source Sans 3', 'Noto Serif SC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* 背景动画 */
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+        radial-gradient(ellipse at 20% 30%, rgba(197, 48, 48, 0.05), transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(45, 74, 124, 0.05), transparent 50%);
+}
+
+.bg-animation::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(197, 48, 48, 0.08), transparent 70%);
+    top: -250px;
+    right: -250px;
+    animation: float 25s ease-in-out infinite;
+}
+
+.bg-animation::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(45, 74, 124, 0.06), transparent 70%);
+    bottom: -200px;
+    left: -200px;
+    animation: float 20s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(80px, -80px) rotate(120deg); }
+    66% { transform: translate(-60px, 60px) rotate(240deg); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* [HEADER] 导航栏样式 */
+header {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+nav {
+    display: flex;
+    gap: 0;
+}
+
+nav a {
+    padding: 0.5rem 1.2rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.lang-switch {
+    padding: 0.4rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    transition: all 0.3s;
+}
+
+.lang-switch:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.cv-download {
+    padding: 0.5rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px var(--glow);
+}
+
+.cv-download:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--glow);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 10%;
+    position: relative;
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 20px 60px var(--shadow), 0 0 0 1px var(--border);
+    transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+}
+
+.hero .subtitle {
+    font-size: 1.4rem;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.hero .tagline {
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.motto {
+    font-size: 1rem;
+    color: var(--text-light);
+    border-left: 3px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.hero-bio {
+    color: var(--text-dim);
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Stats Dashboard */
+.stats-section {
+    padding: 4rem 10%;
+    background: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: var(--bg);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow);
+    border-color: var(--accent);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--primary);
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--accent);
+    margin: 1rem auto 0;
+}
+
+/* Research Vision */
+.vision-section {
+    padding: 6rem 10%;
+}
+
+.vision-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow);
+    border-color: var(--accent);
+}
+
+.timeline-content h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.timeline-content p {
+    color: var(--text-dim);
+    line-height: 1.8;
+}
+
+.timeline-tag {
+    display: inline-block;
+    background: rgba(197, 48, 48, 0.1);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
+
+/* Featured Projects */
+.projects-section {
+    padding: 6rem 10%;
+    background: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--bg);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px var(--shadow);
+    border-color: var(--accent);
+}
+
+.project-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    padding: 2.5rem;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-icon {
+    font-size: 3.5rem;
+}
+
+.project-body {
+    padding: 2rem;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+}
+
+.project-desc {
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.project-journal {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Collaboration Network */
+.network-section {
+    padding: 6rem 10%;
+}
+
+#map {
+    height: 500px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px var(--shadow);
+    margin-top: 2rem;
+}
+
+.network-legend {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-dot.primary { background: var(--accent); }
+.legend-dot.partner { background: var(--primary); }
+
+/* News Section */
+.news-section {
+    padding: 4rem 10%;
+    background: white;
+}
+
+.news-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background: var(--bg);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+    transition: all 0.3s;
+}
+
+.news-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.news-date {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.news-content {
+    color: var(--text-dim);
+}
+
+/* Expandable Section */
+.expandable-section {
+    padding: 4rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expandable-header {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+    border: 1px solid var(--border);
+}
+
+.expandable-header:hover {
+    background: var(--bg);
+    border-color: var(--accent);
+}
+
+.expandable-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+}
+
+.expandable-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+    color: var(--text-dim);
+}
+
+.expandable-icon.open {
+    transform: rotate(180deg);
+}
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.expandable-content.open {
+    max-height: 5000px;
+}
+
+.content-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.content-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.content-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px var(--shadow);
+    border-left-color: var(--accent);
+}
+
+.content-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 10%;
+    text-align: center;
+    color: var(--text-dim);
+    background: white;
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+}
+
+/* Language Toggle */
+.lang-hidden {
+    display: none;
+}
+
+/* [RESPONSIVE] 响应式设计 */
+@media (max-width: 968px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 1rem 4%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0;
+        padding: 5rem 0 2rem 0;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .header-nav.active {
+        right: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+        border-left: 3px solid transparent;
+    }
+
+    nav a:hover {
+        background: var(--bg);
+        border-left-color: var(--accent);
+    }
+
+    .lang-switch {
+        width: auto;
+        margin: 1rem 2rem;
+        text-align: center;
+    }
+
+    .cv-download {
+        margin: 0 2rem 1rem 2rem;
+        text-align: center;
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 5%;
+        min-height: auto;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+    }
+
+    .motto {
+        font-size: 0.95rem;
+        padding-left: 1rem;
+    }
+
+    .hero-bio {
+        font-size: 0.95rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-links a {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .stats-section {
+        padding: 3rem 5%;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .vision-section, .projects-section, .news-section {
+        padding: 3rem 5%;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.95rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-desc {
+        font-size: 0.95rem;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .expandable-section {
+        padding: 2rem 5%;
+    }
+
+    .expandable-title {
+        font-size: 1.2rem;
+    }
+
+    .content-item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   研究版块样式
+   ============================================ */
+.research-section {
+    padding: 6rem 10%;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.research-card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.research-card:hover {
+    box-shadow: 0 12px 32px var(--shadow);
+    border-color: var(--accent);
+}
+
+.research-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.research-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1;
+    min-width: 2.5rem;
+    padding-top: 0.2rem;
+}
+
+.research-header-text {
+    flex: 1;
+}
+
+.research-title-zh {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Noto Serif SC', serif;
+    margin-bottom: 0.2rem;
+}
+
+.research-title-en {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.research-toggle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    transition: transform 0.3s;
+    padding-top: 0.3rem;
+    flex-shrink: 0;
+}
+
+.research-toggle.open {
+    transform: rotate(180deg);
+}
+
+.research-card-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.research-card-body.open {
+    max-height: 2000px;
+}
+
+.research-card-inner {
+    padding: 0 2rem 2rem 5rem;
+    border-top: 1px solid var(--border);
+}
+
+.research-desc-zh,
+.research-desc-en {
+    color: var(--text-dim);
+    line-height: 1.9;
+    margin: 1.5rem 0 1.2rem 0;
+    font-size: 0.97rem;
+}
+
+/* 论文进展标签 */
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+}
+
+.tag-published {
+    background: rgba(56, 161, 105, 0.1);
+    color: #276749;
+    border: 1px solid rgba(56, 161, 105, 0.3);
+}
+
+.tag-accepted {
+    background: rgba(214, 158, 46, 0.1);
+    color: #975a16;
+    border: 1px solid rgba(214, 158, 46, 0.3);
+}
+
+.tag-revision {
+    background: rgba(237, 137, 54, 0.1);
+    color: #c05621;
+    border: 1px solid rgba(237, 137, 54, 0.3);
+}
+
+.tag-review {
+    background: rgba(160, 174, 192, 0.15);
+    color: #4a5568;
+    border: 1px solid rgba(160, 174, 192, 0.4);
+}
+
+.tag-conference {
+    background: rgba(99, 179, 237, 0.12);
+    color: #2b6cb0;
+    border: 1px solid rgba(99, 179, 237, 0.35);
+}
+
+@media (max-width: 968px) {
+    .research-section {
+        padding: 3rem 5%;
+    }
+
+    .research-card-header {
+        padding: 1.5rem;
+    }
+
+    .research-card-inner {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .research-number {
+        font-size: 1.6rem;
+        min-width: 2rem;
+    }
+
+    .research-title-zh {
+        font-size: 1.2rem;
+    }
+}

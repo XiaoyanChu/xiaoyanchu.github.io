@@ -32,13 +32,22 @@ function toggleLanguage() {
     }
 }
 
-// 可展开区域切换
+// 可展开区域切换（论文列表、荣誉等）
 function toggleSection(contentId) {
     const content = document.getElementById(contentId);
     const icon = document.getElementById(contentId.replace('-content', '-icon'));
     
     content.classList.toggle('open');
     icon.classList.toggle('open');
+}
+
+// 研究版图卡片展开
+function toggleResearch(id) {
+    const body = document.getElementById(id);
+    const toggle = document.getElementById(id + '-toggle');
+
+    body.classList.toggle('open');
+    toggle.classList.toggle('open');
 }
 
 // 页面加载完成后执行

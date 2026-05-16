@@ -23,8 +23,7 @@
          ============================================
          个人信息   → [EDIT-PROFILE]
          数据统计   → [EDIT-STATS]
-         研究方向   → [EDIT-RESEARCH]
-         代表项目   → [EDIT-PROJECTS]
+         研究版图   → [EDIT-RESEARCH]  ← 五大方向在这里
          合作机构   → 见 js/map.js
          最新动态   → [EDIT-NEWS]
          论文列表   → [EDIT-PUBLICATIONS]
@@ -49,11 +48,8 @@
                 <a href="#about" class="lang-zh">关于</a>
                 <a href="#about" class="lang-en lang-hidden">About</a>
                 
-                <a href="#vision" class="lang-zh">研究方向</a>
-                <a href="#vision" class="lang-en lang-hidden">Research</a>
-                
-                <a href="#projects" class="lang-zh">代表项目</a>
-                <a href="#projects" class="lang-en lang-hidden">Projects</a>
+                <a href="#research" class="lang-zh">研究版图</a>
+                <a href="#research" class="lang-en lang-hidden">Research</a>
                 
                 <a href="#network" class="lang-zh">合作网络</a>
                 <a href="#network" class="lang-en lang-hidden">Network</a>
@@ -144,153 +140,147 @@
         </div>
     </section>
 
-    <!-- [EDIT-RESEARCH] 研究方向区 -->
-    <section class="vision-section" id="vision">
+    <!-- [EDIT-RESEARCH] 研究版图区（五大方向，点击展开详情）-->
+    <section class="research-section" id="research">
         <h2 class="section-title">
-            <span class="lang-zh">研究主线：生成式AI赋能教育创新</span>
-            <span class="lang-en lang-hidden">Research Focus: GenAI Empowering Educational Innovation</span>
+            <span class="lang-zh">研究版图</span>
+            <span class="lang-en lang-hidden">Research Portfolio</span>
         </h2>
-        
-        <div class="vision-timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>
-                        <span class="lang-zh">🤖 人机协同学习</span>
-                        <span class="lang-en lang-hidden">🤖 Human-AI Collaborative Learning</span>
-                    </h3>
-                    <p class="lang-zh">探索学生与双LLM智能体的交互模式，研究个人学习与协作学习中GenAI如何提升语言能力和批判性思维。通过滞后序列分析和认知网络分析，揭示不同交互模式下的认知发展规律。</p>
-                    <p class="lang-en lang-hidden">Exploring interaction modes between students and dual-LLM agents, investigating how GenAI enhances language proficiency and critical thinking in individual and collaborative learning. Using lag sequential and epistemic network analysis to reveal cognitive development patterns.</p>
-                    <span class="timeline-tag">GenAI × Collaboration</span>
+
+        <div class="research-grid">
+
+            <!-- 方向1：AI赋能教师教育 -->
+            <!-- 👇 修改方向：改 research-title-zh/en 和 research-desc-zh/en，以及标签 -->
+            <div class="research-card">
+                <div class="research-card-header" onclick="toggleResearch('r1')">
+                    <div class="research-number">01</div>
+                    <div class="research-header-text">
+                        <div class="research-title-zh">AI赋能教师教育</div>
+                        <div class="research-title-en lang-hidden lang-en">AI-Empowered Teacher Education</div>
+                    </div>
+                    <div class="research-toggle" id="r1-toggle">▼</div>
                 </div>
-                <div class="timeline-content">
-                    <h3>
-                        <span class="lang-zh">🎓 翻转课堂重构</span>
-                        <span class="lang-en lang-hidden">🎓 Flipped Classroom Reconstruction</span>
-                    </h3>
-                    <p class="lang-zh">将生成式AI与元宇宙技术融入翻转课堂，构建沉浸式学习环境。通过实证研究验证技术增强型翻转课堂对学习成效的影响，为未来教育模式提供实践路径。</p>
-                    <p class="lang-en lang-hidden">Integrating GenAI and Metaverse technologies into flipped classrooms to create immersive learning environments. Empirically validating the impact of technology-enhanced flipped classrooms on learning outcomes.</p>
-                    <span class="timeline-tag">Metaverse × Flipped Classroom</span>
+                <div class="research-card-body" id="r1">
+                    <div class="research-card-inner">
+                        <p class="research-desc-zh lang-zh">
+                            聚焦职前教师培养，将SQD2框架与AI多智能体系统结合，探究<strong>设计思维</strong>的发展路径；构建师生机三元协同课堂，提升职前教师<strong>AI素养</strong>；研究拟人化智能体对职前教师学习效果与学习动机的影响机制。
+                        </p>
+                        <p class="research-desc-en lang-en lang-hidden">
+                            Focusing on pre-service teacher development, this line integrates the SQD2 framework with multi-agent AI systems to examine <strong>design thinking</strong> trajectories; constructs a teacher-student-AI triadic collaborative classroom to enhance pre-service teachers' <strong>AI literacy</strong>; and investigates how anthropomorphic agents influence pre-service teachers' learning outcomes and motivation.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag tag-review">⚪ SSCI Q1 · Under Review ×2</span>
+                            <span class="tag tag-review">⚪ CSSCI · Under Review ×1</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>
-                        <span class="lang-zh">💡 创造力培养</span>
-                        <span class="lang-en lang-hidden">💡 Creativity Development</span>
-                    </h3>
-                    <p class="lang-zh">基于PISA 2022数据，运用模糊集定性比较分析（fsQCA）探究ICT使用如何影响学生创造性思维。识别多种配置路径，为数字时代创造力培养提供循证依据。</p>
-                    <p class="lang-en lang-hidden">Using fuzzy-set Qualitative Comparative Analysis (fsQCA) on PISA 2022 data to investigate how ICT use influences students' creative thinking. Identifying multiple configurational pathways for creativity development.</p>
-                    <span class="timeline-tag">ICT × Creativity</span>
+            <!-- 方向2：神经生理技术应用 -->
+            <div class="research-card">
+                <div class="research-card-header" onclick="toggleResearch('r2')">
+                    <div class="research-number">02</div>
+                    <div class="research-header-text">
+                        <div class="research-title-zh">神经生理技术在学习中的应用</div>
+                        <div class="research-title-en lang-hidden lang-en">Neurophysiological Methods in Learning Research</div>
+                    </div>
+                    <div class="research-toggle" id="r2-toggle">▼</div>
                 </div>
-                <div class="timeline-content">
-                    <h3>
-                        <span class="lang-zh">🌐 教育元宇宙</span>
-                        <span class="lang-en lang-hidden">🌐 Educational Metaverse</span>
-                    </h3>
-                    <p class="lang-zh">从知识共享到知识共创，研究去中心化知识观在教育元宇宙中的实现。探索虚拟教学共同体如何促进教育公平，为未来学习空间设计提供理论框架。</p>
-                    <p class="lang-en lang-hidden">From knowledge sharing to knowledge co-creation, studying the implementation of decentralized knowledge views in educational metaverse. Exploring how virtual teaching communities promote educational equity.</p>
-                    <span class="timeline-tag">Educational Metaverse</span>
+                <div class="research-card-body" id="r2">
+                    <div class="research-card-inner">
+                        <p class="research-desc-zh lang-zh">
+                            基于便携式<strong>EEG脑电</strong>技术，探究人机协同学习过程中学习者不同脑区的激活模式与认知投入（engagement），从神经生理层面验证学习是否真正发生，为人机交互设计提供客观依据。
+                        </p>
+                        <p class="research-desc-en lang-en lang-hidden">
+                            Leveraging portable <strong>EEG</strong> technology to examine learners' regional brain activation and cognitive engagement during human-AI collaboration, providing neurophysiological evidence of whether deep learning actually occurs and informing the design of human-AI interaction.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag tag-accepted">🟡 CSSCI · Accepted</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- [EDIT-PROJECTS] 代表项目区 -->
-    <section class="projects-section" id="projects">
-        <h2 class="section-title">
-            <span class="lang-zh">代表性研究项目</span>
-            <span class="lang-en lang-hidden">Featured Research Projects</span>
-        </h2>
-        
-        <div class="projects-grid">
-            <a href="https://doi.org/10.1080/10494820.2025.2601294" target="_blank" class="project-card">
-                <div class="project-header">
-                    <div class="project-icon">🤝</div>
+            <!-- 方向3：学习者高阶思维培养 -->
+            <div class="research-card">
+                <div class="research-card-header" onclick="toggleResearch('r3')">
+                    <div class="research-number">03</div>
+                    <div class="research-header-text">
+                        <div class="research-title-zh">学习者高阶思维培养</div>
+                        <div class="research-title-en lang-hidden lang-en">Higher-Order Thinking Development</div>
+                    </div>
+                    <div class="research-toggle" id="r3-toggle">▼</div>
                 </div>
-                <div class="project-body">
-                    <h3 class="project-title">
-                        <span class="lang-zh">双LLM智能体交互研究</span>
-                        <span class="lang-en lang-hidden">Dual-LLM Agent Interaction Study</span>
-                    </h3>
-                    <p class="project-desc lang-zh">
-                        设计人性化双LLM GenAI智能体，探索个人与协作交互模式对语言学习和批判性思维的差异化影响。揭示了协作模式促进语言能力，而个人模式强化批判思维意识的独特机制。
-                    </p>
-                    <p class="project-desc lang-en lang-hidden">
-                        Designed a humanized dual-LLM GenAI agent, exploring differential impacts of individual and collaborative interaction modes on language learning and critical thinking. Revealed unique mechanisms where collaborative mode enhances language proficiency while individual mode strengthens critical thinking awareness.
-                    </p>
-                    <div class="project-meta">
-                        <span class="project-journal">Interactive Learning Environments (2025)</span>
-                        <span>SSCI Q1</span>
+                <div class="research-card-body" id="r3">
+                    <div class="research-card-inner">
+                        <p class="research-desc-zh lang-zh">
+                            系统探究GenAI如何促进学习者高阶思维发展。通过双LLM设置认知冲突、多智能体支持协同学习、拟人化智能体的社会存在与信任机制，以及<strong>科学教育</strong>场景下批判性思维与AI伦理素养的作用路径，构建GenAI赋能高阶思维的理论框架；同时基于PISA 2022大规模数据，以fsQCA方法揭示ICT促进<strong>创造性思维</strong>的组态配置路径。
+                        </p>
+                        <p class="research-desc-en lang-en lang-hidden">
+                            Systematically investigating how GenAI fosters higher-order thinking. Studies span cognitive conflict via dual-LLM design, multi-agent collaborative learning, anthropomorphic agents' social presence and trust mechanisms, and pathways from critical thinking to AI ethics literacy in <strong>science education</strong>. Complemented by an fsQCA analysis of PISA 2022 data revealing configurational pathways through which ICT promotes <strong>creative thinking</strong>.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag tag-published">🟢 SSCI Q1 · Published ×2</span>
+                            <span class="tag tag-revision">🟠 SSCI Q1 · Under Revision ×2</span>
+                            <span class="tag tag-review">⚪ SSCI Q1 · Under Review ×1</span>
+                            <span class="tag tag-conference">🔵 GCCCE 2026 · 香港中文大学</span>
+                        </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://link.springer.com/article/10.1007/s11423-024-10446-0" target="_blank" class="project-card">
-                <div class="project-header">
-                    <div class="project-icon">🔄</div>
+            <!-- 方向4：人机协同学习范式重构 -->
+            <div class="research-card">
+                <div class="research-card-header" onclick="toggleResearch('r4')">
+                    <div class="research-number">04</div>
+                    <div class="research-header-text">
+                        <div class="research-title-zh">人机协同学习范式重构</div>
+                        <div class="research-title-en lang-hidden lang-en">Reimagining Human-AI Collaborative Learning</div>
+                    </div>
+                    <div class="research-toggle" id="r4-toggle">▼</div>
                 </div>
-                <div class="project-body">
-                    <h3 class="project-title">
-                        <span class="lang-zh">GenAI+元宇宙翻转课堂</span>
-                        <span class="lang-en lang-hidden">GenAI+Metaverse Flipped Classroom</span>
-                    </h3>
-                    <p class="project-desc lang-zh">
-                        创新性地将生成式AI与元宇宙技术整合到翻转课堂模型中，通过滞后序列分析和认知网络分析验证学习效果。为技术增强型教学设计提供实证支持。
-                    </p>
-                    <p class="project-desc lang-en lang-hidden">
-                        Innovatively integrated GenAI and Metaverse technologies into the flipped classroom model. Validated learning outcomes through lag sequential and epistemic network analysis, providing empirical support for technology-enhanced instructional design.
-                    </p>
-                    <div class="project-meta">
-                        <span class="project-journal">Educational Technology Research and Development (2025)</span>
-                        <span>SSCI Q1</span>
+                <div class="research-card-body" id="r4">
+                    <div class="research-card-inner">
+                        <p class="research-desc-zh lang-zh">
+                            探索GenAI融入学习设计的新范式。将GenAI与元宇宙技术整合进<strong>翻转课堂</strong>，通过滞后序列分析与认知网络分析考察不同水平学习者的差异化效果；系统挖掘人机交互过程中学习者的<strong>行为序列</strong>与<strong>认知模式</strong>，为未来学习环境设计提供实证依据。
+                        </p>
+                        <p class="research-desc-en lang-en lang-hidden">
+                            Exploring new paradigms for integrating GenAI into learning design. Studies embed GenAI and Metaverse technologies into <strong>flipped classrooms</strong>, using lag sequential and epistemic network analysis to examine differentiated effects across learner levels; and systematically mine <strong>behavioral sequences</strong> and <strong>cognitive patterns</strong> in human-AI interaction to inform future learning environment design.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag tag-published">🟢 SSCI Q1 · Published ×1</span>
+                            <span class="tag tag-published">🟢 CSSCI · Published ×N</span>
+                        </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://www.sciencedirect.com/science/article/pii/S0883035525000011" target="_blank" class="project-card">
-                <div class="project-header">
-                    <div class="project-icon">💡</div>
+            <!-- 方向5：AI教育应用的系统性审视 -->
+            <div class="research-card">
+                <div class="research-card-header" onclick="toggleResearch('r5')">
+                    <div class="research-number">05</div>
+                    <div class="research-header-text">
+                        <div class="research-title-zh">AI教育应用的系统性审视</div>
+                        <div class="research-title-en lang-hidden lang-en">A Systematic View of AI in Education</div>
+                    </div>
+                    <div class="research-toggle" id="r5-toggle">▼</div>
                 </div>
-                <div class="project-body">
-                    <h3 class="project-title">
-                        <span class="lang-zh">ICT与创造性思维配置研究</span>
-                        <span class="lang-en lang-hidden">ICT & Creative Thinking Configuration Study</span>
-                    </h3>
-                    <p class="project-desc lang-zh">
-                        基于PISA 2022大规模数据，运用fsQCA方法识别促进学生创造性思维的ICT使用配置路径。研究发现，多种组合策略均可达成创造力培养目标。
-                    </p>
-                    <p class="project-desc lang-en lang-hidden">
-                        Based on PISA 2022 large-scale数据, used fsQCA method to identify ICT usage configuration pathways that promote students' creative thinking. Found that multiple combination strategies can achieve creativity development goals.
-                    </p>
-                    <div class="project-meta">
-                        <span class="project-journal">International Journal of Educational Research (2025)</span>
-                        <span>SSCI Q1</span>
+                <div class="research-card-body" id="r5">
+                    <div class="research-card-inner">
+                        <p class="research-desc-zh lang-zh">
+                            从宏观与系统层面审视AI在教育领域的应用图景。基于Python文本分析，对世界一流高校生成式AI应用指南进行系统梳理；对2010–2020年AI教育应用研究进行系统综述，该成果已被认定为<strong>ESI高被引</strong>论文，引用超1200次。
+                        </p>
+                        <p class="research-desc-en lang-en lang-hidden">
+                            Examining the broader landscape of AI in education at a macro and systemic level. Studies include a Python-based text analysis of generative AI use guidelines from world-leading universities, and a systematic review of AI applications in education from 2010–2020 — recognized as an <strong>ESI Highly Cited Paper</strong> with over 1,200 citations.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag tag-published">🟢 ESI Highly Cited · Published</span>
+                            <span class="tag tag-published">🟢 CSSCI · Published</span>
+                        </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://www.hindawi.com/journals/complexity/2021/8812542/" target="_blank" class="project-card">
-                <div class="project-header">
-                    <div class="project-icon">🏆</div>
-                </div>
-                <div class="project-body">
-                    <h3 class="project-title">
-                        <span class="lang-zh">教育中的AI综述研究</span>
-                        <span class="lang-en lang-hidden">AI in Education Review</span>
-                    </h3>
-                    <p class="project-desc lang-zh">
-                        系统综述2010-2020年间人工智能在教育领域的应用研究。该文被认定为ESI高被引论文，引用量超过1200次，为教育AI研究提供了重要参考框架。
-                    </p>
-                    <p class="project-desc lang-en lang-hidden">
-                        Systematic review of AI applications in education from 2010-2020. Recognized as an ESI Highly Cited Paper with over 1200 citations, providing an important reference framework for educational AI research.
-                    </p>
-                    <div class="project-meta">
-                        <span class="project-journal">Complexity (2021)</span>
-                        <span>🏆 ESI <span class="lang-zh">高被引</span><span class="lang-en lang-hidden">Highly Cited</span></span>
-                    </div>
-                </div>
-            </a>
         </div>
     </section>
 
