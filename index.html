@@ -26,6 +26,12 @@
 
     <div class="bg-animation"></div>
 
+    <!-- 灯箱 -->
+    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="关闭">✕</button>
+        <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+    </div>
+
     <header>
         <div class="logo">Xiaoyan Chu</div>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
@@ -35,14 +41,14 @@
             <nav>
                 <a href="#about" class="lang-zh">关于</a>
                 <a href="#about" class="lang-en lang-hidden">About</a>
-                <a href="#research" class="lang-zh">研究</a>
+                <a href="#research" class="lang-zh">研究版图</a>
                 <a href="#research" class="lang-en lang-hidden">Research</a>
-                <a href="#publications" class="lang-zh">成果</a>
-                <a href="#publications" class="lang-en lang-hidden">Publications</a>
-                <a href="#skills" class="lang-zh">方法</a>
-                <a href="#skills" class="lang-en lang-hidden">Methods</a>
                 <a href="#network" class="lang-zh">合作网络</a>
                 <a href="#network" class="lang-en lang-hidden">Network</a>
+                <a href="#news" class="lang-zh">动态</a>
+                <a href="#news" class="lang-en lang-hidden">News</a>
+                <a href="#publications" class="lang-zh">成果</a>
+                <a href="#publications" class="lang-en lang-hidden">Publications</a>
                 <a href="#references" class="lang-zh">推荐人</a>
                 <a href="#references" class="lang-en lang-hidden">References</a>
             </nav>
@@ -117,6 +123,43 @@
                 <div class="stat-number">Top 5%</div>
                 <div class="stat-label lang-zh">CNKI高被引学者</div>
                 <div class="stat-label lang-en lang-hidden">CNKI Highly Cited</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [EDIT-NEWS] 最新动态 -->
+    <!-- 添加新动态：复制一个 news-item 放在最上面 -->
+    <section class="news-section" id="news">
+        <h2 class="section-title">
+            <span class="lang-zh">最新动态</span>
+            <span class="lang-en lang-hidden">Latest News</span>
+        </h2>
+        <div class="news-list">
+            <div class="news-item">
+                <div class="news-date">2026.03</div>
+                <div class="news-content lang-zh">🎉 获得浙江大学研究生毕业生奖学金（全院1名）</div>
+                <div class="news-content lang-en lang-hidden">🎉 Awarded the ZJU Graduate Scholarship upon Graduation</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2026.01</div>
+                <div class="news-content lang-zh">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
+                <div class="news-content lang-en lang-hidden">🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI for two consecutive years</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2025.07</div>
+                <div class="news-content lang-zh">🎉 获得2025年浙江大学争创优秀博士学位论文项目资助（全院1名）</div>
+                <div class="news-content lang-en lang-hidden">🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2025.01</div>
+                <div class="news-content lang-zh">🎉 入选浙江大学博士生"求是新星计划"培养项目</div>
+                <div class="news-content lang-en lang-hidden">🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2024.09</div>
+                <div class="news-content lang-zh">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
+                <div class="news-content lang-en lang-hidden">🎓 Awarded the Dean's Award for Achievement, University of Manchester</div>
             </div>
         </div>
     </section>
@@ -310,6 +353,7 @@
 
         </div>
     </section>
+
 
     <!-- [EDIT-PUBLICATIONS] 代表性论文（Selected Publications） -->
     <!-- 添加新论文：复制一个 content-item 放在最上面 -->
@@ -529,43 +573,6 @@
 </div>
 
 
-    <!-- [EDIT-NEWS] 最新动态 -->
-    <!-- 添加新动态：复制一个 news-item 放在最上面 -->
-    <section class="news-section" id="news">
-        <h2 class="section-title">
-            <span class="lang-zh">最新动态</span>
-            <span class="lang-en lang-hidden">Latest News</span>
-        </h2>
-        <div class="news-list">
-            <div class="news-item">
-                <div class="news-date">2026.03</div>
-                <div class="news-content lang-zh">🎉 获得浙江大学研究生毕业生奖学金（全院1名）</div>
-                <div class="news-content lang-en lang-hidden">🎉 Awarded the ZJU Graduate Scholarship upon Graduation</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2026.01</div>
-                <div class="news-content lang-zh">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
-                <div class="news-content lang-en lang-hidden">🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI for two consecutive years</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2025.07</div>
-                <div class="news-content lang-zh">🎉 获得2025年浙江大学争创优秀博士学位论文项目资助（全院1名）</div>
-                <div class="news-content lang-en lang-hidden">🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2025.01</div>
-                <div class="news-content lang-zh">🎉 入选浙江大学博士生"求是新星计划"培养项目</div>
-                <div class="news-content lang-en lang-hidden">🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University</div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-date">2024.09</div>
-                <div class="news-content lang-zh">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
-                <div class="news-content lang-en lang-hidden">🎓 Awarded the Dean's Award for Achievement, University of Manchester</div>
-            </div>
-        </div>
-    </section>
-
     <!-- [EDIT-HONORS] 荣誉奖励 -->
     <!-- 添加新荣誉：复制一个 content-item，放在对应级别下方 -->
     <div class="expandable-section">
@@ -671,6 +678,7 @@
         </div>
     </section>
 
+
     <!-- [EDIT-REFERENCES] 推荐人 -->
     <section class="references-section" id="references">
         <h2 class="section-title">
@@ -738,6 +746,20 @@
         <p style="margin-top:0.5rem;font-size:0.85rem;">College of Education, Zhejiang University | Hangzhou, China</p>
     </footer>
 
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/map.js"></script>
 </body>
