@@ -6,897 +6,38 @@
     <title>楚肖燕 Xiaoyan Chu - GenAI in Education Researcher</title>
     <meta name="description" content="楚肖燕的学术主页，浙江大学教育技术学博士，聚焦人工智能教育应用、人机协同学习、沉浸式学习环境研究">
     <link rel="icon" type="image/png" href="images/android-chrome-512x512.jpg">
+    
+    <!-- 字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet 地图库 -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        :root {
-            --primary: #1a365d;
-            --primary-light: #2d4a7c;
-            --accent: #c53030;
-            --accent-light: #e53e3e;
-            --bg: #fafafa;
-            --bg-secondary: #ffffff;
-            --text: #1a202c;
-            --text-dim: #4a5568;
-            --text-light: #718096;
-            --border: #e2e8f0;
-            --shadow: rgba(0, 0, 0, 0.08);
-            --glow: rgba(197, 48, 48, 0.15);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Source Sans 3', 'Noto Serif SC', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        /* Animated Background */
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: 
-                radial-gradient(ellipse at 20% 30%, rgba(197, 48, 48, 0.05), transparent 50%),
-                radial-gradient(ellipse at 80% 70%, rgba(45, 74, 124, 0.05), transparent 50%);
-        }
-
-        .bg-animation::before {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(197, 48, 48, 0.08), transparent 70%);
-            top: -250px;
-            right: -250px;
-            animation: float 25s ease-in-out infinite;
-        }
-
-        .bg-animation::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(45, 74, 124, 0.06), transparent 70%);
-            bottom: -200px;
-            left: -200px;
-            animation: float 20s ease-in-out infinite reverse;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(80px, -80px) rotate(120deg); }
-            66% { transform: translate(-60px, 60px) rotate(240deg); }
-        }
-
-        /* Header */
-        header {
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px var(--shadow);
-        }
-
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary);
-            font-family: 'Playfair Display', serif;
-        }
-
-        .header-nav {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        /* 汉堡菜单按钮 */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 0.5rem;
-            background: none;
-            border: none;
-            z-index: 1001;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--primary);
-            transition: all 0.3s;
-            border-radius: 3px;
-        }
-
-        .menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        nav {
-            display: flex;
-            gap: 0;
-        }
-
-        nav a {
-            padding: 0.5rem 1.2rem;
-            color: var(--text-dim);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav a:hover {
-            color: var(--accent);
-            border-bottom-color: var(--accent);
-        }
-
-        .lang-switch {
-            padding: 0.4rem 1rem;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-dim);
-            transition: all 0.3s;
-        }
-
-        .lang-switch:hover {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
-        .cv-download {
-            padding: 0.5rem 1.5rem;
-            background: var(--accent);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-            box-shadow: 0 2px 8px var(--glow);
-        }
-
-        .cv-download:hover {
-            background: var(--accent-light);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px var(--glow);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 75vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            padding: 4rem 10%;
-            position: relative;
-        }
-
-        .hero-content {
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: fadeInUp 1s ease-out 0.2s backwards;
-        }
-
-        .hero-image img {
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 6px solid white;
-            box-shadow: 0 20px 60px var(--shadow), 0 0 0 1px var(--border);
-            transition: transform 0.3s;
-        }
-
-        .hero-image img:hover {
-            transform: scale(1.05);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            color: var(--primary);
-            font-family: 'Playfair Display', 'Noto Serif SC', serif;
-        }
-
-        .hero .subtitle {
-            font-size: 1.4rem;
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-            font-weight: 400;
-        }
-
-        .hero .tagline {
-            font-size: 1.2rem;
-            color: var(--accent);
-            font-style: italic;
-            margin-bottom: 2rem;
-            font-weight: 400;
-        }
-
-        .motto {
-            font-size: 1rem;
-            color: var(--text-light);
-            border-left: 3px solid var(--accent);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            line-height: 1.8;
-        }
-
-        .hero-bio {
-            color: var(--text-dim);
-            margin: 2rem 0;
-            line-height: 1.8;
-        }
-
-        .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .social-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-size: 0.9rem;
-            padding: 0.6rem 1.2rem;
-            border: 1px solid var(--border);
-            background: white;
-            border-radius: 25px;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-
-        .social-links a:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px var(--shadow);
-        }
-
-        /* Stats Dashboard */
-        .stats-section {
-            padding: 4rem 10%;
-            background: white;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .stat-card {
-            background: var(--bg);
-            padding: 2.5rem 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px var(--shadow);
-            border-color: var(--accent);
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent);
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
-        }
-
-        /* Section Title */
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: var(--primary);
-            font-family: 'Playfair Display', 'Noto Serif SC', serif;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 3px;
-            background: var(--accent);
-            margin: 1rem auto 0;
-        }
-
-        /* Research Vision */
-        .vision-section {
-            padding: 6rem 10%;
-        }
-
-        .vision-timeline {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .timeline-content {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            transition: all 0.3s;
-            cursor: default;
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px var(--shadow);
-            border-color: var(--accent);
-        }
-
-        .timeline-content h3 {
-            font-size: 1.6rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .timeline-content p {
-            color: var(--text-dim);
-            line-height: 1.8;
-        }
-
-        .timeline-tag {
-            display: inline-block;
-            background: rgba(197, 48, 48, 0.1);
-            color: var(--accent);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-top: 1rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 500;
-        }
-
-        /* Featured Projects */
-        .projects-section {
-            padding: 6rem 10%;
-            background: white;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .project-card {
-            background: var(--bg);
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            transition: all 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 32px var(--shadow);
-            border-color: var(--accent);
-        }
-
-        .project-header {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            padding: 2.5rem;
-            height: 140px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .project-icon {
-            font-size: 3.5rem;
-        }
-
-        .project-body {
-            padding: 2rem;
-        }
-
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--primary);
-            font-family: 'Playfair Display', serif;
-        }
-
-        .project-desc {
-            color: var(--text-dim);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .project-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.85rem;
-            color: var(--text-light);
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .project-journal {
-            font-weight: 600;
-            color: var(--accent);
-        }
-
-        /* Collaboration Network */
-        .network-section {
-            padding: 6rem 10%;
-        }
-
-        #map {
-            height: 500px;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 24px var(--shadow);
-            margin-top: 2rem;
-        }
-
-        .network-legend {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .legend-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .legend-dot.primary { background: var(--accent); }
-        .legend-dot.partner { background: var(--primary); }
-
-        /* News Section */
-        .news-section {
-            padding: 4rem 10%;
-            background: white;
-        }
-
-        .news-list {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .news-item {
-            background: var(--bg);
-            padding: 1.5rem 2rem;
-            margin-bottom: 1rem;
-            border-radius: 12px;
-            border-left: 4px solid var(--accent);
-            transition: all 0.3s;
-        }
-
-        .news-item:hover {
-            transform: translateX(8px);
-            box-shadow: 0 4px 12px var(--shadow);
-        }
-
-        .news-date {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--accent);
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .news-content {
-            color: var(--text-dim);
-        }
-
-        /* Expandable Section */
-        .expandable-section {
-            padding: 4rem 10%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .expandable-header {
-            background: white;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            transition: all 0.3s;
-            border: 1px solid var(--border);
-        }
-
-        .expandable-header:hover {
-            background: var(--bg);
-            border-color: var(--accent);
-        }
-
-        .expandable-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--primary);
-            font-family: 'Playfair Display', serif;
-        }
-
-        .expandable-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-            color: var(--text-dim);
-        }
-
-        .expandable-icon.open {
-            transform: rotate(180deg);
-        }
-
-        .expandable-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-        }
-
-        .expandable-content.open {
-            max-height: 5000px;
-        }
-
-        .content-grid {
-            display: grid;
-            gap: 1rem;
-            padding: 1rem 0;
-        }
-
-        .content-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 3px solid var(--accent);
-            border: 1px solid var(--border);
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .content-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 12px var(--shadow);
-            border-left-color: var(--accent);
-        }
-
-        .content-item a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 10%;
-            text-align: center;
-            color: var(--text-dim);
-            background: white;
-            border-top: 1px solid var(--border);
-            margin-top: 4rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            body {
-                font-size: 16px;
-            }
-
-            header {
-                padding: 1rem 4%;
-            }
-
-            .logo {
-                font-size: 1.2rem;
-            }
-
-            /* 显示汉堡菜单按钮 */
-            .menu-toggle {
-                display: flex;
-            }
-
-            /* 隐藏导航，点击后显示 */
-            .header-nav {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 300px;
-                height: 100vh;
-                background: white;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: stretch;
-                gap: 0;
-                padding: 5rem 0 2rem 0;
-                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-                transition: right 0.3s ease;
-                overflow-y: auto;
-            }
-
-            .header-nav.active {
-                right: 0;
-            }
-
-            nav {
-                display: flex;
-                flex-direction: column;
-                gap: 0;
-                width: 100%;
-                padding: 0;
-            }
-
-            nav a {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                text-align: left;
-                border-bottom: 1px solid var(--border);
-                border-left: 3px solid transparent;
-            }
-
-            nav a:hover {
-                background: var(--bg);
-                border-left-color: var(--accent);
-            }
-
-            .lang-switch {
-                width: auto;
-                margin: 1rem 2rem;
-                text-align: center;
-            }
-
-            .cv-download {
-                margin: 0 2rem 1rem 2rem;
-                text-align: center;
-                display: block;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-                text-align: center;
-                padding: 2rem 5%;
-                min-height: auto;
-            }
-
-            .hero-image {
-                order: -1;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-image img {
-                width: 200px;
-                height: 200px;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-                line-height: 1.3;
-            }
-
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .hero .tagline {
-                font-size: 1rem;
-            }
-
-            .motto {
-                font-size: 0.95rem;
-                padding-left: 1rem;
-            }
-
-            .hero-bio {
-                font-size: 0.95rem;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-
-            .social-links a {
-                font-size: 0.85rem;
-                padding: 0.5rem 1rem;
-            }
-
-            .stats-section {
-                padding: 3rem 5%;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-                padding: 0 1rem;
-            }
-
-            .vision-section, .projects-section, .news-section {
-                padding: 3rem 5%;
-            }
-
-            .timeline-item {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                margin-bottom: 2rem;
-            }
-
-            .timeline-content {
-                padding: 1.5rem;
-            }
-
-            .timeline-content h3 {
-                font-size: 1.3rem;
-            }
-
-            .timeline-content p {
-                font-size: 0.95rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .project-title {
-                font-size: 1.2rem;
-            }
-
-            .project-desc {
-                font-size: 0.95rem;
-            }
-
-            #map {
-                height: 350px;
-            }
-
-            .expandable-section {
-                padding: 2rem 5%;
-            }
-
-            .expandable-title {
-                font-size: 1.2rem;
-            }
-
-            .content-item {
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            nav {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Language Toggle */
-        .lang-hidden {
-            display: none;
-        }
-    </style>
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ============================================
+         📝 内容快速修改导航（Ctrl+F 搜索）
+         ============================================
+         个人信息   → [EDIT-PROFILE]
+         数据统计   → [EDIT-STATS]
+         研究方向   → [EDIT-RESEARCH]
+         代表项目   → [EDIT-PROJECTS]
+         合作机构   → 见 js/map.js
+         最新动态   → [EDIT-NEWS]
+         论文列表   → [EDIT-PUBLICATIONS]
+         荣誉奖励   → [EDIT-HONORS]
+         学术服务   → [EDIT-SERVICE]
+         ============================================ -->
+
     <div class="bg-animation"></div>
 
+    <!-- 导航栏 -->
     <header>
         <div class="logo">Xiaoyan Chu</div>
         
-        <!-- 汉堡菜单按钮 -->
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
             <span></span>
             <span></span>
@@ -934,7 +75,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- [EDIT-PROFILE] 个人介绍区 -->
     <section class="hero" id="about">
         <div class="hero-content">
             <h1>
@@ -978,7 +119,7 @@
         </div>
     </section>
 
-    <!-- Stats Dashboard -->
+    <!-- [EDIT-STATS] 数据统计区 -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-card">
@@ -1003,7 +144,7 @@
         </div>
     </section>
 
-    <!-- Research Vision -->
+    <!-- [EDIT-RESEARCH] 研究方向区 -->
     <section class="vision-section" id="vision">
         <h2 class="section-title">
             <span class="lang-zh">研究主线：生成式AI赋能教育创新</span>
@@ -1055,7 +196,7 @@
         </div>
     </section>
 
-    <!-- Featured Projects -->
+    <!-- [EDIT-PROJECTS] 代表项目区 -->
     <section class="projects-section" id="projects">
         <h2 class="section-title">
             <span class="lang-zh">代表性研究项目</span>
@@ -1120,7 +261,7 @@
                         基于PISA 2022大规模数据，运用fsQCA方法识别促进学生创造性思维的ICT使用配置路径。研究发现，多种组合策略均可达成创造力培养目标。
                     </p>
                     <p class="project-desc lang-en lang-hidden">
-                        Based on PISA 2022 large-scale data, used fsQCA method to identify ICT usage configuration pathways that promote students' creative thinking. Found that multiple combination strategies can achieve creativity development goals.
+                        Based on PISA 2022 large-scale数据, used fsQCA method to identify ICT usage configuration pathways that promote students' creative thinking. Found that multiple combination strategies can achieve creativity development goals.
                     </p>
                     <div class="project-meta">
                         <span class="project-journal">International Journal of Educational Research (2025)</span>
@@ -1153,7 +294,7 @@
         </div>
     </section>
 
-    <!-- Collaboration Network -->
+    <!-- 合作网络区（数据在 js/map.js） -->
     <section class="network-section" id="network">
         <h2 class="section-title">
             <span class="lang-zh">国际合作网络</span>
@@ -1225,7 +366,7 @@
         </div>
     </section>
 
-    <!-- Latest News -->
+    <!-- [EDIT-NEWS] 最新动态区 -->
     <section class="news-section" id="news">
         <h2 class="section-title">
             <span class="lang-zh">最新动态</span>
@@ -1233,6 +374,7 @@
         </h2>
         
         <div class="news-list">
+            <!-- 👇 添加新动态：复制下面整个 <div class="news-item"> 块 -->
             <div class="news-item">
                 <div class="news-date">2025.07</div>
                 <div class="news-content lang-zh">🎉 获得2025年浙江大学优秀博士学位论文培育项目资助</div>
@@ -1261,7 +403,7 @@
         </div>
     </section>
 
-    <!-- Expandable Sections -->
+    <!-- [EDIT-PUBLICATIONS] 论文列表区 -->
     <div class="expandable-section" id="publications">
         <div class="expandable-header" onclick="toggleSection('publications-content')">
             <span class="expandable-title">
@@ -1272,6 +414,7 @@
         </div>
         <div class="expandable-content" id="publications-content">
             <div class="content-grid">
+                <!-- 👇 添加新论文：复制下面整个 <div class="content-item"> 块 -->
                 <div class="content-item">
                     <a href="https://doi.org/10.1080/10494820.2025.2601294" target="_blank">
                         <strong>Chu, X., Li, Y. (2025).</strong> Interacting with a humanized dual-LLM agent: an exploratory study of individual and collaborative modes in language proficiency and critical thinking awareness. <em>Interactive Learning Environments</em>. SSCI Q1
@@ -1306,6 +449,7 @@
         </div>
     </div>
 
+    <!-- [EDIT-HONORS] 荣誉奖励区 -->
     <div class="expandable-section">
         <div class="expandable-header" onclick="toggleSection('honors-content')">
             <span class="expandable-title">
@@ -1316,6 +460,7 @@
         </div>
         <div class="expandable-content" id="honors-content">
             <div class="content-grid">
+                <!-- 👇 添加新荣誉：复制下面整个 <div class="content-item"> 块 -->
                 <div class="content-item">
                     <strong>2025.01</strong> - <span class="lang-zh">浙江大学博士生"求是新星计划"培养项目</span><span class="lang-en lang-hidden">Qiushi Rising Star Training Program for PhD Students, Zhejiang University</span>
                 </div>
@@ -1341,6 +486,7 @@
         </div>
     </div>
 
+    <!-- [EDIT-SERVICE] 学术服务区 -->
     <div class="expandable-section">
         <div class="expandable-header" onclick="toggleSection('service-content')">
             <span class="expandable-title">
@@ -1364,7 +510,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- 页脚 -->
     <footer>
         <p>&copy; 2025 Xiaoyan Chu | PhD Candidate at Zhejiang University</p>
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">
@@ -1372,102 +518,8 @@
         </p>
     </footer>
 
-    <script>
-        // 汉堡菜单切换
-        function toggleMenu() {
-            const nav = document.getElementById('headerNav');
-            const toggle = document.querySelector('.menu-toggle');
-            nav.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }
-
-        // 点击导航链接后关闭菜单
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                const nav = document.getElementById('headerNav');
-                const toggle = document.querySelector('.menu-toggle');
-                nav.classList.remove('active');
-                toggle.classList.remove('active');
-            });
-        });
-
-        // Language Toggle
-        let currentLang = 'zh';
-        
-        function toggleLanguage() {
-            currentLang = currentLang === 'zh' ? 'en' : 'zh';
-            
-            if (currentLang === 'zh') {
-                document.querySelectorAll('.lang-zh').forEach(el => el.classList.remove('lang-hidden'));
-                document.querySelectorAll('.lang-en').forEach(el => el.classList.add('lang-hidden'));
-            } else {
-                document.querySelectorAll('.lang-zh').forEach(el => el.classList.add('lang-hidden'));
-                document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('lang-hidden'));
-            }
-        }
-
-        // Expandable sections
-        function toggleSection(contentId) {
-            const content = document.getElementById(contentId);
-            const icon = document.getElementById(contentId.replace('-content', '-icon'));
-            
-            content.classList.toggle('open');
-            icon.classList.toggle('open');
-        }
-
-        // Initialize Map - 使用高德地图（国内可访问）
-        const map = L.map('map').setView([35.0, 105.0], 2);
-        
-        // 使用高德地图切片服务（国内可访问）
-        L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
-            attribution: '© 高德地图',
-            subdomains: ['1', '2', '3', '4'],
-            maxZoom: 18
-        }).addTo(map);
-
-        // Collaboration locations
-        const collaborations = [
-            { name: 'Zhejiang University', nameZh: '浙江大学', lat: 30.2636, lng: 120.1219, type: 'primary' },
-            { name: 'University of Manchester', nameZh: '曼彻斯特大学', lat: 53.4668, lng: -2.2339, type: 'partner' },
-            { name: 'University of Cambridge', nameZh: '剑桥大学', lat: 52.2053, lng: 0.1218, type: 'partner' },
-            { name: 'University College London (UCL)', nameZh: '伦敦大学学院', lat: 51.5246, lng: -0.1340, type: 'partner' },
-            { name: 'Peking University', nameZh: '北京大学', lat: 39.9990, lng: 116.3161, type: 'partner' },
-            { name: 'Beijing Normal University', nameZh: '北京师范大学', lat: 39.9602, lng: 116.3686, type: 'partner' },
-            { name: 'Nanjing Normal University', nameZh: '南京师范大学', lat: 32.0603, lng: 118.7969, type: 'partner' },
-            { name: 'The Chinese University of Hong Kong', nameZh: '香港中文大学', lat: 22.4194, lng: 114.2069, type: 'partner' },
-            { name: 'The Education University of Hong Kong', nameZh: '香港教育大学', lat: 22.3827, lng: 114.2042, type: 'partner' },
-            { name: 'iFLYTEK', nameZh: '科大讯飞', lat: 31.8639, lng: 117.2808, type: 'partner' },
-            { name: 'Florida Gulf Coast University', nameZh: '佛罗里达湾岸大学', lat: 26.4632, lng: -81.7706, type: 'partner' },
-            { name: 'National Taiwan Normal University', nameZh: '台湾师范大学', lat: 25.0262, lng: 121.5273, type: 'partner' },
-            { name: 'UNESCO-ICHEI', nameZh: '联合国教科文组织高等教育创新中心', lat: 39.9042, lng: 116.4074, type: 'partner' }
-        ];
-
-        // Add markers
-        collaborations.forEach(loc => {
-            const color = loc.type === 'primary' ? '#c53030' : '#1a365d';
-            const size = loc.type === 'primary' ? 20 : 14;
-            const icon = L.divIcon({
-                className: 'custom-marker',
-                html: `<div style="background: ${color}; width: ${size}px; height: ${size}px; border-radius: 50%; border: 3px solid white; box-shadow: 0 3px 10px rgba(0,0,0,0.4);"></div>`,
-                iconSize: [size, size]
-            });
-            
-            const displayName = currentLang === 'zh' ? loc.nameZh : loc.name;
-            L.marker([loc.lat, loc.lng], { icon: icon })
-                .addTo(map)
-                .bindPopup(`<strong>${displayName}</strong>`);
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+    <!-- JavaScript文件 -->
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>

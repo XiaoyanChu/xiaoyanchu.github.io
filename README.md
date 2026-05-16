@@ -1,72 +1,173 @@
+# 学术主页使用说明
 
-<h1 align="center">
-AcadHomepage
-</h1>
+## 📁 文件结构
 
-<div align="center">
+```
+xiaoyanchu.github.io/
+├── index.html          ← 主页面（包含所有内容）
+├── css/
+│   └── style.css      ← 样式文件（颜色、布局、字体）
+├── js/
+│   ├── main.js        ← 交互逻辑（菜单、语言切换）
+│   └── map.js         ← 地图配置（合作机构数据）
+├── images/
+│   └── android-chrome-512x512.jpg  ← 你的照片
+├── files/
+│   └── CV_XiaoyanChu.pdf           ← 简历文件
+└── README.md          ← 本说明文件
+```
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
+## 🎯 快速修改指南
+
+### 1️⃣ 修改个人信息
+📍 **文件**: `index.html`  
+🔍 **搜索**: `[EDIT-PROFILE]`
+
+修改内容：
+- 姓名、职位
+- 个人简介
+- 社交链接（邮箱、Google Scholar等）
+
+### 2️⃣ 更新数据统计
+📍 **文件**: `index.html`  
+🔍 **搜索**: `[EDIT-STATS]`
+
+修改数字：
+- 引用次数
+- H-Index
+- 论文数量
+
+### 3️⃣ 添加新论文
+📍 **文件**: `index.html`  
+🔍 **搜索**: `[EDIT-PUBLICATIONS]`
+
+复制这个模板：
+```html
+<div class="content-item">
+    <a href="你的论文链接" target="_blank">
+        <strong>Chu, X. (2025).</strong> 论文标题. <em>期刊名</em>. SSCI Q1
+    </a>
 </div>
+```
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+### 4️⃣ 添加新荣誉
+📍 **文件**: `index.html`  
+🔍 **搜索**: `[EDIT-HONORS]`
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+复制这个模板：
+```html
+<div class="content-item">
+    <strong>2025.XX</strong> - <span class="lang-zh">中文名称</span><span class="lang-en lang-hidden">English Name</span>
+</div>
+```
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+### 5️⃣ 添加最新动态
+📍 **文件**: `index.html`  
+🔍 **搜索**: `[EDIT-NEWS]`
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+复制这个模板：
+```html
+<div class="news-item">
+    <div class="news-date">2025.XX</div>
+    <div class="news-content lang-zh">🎉 中文内容</div>
+    <div class="news-content lang-en lang-hidden">🎉 English Content</div>
+</div>
+```
 
-## Quick Start
+### 6️⃣ 添加合作机构
+📍 **文件**: `js/map.js`  
+🔍 **搜索**: `[EDIT-INSTITUTIONS]`
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+复制这个模板：
+```javascript
+{ 
+    name: 'Institution Name', 
+    nameZh: '机构中文名', 
+    lat: 纬度数字,    // 例如: 30.2636
+    lng: 经度数字,    // 例如: 120.1219
+    type: 'partner'   // 保持这个值
+},
+```
 
-## Debug Locally
+**获取坐标方法**：
+1. 打开 Google Maps
+2. 搜索机构名称
+3. 右键点击位置
+4. 选择"复制坐标"
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+### 7️⃣ 修改主题颜色
+📍 **文件**: `css/style.css`  
+🔍 **搜索**: `[COLORS]`
 
-# Acknowledges
+修改颜色变量：
+```css
+--primary: #1a365d;    /* 主色：深蓝 */
+--accent: #c53030;     /* 强调色：红色 */
+```
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+## 🚀 部署到GitHub Pages
+
+### 方法一：直接上传（推荐新手）
+1. 登录 GitHub
+2. 进入你的仓库 `xiaoyanchu.github.io`
+3. 点击 **Add file** → **Upload files**
+4. 拖拽所有文件到页面（保持文件夹结构）
+5. 点击 **Commit changes**
+6. 等待1-2分钟，访问 `https://xiaoyanchu.github.io`
+
+### 方法二：Git命令行
+```bash
+git add .
+git commit -m "更新学术主页"
+git push
+```
+
+## ⚡ 常见问题
+
+### Q1: 修改后网站没有更新？
+**A**: 清除浏览器缓存，或按 `Ctrl+F5` 强制刷新
+
+### Q2: 地图加载不出来？
+**A**: 检查网络，确保能访问高德地图服务
+
+### Q3: 手机端看起来怎么样？
+**A**: 已经完全优化了移动端，包括汉堡菜单
+
+### Q4: 如何改照片？
+**A**: 替换 `images/android-chrome-512x512.jpg`，保持文件名不变
+
+### Q5: 如何更新简历？
+**A**: 替换 `files/CV_XiaoyanChu.pdf`，保持文件名不变
+
+## 📝 注意事项
+
+1. **双语内容**：每次添加内容都要写中英文两个版本
+2. **文件路径**：不要改变文件夹结构，否则可能链接失效
+3. **特殊字符**：中文标点在HTML里要用英文标点
+4. **备份**：修改前先下载一份备份
+
+## 🎨 自定义建议
+
+如果你想要：
+- **改变字体**：修改 `css/style.css` 中的 `[FONTS]` 部分
+- **调整间距**：修改 `padding` 和 `margin` 值
+- **换背景图**：在 `.bg-animation` 部分添加 background-image
+
+## 💡 维护建议
+
+**每次更新流程**：
+1. 在本地用记事本/VS Code打开文件
+2. 找到对应标记（如 `[EDIT-NEWS]`）
+3. 复制模板，修改内容
+4. 保存后上传到GitHub
+5. 等待1-2分钟查看效果
+
+**更新频率**：
+- 发表新论文 → 更新 Publications
+- 获得荣誉 → 更新 Honors
+- 新合作 → 更新 js/map.js
+- 重要动态 → 更新 News（保留最新5-6条）
+
+---
+
+有问题随时联系我！🚀
