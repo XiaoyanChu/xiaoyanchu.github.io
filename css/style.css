@@ -1054,3 +1054,50 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.skill-card {
+    background: white;
+    padding: 1.4rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    transition: all 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px var(--shadow);
+    border-color: var(--accent);
+}
+
+.skill-title {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.9rem;
+    font-size: 1.02rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tags span {
+    display: inline-block;
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(26, 54, 93, 0.08);
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
