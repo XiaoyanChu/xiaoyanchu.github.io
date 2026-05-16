@@ -242,13 +242,15 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
     margin: 1.2rem 0;
+    align-items: stretch;
 }
 
 .research-img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     border: 1px solid var(--border);
-    object-fit: contain;
+    object-fit: cover;
     background: #f8f8f8;
     display: block;
     transition: transform 0.25s, box-shadow 0.25s;
