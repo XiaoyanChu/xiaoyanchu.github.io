@@ -226,15 +226,17 @@
     line-height: 1.4;
 }
 
-/* 修复 skill-tags 内的双语显示问题
-   skill-tags span 的 display:inline-block 会覆盖 lang-hidden 的 display:none
-   用更高优先级强制隐藏 */
+/* ============================================
+   修复：skill-tags 内 lang-hidden 被 display:inline-block 覆盖
+   ============================================ */
 .skill-tags span.lang-hidden,
 .skill-title span.lang-hidden {
     display: none !important;
 }
 
-/* 研究版图图片样式 */
+/* ============================================
+   研究版图：图片
+   ============================================ */
 .research-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -246,8 +248,8 @@
     width: 100%;
     border-radius: 10px;
     border: 1px solid var(--border);
-    object-fit: contain;      /* 完整显示，不裁切 */
-    background: #f8f8f8;      /* 图片背景色，防止透明图片显示怪 */
+    object-fit: contain;
+    background: #f8f8f8;
     display: block;
     transition: transform 0.25s, box-shadow 0.25s;
     cursor: zoom-in;
@@ -258,12 +260,14 @@
     box-shadow: 0 8px 24px var(--shadow);
 }
 
-/* 灯箱遮罩 */
+/* ============================================
+   灯箱
+   ============================================ */
 .lightbox-overlay {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(0,0,0,0.82);
     z-index: 9999;
     align-items: center;
     justify-content: center;
@@ -271,11 +275,9 @@
     padding: 2rem;
     animation: lbFadeIn 0.2s ease;
 }
-
 .lightbox-overlay.active {
     display: flex;
 }
-
 .lightbox-overlay img {
     max-width: 90vw;
     max-height: 88vh;
@@ -285,14 +287,12 @@
     cursor: default;
     animation: lbZoomIn 0.2s ease;
 }
-
 .lightbox-close {
     position: fixed;
     top: 1.2rem;
     right: 1.5rem;
     color: white;
-    font-size: 2rem;
-    line-height: 1;
+    font-size: 1.5rem;
     cursor: pointer;
     background: rgba(0,0,0,0.4);
     border: none;
@@ -305,22 +305,19 @@
     transition: background 0.2s;
     z-index: 10000;
 }
-
-.lightbox-close:hover {
-    background: rgba(255,255,255,0.2);
-}
+.lightbox-close:hover { background: rgba(255,255,255,0.2); }
 
 @keyframes lbFadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { opacity: 0; } to { opacity: 1; }
 }
-
 @keyframes lbZoomIn {
     from { transform: scale(0.88); opacity: 0; }
     to   { transform: scale(1);    opacity: 1; }
 }
 
-/* 研究版图论文链接 */
+/* ============================================
+   研究版图：论文链接
+   ============================================ */
 .research-papers {
     margin-top: 1.2rem;
     display: flex;
@@ -342,21 +339,14 @@
     background: var(--bg);
     transition: all 0.2s;
 }
-
 .research-paper-link:hover {
     border-color: var(--accent);
     color: var(--accent);
     background: white;
     transform: translateX(4px);
 }
-
-.research-paper-icon {
-    flex-shrink: 0;
-    margin-top: 0.1rem;
-}
+.research-paper-icon { flex-shrink: 0; margin-top: 0.1rem; }
 
 @media (max-width: 968px) {
-    .research-images {
-        grid-template-columns: 1fr;
-    }
+    .research-images { grid-template-columns: 1fr; }
 }
