@@ -13,6 +13,7 @@
             --glow: rgba(197,48,48,0.15);
         }
         * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-padding-top: 80px; }
         body { font-family:'Source Sans 3','Noto Serif SC',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; overflow-x:hidden; }
 
         /* 背景动画 */
