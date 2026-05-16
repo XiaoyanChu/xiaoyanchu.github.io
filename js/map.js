@@ -13,6 +13,7 @@ const collaborations = [
     { name: 'University of Cambridge',               nameZh: '剑桥大学',                        lat: 52.2053, lng: 0.1218,   type: 'partner' },
     { name: 'University College London (UCL)',       nameZh: '伦敦大学学院',                    lat: 51.5246, lng: -0.1340,  type: 'partner' },
     { name: 'Peking University',                     nameZh: '北京大学',                        lat: 39.9990, lng: 116.3161, type: 'partner' },
+    { name: 'Shanghai Jiao Tong University',         nameZh: '上海交通大学',                    lat: 31.0245, lng: 121.4365, type: 'partner' },
     { name: 'Beijing Normal University',             nameZh: '北京师范大学',                    lat: 39.9602, lng: 116.3686, type: 'partner' },
     { name: 'Nanjing Normal University',             nameZh: '南京师范大学',                    lat: 32.0603, lng: 118.7969, type: 'partner' },
     { name: 'The Chinese University of Hong Kong',   nameZh: '香港中文大学',                    lat: 22.4194, lng: 114.2069, type: 'partner' },
