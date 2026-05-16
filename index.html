@@ -26,12 +26,6 @@
 
     <div class="bg-animation"></div>
 
-    <!-- 灯箱 -->
-    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
-        <button class="lightbox-close" onclick="closeLightbox()" aria-label="关闭">✕</button>
-        <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
-    </div>
-
     <header>
         <div class="logo">Xiaoyan Chu</div>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
@@ -41,14 +35,14 @@
             <nav>
                 <a href="#about" class="lang-zh">关于</a>
                 <a href="#about" class="lang-en lang-hidden">About</a>
-                <a href="#research" class="lang-zh">研究版图</a>
+                <a href="#research" class="lang-zh">研究</a>
                 <a href="#research" class="lang-en lang-hidden">Research</a>
-                <a href="#network" class="lang-zh">合作网络</a>
-                <a href="#network" class="lang-en lang-hidden">Network</a>
-                <a href="#news" class="lang-zh">动态</a>
-                <a href="#news" class="lang-en lang-hidden">News</a>
                 <a href="#publications" class="lang-zh">成果</a>
                 <a href="#publications" class="lang-en lang-hidden">Publications</a>
+                <a href="#skills" class="lang-zh">方法</a>
+                <a href="#skills" class="lang-en lang-hidden">Methods</a>
+                <a href="#network" class="lang-zh">合作网络</a>
+                <a href="#network" class="lang-en lang-hidden">Network</a>
                 <a href="#references" class="lang-zh">推荐人</a>
                 <a href="#references" class="lang-en lang-hidden">References</a>
             </nav>
@@ -149,10 +143,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">聚焦职前教师培养，将SQD2框架与AI多智能体系统结合，探究<strong>设计思维</strong>的发展路径；构建师生机三元协同课堂，提升职前教师<strong>AI素养</strong>；研究拟人化智能体对职前教师学习效果与学习动机的影响机制。</p>
                         <p class="research-desc-en lang-en lang-hidden">Focusing on pre-service teacher development, this line integrates the SQD2 framework with multi-agent AI systems to examine <strong>design thinking</strong> trajectories; constructs a teacher-student-AI triadic collaborative classroom to enhance pre-service teachers' <strong>AI literacy</strong>; and investigates how anthropomorphic agents influence pre-service teachers' learning outcomes and motivation.</p>
-                        <div class="research-images">
-                            <img class="research-img" src="images/research/Topic1-1.png" alt="AI Teacher Education 1" onclick="openLightbox(this.src)"style="max-width: 60%; margin: 0 auto;">
-                            <img class="research-img" src="images/research/Topic1-2.png" alt="AI Teacher Education 2" onclick="openLightbox(this.src)">
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-review">⚪ SSCI Q1 · Under Review ×2</span>
                             <span class="tag tag-review">⚪ CSSCI · Under Review ×1</span>
@@ -174,9 +164,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">基于便携式<strong>EEG脑电</strong>技术，探究人机协同学习过程中学习者不同脑区的激活模式与认知投入（engagement），从神经生理层面验证学习是否真正发生，为人机交互设计提供客观依据。</p>
                         <p class="research-desc-en lang-en lang-hidden">Leveraging portable <strong>EEG</strong> technology to examine learners' regional brain activation and cognitive engagement during human-AI collaboration, providing neurophysiological evidence of whether deep learning actually occurs and informing the design of human-AI interaction.</p>
-                        <div class="research-images">
-                            <img class="research-img" src="images/research/Topic2-1.png" alt="EEG Research" onclick="openLightbox(this.src)">
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-accepted">🟡 CSSCI · Accepted</span>
                         </div>
@@ -197,19 +184,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">系统探究GenAI如何促进学习者高阶思维发展。通过双LLM设置认知冲突、多智能体支持协同学习、拟人化智能体的社会存在与信任机制，以及<strong>科学教育</strong>场景下批判性思维与AI伦理素养的作用路径，构建GenAI赋能高阶思维的理论框架；同时基于PISA 2022大规模数据，以fsQCA方法揭示ICT促进<strong>创造性思维</strong>的组态配置路径。</p>
                         <p class="research-desc-en lang-en lang-hidden">Systematically investigating how GenAI fosters higher-order thinking. Studies span cognitive conflict via dual-LLM design, multi-agent collaborative learning, anthropomorphic agents' social presence and trust mechanisms, and pathways from critical thinking to AI ethics literacy in <strong>science education</strong>. Complemented by an fsQCA analysis of PISA 2022 data revealing configurational pathways through which ICT promotes <strong>creative thinking</strong>.</p>
-                        <div class="research-images">
-                            <img class="research-img" src="images/research/Topic3-1.png" alt="Higher-Order Thinking" onclick="openLightbox(this.src)" style="max-width: 90%; margin: 0 auto;">
-                        </div>
-                        <div class="research-papers">
-                            <a class="research-paper-link" href="https://doi.org/10.1080/10494820.2025.2601294" target="_blank">
-                                <span class="research-paper-icon">📄</span>
-                                <span>Chu &amp; Li (2025) — Dual-LLM Agent &amp; Critical Thinking · <em>Interactive Learning Environments</em> · SSCI Q1</span>
-                            </a>
-                            <a class="research-paper-link" href="https://www.sciencedirect.com/science/article/pii/S0883035525000011" target="_blank">
-                                <span class="research-paper-icon">📄</span>
-                                <span>Chu* (2025) — ICT &amp; Creative Thinking, fsQCA · <em>International Journal of Educational Research</em> · SSCI Q1</span>
-                            </a>
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-published">🟢 SSCI Q1 · Published ×2</span>
                             <span class="tag tag-revision">🟠 SSCI Q1 · Under Revision ×2</span>
@@ -233,16 +207,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">探索GenAI融入学习设计的新范式。将GenAI与沉浸式学习技术整合进<strong>翻转课堂</strong>，通过滞后序列分析与认知网络分析考察不同水平学习者的差异化效果；系统挖掘人机交互过程中学习者的<strong>行为序列</strong>与<strong>认知模式</strong>，为未来学习环境设计提供实证依据。</p>
                         <p class="research-desc-en lang-en lang-hidden">Exploring new paradigms for integrating GenAI into learning design. Studies embed GenAI and immersive learning technologies into <strong>flipped classrooms</strong>, using lag sequential and epistemic network analysis to examine differentiated effects across learner levels; and systematically mine <strong>behavioral sequences</strong> and <strong>cognitive patterns</strong> in human-AI interaction to inform future learning environment design.</p>
-                        <div class="research-images">
-                            <img class="research-img" src="images/research/Topic4-1.png" alt="Human-AI Learning 1" onclick="openLightbox(this.src)">
-                            <img class="research-img" src="images/research/Topic4-2.png" alt="Human-AI Learning 2" onclick="openLightbox(this.src)" style="max-width: 70%; margin: 0 auto;">
-                        </div>
-                        <div class="research-papers">
-                            <a class="research-paper-link" href="https://link.springer.com/article/10.1007/s11423-024-10446-0" target="_blank">
-                                <span class="research-paper-icon">📄</span>
-                                <span>Chu et al. (2025) — GenAI + Flipped Classroom · <em>Educational Technology Research &amp; Development</em> · SSCI Q1</span>
-                            </a>
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-published">🟢 SSCI Q1 · Published ×1</span>
                             <span class="tag tag-published">🟢 CSSCI · Published ×N</span>
@@ -264,15 +228,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">从宏观与系统层面审视AI在教育领域的应用图景。基于Python文本分析，对世界一流高校生成式AI应用指南进行系统梳理；对2010–2020年AI教育应用研究进行系统综述，该成果已被认定为<strong>ESI高被引</strong>论文，引用超1200次。</p>
                         <p class="research-desc-en lang-en lang-hidden">Examining the broader landscape of AI in education at a macro and systemic level. Studies include a Python-based text analysis of generative AI use guidelines from world-leading universities, and a systematic review of AI applications in education from 2010–2020 — recognized as an <strong>ESI Highly Cited Paper</strong> with over 1,200 citations.</p>
-                        <div class="research-images">
-                            <img class="research-img" src="images/research/Topic5-1.png" alt="AI in Education Review" onclick="openLightbox(this.src)" style="max-width: 80%; margin: 0 auto;">
-                        </div>
-                        <div class="research-papers">
-                            <a class="research-paper-link" href="https://www.hindawi.com/journals/complexity/2021/8812542/" target="_blank">
-                                <span class="research-paper-icon">📄</span>
-                                <span>Zhai, Chu et al. (2021) — AI in Education Review · <em>Complexity</em> · 🏆 ESI Highly Cited</span>
-                            </a>
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-published">🟢 ESI Highly Cited · Published</span>
                             <span class="tag tag-published">🟢 CSSCI · Published</span>
@@ -295,18 +250,6 @@
                     <div class="research-card-inner">
                         <p class="research-desc-zh lang-zh">基于<strong>Unity 3D</strong>开发沉浸式学习环境，探索数字人交互设计对学习投入与效果的影响；研究沉浸式技术如何重构虚拟教学共同体，推动教育公平。具备完整的从环境开发到实证研究的全链路研究能力。</p>
                         <p class="research-desc-en lang-en lang-hidden">Developing immersive learning environments based on <strong>Unity 3D</strong>, and exploring how digital human interaction design influences learner engagement and outcomes; investigating how immersive technologies reshape virtual learning communities to promote educational equity. Full pipeline capability from environment development to empirical research.</p>
-                        <div class="research-images">
-                           <img class="research-img" src="images/research/Topic6-1.png" 
-                                alt="Immersive Learning Environment" 
-                                onclick="openLightbox(this.src)"
-                                style="max-width: 60%; margin: 0 auto;">
-                        </div>
-                        <div class="research-papers">
-                            <a class="research-paper-link" href="https://ieeexplore.ieee.org/document/10123579" target="_blank">
-                                <span class="research-paper-icon">📄</span>
-                                <span>Zhai, Chu* et al. (2023) — Immersive Virtual Teaching Community · <em>IEEE Transactions on Learning Technologies</em> · SSCI Q1</span>
-                            </a>
-                        </div>
                         <div class="research-tags">
                             <span class="tag tag-published">🟢 SSCI Q1 · Published ×1 (IEEE)</span>
                             <span class="tag tag-published">🟢 CSSCI · Published ×N</span>
@@ -317,80 +260,6 @@
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- 合作网络 -->
-    <section class="network-section" id="network">
-        <h2 class="section-title">
-            <span class="lang-zh">国际合作网络</span>
-            <span class="lang-en lang-hidden">International Collaboration Network</span>
-        </h2>
-        <div id="map"></div>
-        <!-- [EDIT-INSTITUTIONS] 机构列表（地图坐标在页面底部JS） -->
-        <div style="max-width:1000px;margin:2rem auto;padding:2rem;background:white;border-radius:15px;border:1px solid var(--border);">
-            <h3 style="font-size:1.3rem;color:var(--primary);margin-bottom:1.5rem;font-family:'Playfair Display',serif;">
-                <span class="lang-zh">合作机构</span><span class="lang-en lang-hidden">Partner Institutions</span>
-            </h3>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;">
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;border-left:3px solid var(--accent);">
-                    <strong style="color:var(--accent);">🏛️ <span class="lang-zh">浙江大学</span><span class="lang-en lang-hidden">Zhejiang University</span></strong>
-                    <div style="font-size:0.85rem;color:var(--text-light);margin-top:0.3rem;"><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
-                </div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">剑桥大学</span><span class="lang-en lang-hidden">University of Cambridge</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">曼彻斯特大学</span><span class="lang-en lang-hidden">University of Manchester</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">伦敦大学学院</span><span class="lang-en lang-hidden">University College London</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">佛罗里达湾岸大学</span><span class="lang-en lang-hidden">Florida Gulf Coast University</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">香港教育大学</span><span class="lang-en lang-hidden">The Education University of Hong Kong</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">香港中文大学</span><span class="lang-en lang-hidden">The Chinese University of Hong Kong</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">北京大学</span><span class="lang-en lang-hidden">Peking University</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">上海交通大学</span><span class="lang-en lang-hidden">Shanghai Jiao Tong University</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">北京师范大学</span><span class="lang-en lang-hidden">Beijing Normal University</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">南京师范大学</span><span class="lang-en lang-hidden">Nanjing Normal University</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🌐 <span class="lang-zh">联合国教科文组织高等教育创新中心（深圳）</span><span class="lang-en lang-hidden">UNESCO-ICHEI (Shenzhen)</span></div>
-                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏢 <span class="lang-zh">科大讯飞</span><span class="lang-en lang-hidden">iFLYTEK</span></div>
-            </div>
-        </div>
-        <div class="network-legend">
-            <div class="legend-item"><div class="legend-dot primary"></div><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
-            <div class="legend-item"><div class="legend-dot partner"></div><span class="lang-zh">合作机构</span><span class="lang-en lang-hidden">Partner Institutions</span></div>
-        </div>
-    </section>
-
-    <!-- [EDIT-NEWS] 最新动态 -->
-    <!-- 添加新动态：复制一个 news-item 放在最上面 -->
-    <section class="news-section" id="news">
-        <h2 class="section-title">
-            <span class="lang-zh">最新动态</span>
-            <span class="lang-en lang-hidden">Latest News</span>
-        </h2>
-        <div class="news-list">
-            <div class="news-item">
-                <div class="news-date">2026.03</div>
-                <div class="news-content lang-zh">🎉 获得浙江大学研究生毕业生奖学金（全院1名）</div>
-                <div class="news-content lang-en lang-hidden">🎉 Awarded the ZJU Graduate Scholarship upon Graduation</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2026.01</div>
-                <div class="news-content lang-zh">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
-                <div class="news-content lang-en lang-hidden">🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI for two consecutive years</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2025.07</div>
-                <div class="news-content lang-zh">🎉 获得2025年浙江大学争创优秀博士学位论文项目资助（全院1名）</div>
-                <div class="news-content lang-en lang-hidden">🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">2025.01</div>
-                <div class="news-content lang-zh">🎉 入选浙江大学博士生"求是新星计划"培养项目</div>
-                <div class="news-content lang-en lang-hidden">🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University</div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-date">2024.09</div>
-                <div class="news-content lang-zh">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
-                <div class="news-content lang-en lang-hidden">🎓 Awarded the Dean's Award for Achievement, University of Manchester</div>
-            </div>
         </div>
     </section>
 
@@ -506,6 +375,43 @@
         </div>
     </div>
 
+    <!-- [EDIT-NEWS] 最新动态 -->
+    <!-- 添加新动态：复制一个 news-item 放在最上面 -->
+    <section class="news-section" id="news">
+        <h2 class="section-title">
+            <span class="lang-zh">最新动态</span>
+            <span class="lang-en lang-hidden">Latest News</span>
+        </h2>
+        <div class="news-list">
+            <div class="news-item">
+                <div class="news-date">2026.03</div>
+                <div class="news-content lang-zh">🎉 获得浙江大学研究生毕业生奖学金（全院1名）</div>
+                <div class="news-content lang-en lang-hidden">🎉 Awarded the ZJU Graduate Scholarship upon Graduation</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2026.01</div>
+                <div class="news-content lang-zh">🎉 连续两年入选CNKI前5%高被引学者榜单</div>
+                <div class="news-content lang-en lang-hidden">🎉 Recognized as a Top 5% Highly Cited Scholar by CNKI for two consecutive years</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2025.07</div>
+                <div class="news-content lang-zh">🎉 获得2025年浙江大学争创优秀博士学位论文项目资助（全院1名）</div>
+                <div class="news-content lang-en lang-hidden">🎉 Awarded the 2025 Zhejiang University Funding for Outstanding Doctoral Dissertation Initiative</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2025.01</div>
+                <div class="news-content lang-zh">🎉 入选浙江大学博士生"求是新星计划"培养项目</div>
+                <div class="news-content lang-en lang-hidden">🎉 Selected for the Qiushi Rising Star Training Program for PhD Students, Zhejiang University</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2024.09</div>
+                <div class="news-content lang-zh">🎓 获曼彻斯特大学院长成就奖（Dean's Award for Achievement）</div>
+                <div class="news-content lang-en lang-hidden">🎓 Awarded the Dean's Award for Achievement, University of Manchester</div>
+            </div>
+        </div>
+    </section>
+
     <!-- [EDIT-HONORS] 荣誉奖励 -->
     <!-- 添加新荣誉：复制一个 content-item，放在对应级别下方 -->
     <div class="expandable-section">
@@ -573,7 +479,7 @@
     </div>
 
    <!-- [EDIT-SKILLS] 研究方法与技能 -->
-<div class="expandable-section">
+<div class="expandable-section" id="skills">
     <div class="expandable-header" onclick="toggleSection('skills-content')">
         <span class="expandable-title">
             <span class="lang-zh">🔬 研究方法与技能</span>
@@ -676,6 +582,42 @@
     </div>
 </div>
 
+    <!-- 合作网络 -->
+    <section class="network-section" id="network">
+        <h2 class="section-title">
+            <span class="lang-zh">国际合作网络</span>
+            <span class="lang-en lang-hidden">International Collaboration Network</span>
+        </h2>
+        <div id="map"></div>
+        <!-- [EDIT-INSTITUTIONS] 机构列表（地图坐标在页面底部JS） -->
+        <div style="max-width:1000px;margin:2rem auto;padding:2rem;background:white;border-radius:15px;border:1px solid var(--border);">
+            <h3 style="font-size:1.3rem;color:var(--primary);margin-bottom:1.5rem;font-family:'Playfair Display',serif;">
+                <span class="lang-zh">合作机构</span><span class="lang-en lang-hidden">Partner Institutions</span>
+            </h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;">
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;border-left:3px solid var(--accent);">
+                    <strong style="color:var(--accent);">🏛️ <span class="lang-zh">浙江大学</span><span class="lang-en lang-hidden">Zhejiang University</span></strong>
+                    <div style="font-size:0.85rem;color:var(--text-light);margin-top:0.3rem;"><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
+                </div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">剑桥大学</span><span class="lang-en lang-hidden">University of Cambridge</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">曼彻斯特大学</span><span class="lang-en lang-hidden">University of Manchester</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">伦敦大学学院</span><span class="lang-en lang-hidden">University College London</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">佛罗里达湾岸大学</span><span class="lang-en lang-hidden">Florida Gulf Coast University</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">香港教育大学</span><span class="lang-en lang-hidden">The Education University of Hong Kong</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">香港中文大学</span><span class="lang-en lang-hidden">The Chinese University of Hong Kong</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">北京大学</span><span class="lang-en lang-hidden">Peking University</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">上海交通大学</span><span class="lang-en lang-hidden">Shanghai Jiao Tong University</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">北京师范大学</span><span class="lang-en lang-hidden">Beijing Normal University</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏛️ <span class="lang-zh">南京师范大学</span><span class="lang-en lang-hidden">Nanjing Normal University</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🌐 <span class="lang-zh">联合国教科文组织高等教育创新中心（深圳）</span><span class="lang-en lang-hidden">UNESCO-ICHEI (Shenzhen)</span></div>
+                <div style="padding:0.8rem 1rem;background:var(--bg);border-radius:8px;">🏢 <span class="lang-zh">科大讯飞</span><span class="lang-en lang-hidden">iFLYTEK</span></div>
+            </div>
+        </div>
+        <div class="network-legend">
+            <div class="legend-item"><div class="legend-dot primary"></div><span class="lang-zh">当前机构</span><span class="lang-en lang-hidden">Current Institution</span></div>
+            <div class="legend-item"><div class="legend-dot partner"></div><span class="lang-zh">合作机构</span><span class="lang-en lang-hidden">Partner Institutions</span></div>
+        </div>
+    </section>
 
     <!-- [EDIT-REFERENCES] 推荐人 -->
     <section class="references-section" id="references">
@@ -744,20 +686,6 @@
         <p style="margin-top:0.5rem;font-size:0.85rem;">College of Education, Zhejiang University | Hangzhou, China</p>
     </footer>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeLightbox();
-        });
-    </script>
     <script src="js/main.js"></script>
     <script src="js/map.js"></script>
 </body>
