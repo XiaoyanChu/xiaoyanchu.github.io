@@ -127,7 +127,7 @@
         /* References */
         .references-section { padding:4rem 10%; max-width:1200px; margin:0 auto; }
         .references-card { background:white; border-radius:15px; border:1px solid var(--border); padding:2rem; box-shadow:0 4px 16px var(--shadow); }
-        .references-note { color:var(--text-dim); margin-bottom:1.5rem; line-height:1.8; }
+        .references-note { color:var(--text-dim); margin-top:1.5rem; line-height:1.8; }
         .references-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
         .reference-item { background:var(--bg); border-radius:10px; padding:1.2rem 1.3rem; border-left:3px solid var(--accent); transition:all 0.3s; }
         .reference-item:hover { transform:translateY(-3px); box-shadow:0 6px 16px var(--shadow); }
