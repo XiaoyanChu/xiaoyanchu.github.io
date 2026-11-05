@@ -351,3 +351,23 @@
 @media (max-width: 968px) {
     .research-images { grid-template-columns: 1fr; }
 }
+
+
+
+.pdf-link {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pdf-link:hover {
+    background-color: var(--accent);
+    color: white;
+}
